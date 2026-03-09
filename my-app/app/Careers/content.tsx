@@ -13,7 +13,7 @@ const tiers = [
   {
     name: 'Foundational Tier',
     title: 'Build essential skills and gain the qualifications for entry-level positions',
-    // price: '₦180,000 - ₦300,000',
+    price: '₦180,000 - ₦300,000',
     duration: '2-3 months',
     projects: '5-10 projects',
     color: 'from-blue-600 to-blue-400',
@@ -31,7 +31,7 @@ const tiers = [
   {
     name: 'Intermediate Tier',
     title: 'Deepen your expertise with more complex tools, technologies, and processes',
-    // price: '₦350,000 - ₦600,000',
+    price: '₦350,000 - ₦600,000',
     duration: '4-6 months',
     projects: '15-25 projects',
     color: 'from-blue-700 to-blue-500',
@@ -48,7 +48,7 @@ const tiers = [
   {
     name: 'Advanced Tier',
     title: 'Achieve expert-level proficiency for leadership and expert roles',
-    // price: '₦850,000 - ₦1.5M',
+    price: '₦850,000 - ₦1.5M',
     duration: '7-12 months',
     projects: '30-60 projects',
     color: 'from-blue-800 to-blue-600',
