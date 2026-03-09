@@ -64,7 +64,7 @@ const tiers = [
   }
 ]
 
-// Course data organized by category
+// Course data organized by categorys
 const courseCategories = [
   {
     name: 'Web Development',
