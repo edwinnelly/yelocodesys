@@ -2,6 +2,7 @@ name = "my-app"
 compatibility_date = "2024-01-01"
 compatibility_flags = ["nodejs_compat"]
 
+
 # For OpenNext/Next.js apps, you typically need to specify the main entry point
 main = ".open-next/worker.js"
 
