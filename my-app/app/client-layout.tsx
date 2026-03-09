@@ -40,24 +40,35 @@ export default function ClientLayout({
     };
   }, [isMobileMenuOpen]);
 
-  const navItems = ["Home", "Solutions", "Network", "Education", "Partners"];
+  const navItems = [
+    "Home",
+    "Solutions",
+    "Network",
+    "Education",
+    "Partners",
+    "Princing",
+    "About us",
+    "Contact us",
+  ];
 
   return (
     <>
       {/* Header with dynamic background */}
-      <nav 
+      <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          isScrolled 
-            ? "bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm" 
+          isScrolled
+            ? "bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm"
             : "bg-transparent border-transparent"
         }`}
       >
         <div className="container-custom">
           <div className="flex justify-between items-center h-16">
             {/* Logo - changes color on scroll */}
-            <div className={`text-xl font-semibold transition-colors duration-300 ${
-              isScrolled ? "text-[#1e3a8a]" : "text-white"
-            }`}>
+            <div
+              className={`text-xl font-semibold transition-colors duration-300 ${
+                isScrolled ? "text-[#1e3a8a]" : "text-white"
+              }`}
+            >
               <img
                 src="pics/10001.png"
                 alt="Company logo"
@@ -77,8 +88,8 @@ export default function ClientLayout({
                   key={item}
                   href={`#${item.toLowerCase()}`}
                   className={`text-sm font-bold transition-colors duration-300 ${
-                    isScrolled 
-                      ? "text-gray-700 hover:text-[#2563eb]" 
+                    isScrolled
+                      ? "text-gray-700 hover:text-[#2563eb]"
                       : "text-white hover:text-white/80"
                   }`}
                 >
@@ -88,7 +99,7 @@ export default function ClientLayout({
             </div>
 
             {/* Desktop Contact button - style changes on scroll */}
-            <button 
+            <button
               className={`hidden md:block px-5 py-2 text-sm font-medium rounded-md transition-all duration-300 ${
                 isScrolled
                   ? "bg-[#1e3a8a] text-white hover:bg-[#2563eb]"
@@ -100,7 +111,7 @@ export default function ClientLayout({
 
             {/* Mobile menu button */}
             <div className="flex items-center gap-3 md:hidden">
-              <button 
+              <button
                 className={`px-4 py-1.5 text-sm font-medium rounded-md transition-all duration-300 ${
                   isScrolled
                     ? "bg-[#1e3a8a] text-white hover:bg-[#2563eb]"
@@ -129,9 +140,11 @@ export default function ClientLayout({
               isMobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
             }`}
           >
-            <div className={`py-4 space-y-3 border-t ${
-              isScrolled ? "border-gray-200" : "border-white/20"
-            }`}>
+            <div
+              className={`py-4 space-y-3 border-t ${
+                isScrolled ? "border-gray-200" : "border-white/20"
+              }`}
+            >
               {navItems.map((item) => (
                 <a
                   key={item}
@@ -150,9 +163,8 @@ export default function ClientLayout({
           </div>
         </div>
       </nav>
-
-      <main className="pt-0">{children}</main> {/* Removed pt-16 since header is transparent */}
-
+      <main className="pt-0">{children}</main>{" "}
+      {/* Removed pt-16 since header is transparent */}
       {/* Overlay when mobile menu is open */}
       {isMobileMenuOpen && (
         <div
