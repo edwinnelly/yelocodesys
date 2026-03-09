@@ -19,7 +19,7 @@ export default function Hero() {
             height: '100%'
           }}
         >
-          <source src="/abc.mp4" type="video/mp4" />
+          <source src="pics/abc.mp4" type="video/mp4" />
           {/* Fallback for browsers that don't support video */}
           Your browser does not support the video tag.
         </video>
