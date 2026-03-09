@@ -1,7 +1,8 @@
+// next.config.ts
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export", // this tells Next.js to generate a static folder
+  output: "export", // generates static files in `out`
 };
 
 export default nextConfig;
