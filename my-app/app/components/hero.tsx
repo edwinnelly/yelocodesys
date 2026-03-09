@@ -33,7 +33,7 @@ export default function Hero() {
           {/* Badge */}
           <div className="inline-block mb-6">
             <span className="bg-white/10 backdrop-blur-sm text-white text-sm font-medium px-4 py-2 rounded-full border border-white/20">
-              ✦ Enterprise Solutions
+              Launch Your Digital Future
             </span>
           </div>
           
@@ -50,8 +50,7 @@ export default function Hero() {
           
           {/* Description */}
           <p className="text-lg md:text-xl text-gray-100 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            Transform your business with scalable, secure, and innovative solutions 
-            built for enterprise-grade performance. Trusted by industry leaders worldwide.
+           Expert IT support, custom app development, and professional training designed to drive efficiency, growth, and digital transformation.
           </p>
           
           {/* CTA Buttons */}
@@ -73,16 +72,16 @@ export default function Hero() {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-4 md:gap-8 mt-12 max-w-2xl mx-auto lg:mx-0">
             <div className="text-center lg:text-left">
-              <div className="text-2xl md:text-3xl font-bold text-white">99.9%</div>
-              <div className="text-sm text-blue-200">Uptime SLA</div>
+              <div className="text-2xl md:text-3xl font-bold text-white">476+</div>
+              <div className="text-sm text-blue-200">Trusted Customers</div>
+            </div>
+            <div className="text-center lg:text-left">
+              <div className="text-2xl md:text-3xl font-bold text-white">10+</div>
+              <div className="text-sm text-blue-200">Years of Excellence</div>
             </div>
             <div className="text-center lg:text-left">
               <div className="text-2xl md:text-3xl font-bold text-white">24/7</div>
               <div className="text-sm text-blue-200">Support</div>
-            </div>
-            <div className="text-center lg:text-left">
-              <div className="text-2xl md:text-3xl font-bold text-white">500+</div>
-              <div className="text-sm text-blue-200">Enterprise Clients</div>
             </div>
           </div>
         </div>
