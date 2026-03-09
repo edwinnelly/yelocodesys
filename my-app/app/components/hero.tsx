@@ -39,7 +39,7 @@ export default function Hero() {
           
           {/* Heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-          Delivering world-class computer programming {' '}
+          Delivering... world-class computer programming {' '}
             <span className="text-blue-300 relative">
             education for all.
               <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none" xmlns="http://www.w3.org/2000/svg">
