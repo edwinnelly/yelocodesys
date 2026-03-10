@@ -11,7 +11,7 @@ const students = [
     score: 98,
     rank: '1',
     image: 'pics/picd.png',
-    color: 'from-blue-600 to-blue-400',
+    color: 'from-black to-black',
     skills: ['Content Creation', 'Audience Targeting', 'Predictive Analytics','Automation'],
     feedback: 'Exceptional problem solver and team player',
     projects: 15,
@@ -24,7 +24,7 @@ const students = [
     score: 96,
     rank: '2',
     image: 'pics/ayo.png',
-    color: 'from-blue-700 to-blue-500',
+    color: 'from-black to-black',
     skills: ['TensorFlow', 'PyTorch', 'Computer Vision'],
     feedback: 'Brilliant researcher with innovative ideas',
     projects: 24,
@@ -37,7 +37,7 @@ const students = [
     score: 95,
     rank: '3',
     image: 'pics/xxc.png',
-    color: 'from-blue-800 to-blue-600',
+    color: 'from-black to-black',
     skills: ['AWS', 'Kubernetes', 'Terraform'],
     feedback: 'Architected solutions for 10+ enterprises',
     projects: 50,
@@ -50,7 +50,7 @@ const students = [
     score: 94,
     rank: '4',
     image: 'pics/expensive.png',
-    color: 'from-blue-600 to-blue-400',
+    color: 'from-black to-black',
     skills: ['Node js, Nextjs', 'User Research', 'Prototyping'],
     feedback: 'Creates intuitive and beautiful experiences',
     projects: 18,
@@ -113,28 +113,28 @@ export default function TopStudents() {
       {/* Subtle blue pattern overlay */}
       <div className="absolute inset-0 opacity-[0.02]" 
         style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, #1e3a8a 1px, transparent 0)`,
+          backgroundImage: `radial-gradient(circle at 1px 1px, #05070e 1px, transparent 0)`,
           backgroundSize: '40px 40px'
         }}
       />
       
       {/* Very light blue orbs for depth */}
-      <div className="absolute top-20 left-10 w-96 h-96 bg-blue-50 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-50 rounded-full blur-3xl" />
+      <div className="absolute top-20 left-10 w-96 h-96 bg-black-50 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-black-50 rounded-full blur-3xl" />
       
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           {/* Minimal badge */}
-          <div className="inline-flex items-center gap-2 bg-white border border-blue-200 text-blue-700 text-sm font-medium px-4 py-2 rounded-full mb-6 shadow-sm">
-            <Medal className="w-4 h-4 text-blue-600" />
+          <div className="inline-flex items-center gap-2 bg-white border border-black-200 text-black text-sm font-medium px-4 py-2 rounded-full mb-6 shadow-sm">
+            <Medal className="w-4 h-4 text-black" />
             Excellence in Performance
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
             Top{' '}
-            <span className="text-blue-600">
+            <span className="text-yellow-500">
               Performing Students
             </span>
           </h2>
@@ -157,7 +157,7 @@ export default function TopStudents() {
                 onMouseLeave={() => setHoveredIndex(null)}
               >
                 {/* Card */}
-                <div className="relative bg-white border border-gray-200 rounded-2xl p-6 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-100 transition-all duration-300">
+                <div className="relative bg-white border border-gray-200 rounded-2xl p-6 hover:border-black hover:shadow-xl hover:shadow-blue-100 transition-all duration-300">
                   {/* Rank badge */}
                   <div className={`absolute -top-3 -right-3 w-10 h-10 bg-gradient-to-br ${student.color} rounded-xl flex items-center justify-center text-white font-bold text-sm shadow-lg`}>
                     {student.rank}
@@ -177,11 +177,11 @@ export default function TopStudents() {
                   {/* Student info */}
                   <div className="text-center mb-4">
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">{student.name}</h3>
-                    <p className="text-sm text-blue-600 mb-3">{student.role}</p>
+                    <p className="text-sm text-black-600 mb-3">{student.role}</p>
                     
                     {/* Score */}
                     <div className="inline-flex items-center gap-1.5 bg-blue-50 px-3 py-1.5 rounded-lg">
-                      <Target className="w-3.5 h-3.5 text-blue-600" />
+                      <Target className="w-3.5 h-3.5 text-black-600" />
                       <span className="text-base font-bold text-gray-900">{scores[index]}%</span>
                     </div>
                   </div>
@@ -199,9 +199,9 @@ export default function TopStudents() {
                   </div>
                   
                   {/* Achievement */}
-                  <div className="bg-blue-50 rounded-lg p-2.5 mb-4">
+                  <div className="bg-yellow-50 rounded-lg p-2.5 mb-4">
                     <div className="flex items-center gap-2">
-                      <Award className="w-4 h-4 text-blue-600 flex-shrink-0" />
+                      <Award className="w-4 h-4 text-yellow-600 flex-shrink-0" />
                       <span className="text-xs text-gray-700 line-clamp-1">{student.achievement}</span>
                     </div>
                   </div>
@@ -241,10 +241,10 @@ export default function TopStudents() {
         {/* Bottom metrics */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
           {[
-            { label: 'Average Score', value: '96%', icon: Star, color: 'from-blue-600 to-blue-400' },
-            { label: 'Projects', value: '150+', icon: Code, color: 'from-blue-700 to-blue-500' },
-            { label: 'Placements', value: '45', icon: Users, color: 'from-blue-600 to-blue-400' },
-            { label: 'Certifications', value: '89', icon: Shield, color: 'from-blue-800 to-blue-600' }
+            { label: 'Average Score', value: '96%', icon: Star, color: 'from-black to-black' },
+            { label: 'Projects', value: '150+', icon: Code, color: 'from-black to-black' },
+            { label: 'Placements', value: '45', icon: Users, color: 'from-black to-black' },
+            { label: 'Certifications', value: '89', icon: Shield, color: 'from-black to-black' }
           ].map((metric, index) => {
             const Icon = metric.icon
             return (
@@ -262,11 +262,11 @@ export default function TopStudents() {
         {/* Trend indicator */}
         <div className="mt-16 text-center">
           <div className="inline-flex items-center gap-3 bg-white border border-gray-200 rounded-full px-6 py-3 shadow-sm">
-            <TrendingUp className="w-5 h-5 text-blue-600" />
+            <TrendingUp className="w-5 h-5 text-yellow-600" />
             <span className="text-sm text-gray-600">
               <span className="font-semibold text-gray-900">30% improvement</span> in overall performance
             </span>
-            <Zap className="w-4 h-4 text-blue-500" />
+            <Zap className="w-4 h-4 text-yellow-500" />
           </div>
         </div>
 

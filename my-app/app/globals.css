@@ -171,15 +171,15 @@ body {
   }
 
   .text-dark-blue {
-    color: #3b82f6;
+    color: #d2ec2a;
   }
 
   .hover\:text-dark-blue:hover {
-    color: #2563eb;
+    color: #d2ec2a;
   }
 
   .border-dark-blue {
-    border-color: #3b82f6;
+    border-color: black;
   }
 
   .bg-dark-blue {

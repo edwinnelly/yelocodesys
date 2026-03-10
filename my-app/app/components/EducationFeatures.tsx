@@ -11,16 +11,16 @@ export default function TopStudents() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   return (
-    <section className="py-1 bg-white dark:bg-gray-950">
+    <section className="py-1 bg-white dark:bg-black">
       <br></br>
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
+          <div className="inline-flex items-center gap-2 bg-yellow-50 dark:bg-yellow-900/30 text-gray-600 dark:text-white text-sm font-medium px-4 py-2 rounded-full mb-4">
             <Heart className="w-4 h-4" />
             Core Principles
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
-            Empowerment Through <span className="text-blue-600 dark:text-blue-400">Knowledge</span>
+            Empowerment Through <span className="text-yellow-600 dark:text-yellow-400">Knowledge</span>
           </h2>
         </div>
 
@@ -28,7 +28,7 @@ export default function TopStudents() {
           {/* Principle 1 */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
-              <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
+              <div className="inline-flex items-center gap-2 bg-yellow-50 dark:bg-yellow-800 text-gray-600 dark:text-white text-sm font-medium px-4 py-2 rounded-full mb-4">
                 <Lightbulb className="w-4 h-4" />
                 Principle 1
               </div>
@@ -63,7 +63,7 @@ export default function TopStudents() {
               </div>
             </div>
             <div>
-              <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
+              <div className="inline-flex items-center gap-2 bg-yellow-50 dark:bg-yellow-800 text-gray-600 dark:text-white text-sm font-medium px-4 py-2 rounded-full mb-4">
                 <Award className="w-4 h-4" />
                 Principle 2
               </div>
@@ -78,7 +78,7 @@ export default function TopStudents() {
           {/* Principle 3 */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
-              <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
+              <div className="inline-flex items-center gap-2 bg-yellow-50 dark:bg-yellow-700 text-gray-600 dark:text-white text-sm font-medium px-4 py-2 rounded-full mb-4">
                 <Shield className="w-4 h-4" />
                 Principle 3
               </div>

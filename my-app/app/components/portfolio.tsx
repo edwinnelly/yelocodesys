@@ -60,12 +60,12 @@ const companyStats = [
 
 export default function PortfolioSection() {
   return (
-    <section id="portfolio" className="py-24 bg-white dark:bg-gray-950">
+    <section id="portfolio" className="py-24 bg-white dark:bg-black">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         {/* Header with company focus */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-sm px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-gray-100 dark:bg-gray-800 text-yellow-600 dark:text-gray-400 text-sm px-4 py-2 rounded-full mb-6">
               <Building2 className="w-4 h-4" />
               Enterprise Solutions
             </div>
@@ -104,7 +104,7 @@ export default function PortfolioSection() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative bg-gray-50 dark:bg-gray-900 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:shadow-2xl transition-all duration-300"
+              className="group relative bg-black dark:bg-black rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:shadow-2xl transition-all duration-300"
             >
               {/* Image with overlay */}
               <div className="relative h-56 overflow-hidden">
@@ -129,7 +129,7 @@ export default function PortfolioSection() {
               {/* Content */}
               <div className="p-6">
                 <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-xl font-medium text-gray-900 dark:text-white">
+                  <h3 className="text-xl font-medium text-yellow-700 dark:text-white">
                     {project.title}
                   </h3>
                 </div>
@@ -169,7 +169,7 @@ export default function PortfolioSection() {
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </button>
                   
-                  <button className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+                  <button className="text-sm text-yellow-600 dark:text-gray-400 hover:text-yellow-600 dark:hover:text-white transition-colors">
                     Live demo →
                   </button>
                 </div>

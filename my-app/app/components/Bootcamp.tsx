@@ -33,7 +33,7 @@ const bootcamps = [
     students: 234,
     rating: 4.9,
     level: "Beginner to Advanced",
-    color: "from-blue-500 to-cyan-500",
+    color: "bg-black",
     courses: [
       "HTML/CSS Fundamentals",
       "JavaScript Mastery",
@@ -56,7 +56,7 @@ const bootcamps = [
     students: 156,
     rating: 4.8,
     level: "Intermediate",
-    color: "from-cyan-500 to-blue-500",
+    color: "bg-black",
     courses: [
       "Python Programming",
       "Data Analysis with Pandas",
@@ -79,7 +79,7 @@ const bootcamps = [
     students: 98,
     rating: 4.7,
     level: "Advanced",
-    color: "from-blue-600 to-cyan-600",
+    color: "bg-black",
     courses: [
       "AWS Fundamentals",
       "Serverless Computing",
@@ -102,7 +102,7 @@ const bootcamps = [
     students: 187,
     rating: 4.9,
     level: "Beginner-friendly",
-    color: "from-teal-500 to-blue-500",
+     color: "bg-black",
     courses: [
       "Design Fundamentals",
       "User Research Methods",
@@ -180,13 +180,13 @@ export default function BootcampPrograms() {
       <div
         className="absolute inset-0 opacity-[0.02]"
         style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, #2563eb 1px, transparent 0)`,
+          backgroundImage: `radial-gradient(circle at 1px 1px, #75730d 1px, transparent 0)`,
           backgroundSize: "40px 40px",
         }}
       />
 
       {/* Soft gradient orbs */}
-      <div className="absolute top-20 left-10 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl" />
+      <div className="absolute top-20 left-10 w-96 h-96 bg-yellow-200/20 rounded-full blur-3xl" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-200/20 rounded-full blur-3xl" />
 
       {/* Content */}
@@ -194,14 +194,14 @@ export default function BootcampPrograms() {
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           {/* Minimal badge */}
-          <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-600 text-sm font-medium px-4 py-2 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 bg-yellow-50 border border-blue-100 text-black text-sm font-medium px-4 py-2 rounded-full mb-6">
             <Sparkles className="w-4 h-4" />
             Intensive Programs
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
             Professional{" "}
-            <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-gray-600 to-yellow-600 bg-clip-text text-transparent">
               Bootcamps
             </span>
           </h2>
@@ -250,10 +250,10 @@ export default function BootcampPrograms() {
                 onMouseLeave={() => setHoveredIndex(null)}
               >
                 {/* Card */}
-                <div className="relative bg-white border border-gray-200 rounded-2xl p-6 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-100/50 transition-all duration-300">
+                <div className="relative bg-white border border-gray-200 rounded-2xl p-6 hover:border-blue-200 hover:shadow-xl hover:yellow-black-100/50 transition-all duration-300">
                   {/* Popular badge */}
                   {index === 0 && (
-                    <div className="absolute -top-3 -right-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white text-xs font-medium px-3 py-1.5 rounded-full shadow-lg z-10">
+                    <div className="absolute -top-3 -right-3 bg-gradient-to-r from-yellow-600 to-gray-600 text-white text-xs font-medium px-3 py-1.5 rounded-full shadow-lg z-10">
                       Most Popular
                     </div>
                   )}
@@ -293,7 +293,7 @@ export default function BootcampPrograms() {
                     </div>
 
                     <div className="flex items-center justify-between">
-                      <span className="text-xs bg-blue-50 text-blue-600 px-2 py-1 rounded-md">
+                      <span className="text-xs bg-blue-50 text-yellow-600 px-2 py-1 rounded-md">
                         {bootcamp.level}
                       </span>
                       <span className="text-xs text-gray-500 flex items-center gap-1">
@@ -312,7 +312,7 @@ export default function BootcampPrograms() {
                       </span>
                     </div>
                     <div className="flex items-center gap-2 text-xs text-gray-600">
-                      <Calendar className="w-3 h-3 text-blue-600" />
+                      <Calendar className="w-3 h-3 text-yellow-600" />
                       <span>{bootcamp.nextStart}</span>
                     </div>
                   </div>
@@ -365,7 +365,7 @@ export default function BootcampPrograms() {
 
                     <button 
                       onClick={handleEnroll}
-                      className="text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors flex items-center gap-1"
+                      className="text-sm font-medium text-yellow-600 hover:text-yellow-700 transition-colors flex items-center gap-1"
                     >
                       <span>Enroll</span>
                       <ChevronRight className="w-4 h-4" />
@@ -406,7 +406,7 @@ export default function BootcampPrograms() {
         <div className="mt-16 text-center">
           <Link
             href="/bootcampsapply"
-            className="group inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-full font-medium hover:shadow-xl hover:shadow-blue-200/50 transition-all"
+            className="group inline-flex items-center gap-3 bg-gradient-to-r from-yellow-600 to-gray-600 text-white px-8 py-4 rounded-full font-medium hover:shadow-xl hover:shadow-blue-200/50 transition-all"
           >
             <span>Download Program Guide</span>
             <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

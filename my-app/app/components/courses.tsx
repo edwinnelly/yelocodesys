@@ -21,55 +21,69 @@ const courses = [
     title: "Python Programming",
     level: "Beginner",
     students: "2.5k",
+    duration: "16 weeks",
   },
   {
     icon: Brain,
     title: "Machine Learning",
     level: "Advanced",
     students: "1.8k",
+    duration: "18 weeks",
   },
   {
     icon: Globe,
     title: "Full Stack Web Dev",
     level: "Intermediate",
     students: "3.2k",
+    duration: "16 weeks",
   },
   {
     icon: Database,
     title: "Data Science",
     level: "Intermediate",
     students: "1.5k",
+    duration: "14 weeks",
   },
   {
     icon: Cloud,
     title: "Cloud Computing",
     level: "Advanced",
     students: "1.2k",
+    duration: "10 weeks",
   },
   {
     icon: Smartphone,
     title: "Mobile App Dev",
     level: "Intermediate",
     students: "1.1k",
+    duration: "18 weeks",
   },
   {
     icon: TrendingUp,
     title: "Digital Marketing",
     level: "Beginner",
     students: "2.1k",
+    duration: "12 weeks",
   },
-  { icon: Palette, title: "UI/UX Design", level: "Beginner", students: "1.4k" },
+  {
+    icon: Palette,
+    title: "UI/UX Design",
+    level: "Beginner",
+    students: "1.4k",
+    duration: "10 weeks",
+  },
   {
     icon: BarChart,
     title: "Data Analysis",
     level: "Intermediate",
     students: "1.9k",
+    duration: "10 weeks",
   },
 ];
 
 export default function CoursesSection() {
   return (
-    <section id="courses" className="py-24 bg-gray-50 dark:bg-gray-900">
+    <section id="courses" className="py-24 bg-gray-50 dark:bg-black">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-3">
@@ -87,7 +101,7 @@ export default function CoursesSection() {
             return (
               <div
                 key={index}
-                className="group relative bg-white dark:bg-gray-950 p-5 hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-800"
+                className="group relative bg-white dark:bg-black p-5 hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-800"
               >
                 {/* Metallic shimmer effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-100/50 to-transparent dark:via-gray-800/50 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
@@ -115,7 +129,7 @@ export default function CoursesSection() {
                       </div>
                       <div className="flex items-center gap-1">
                         <Clock className="w-3 h-3 text-gray-400" />
-                        <span className="text-xs text-gray-500">8 weeks</span>
+                        <span className="text-xs text-gray-500">{course.duration}</span>
                       </div>
                     </div>
                   </div>
