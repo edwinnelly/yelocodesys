@@ -54,7 +54,7 @@ const projects = [
 const companyStats = [
   { icon: Briefcase, value: '50+', label: 'Enterprise Clients' },
   { icon: Users, value: '1M+', label: 'End Users' },
-  { icon: Globe, value: '15+', label: 'Countries' },
+  { icon: Globe, value: '5+', label: 'Countries' },
   { icon: Shield, value: '99.9%', label: 'Uptime SLA' }
 ]
 

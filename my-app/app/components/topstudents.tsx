@@ -5,20 +5,20 @@ import { Award, Star, TrendingUp, Users, BookOpen, Code, Zap, Target, Shield, Me
 
 const students = [
   { 
-    name: 'Alex Chen',
-    role: 'Full Stack Developer',
+    name: 'Sharon Chukw.',
+    role: 'Digital Marketing',
     achievement: 'Completed 15+ projects',
     score: 98,
     rank: '1',
     image: 'pics/picd.png',
     color: 'from-blue-600 to-blue-400',
-    skills: ['React', 'Node.js', 'Python'],
+    skills: ['Content Creation', 'Audience Targeting', 'Predictive Analytics','Automation'],
     feedback: 'Exceptional problem solver and team player',
     projects: 15,
     certifications: 8
   },
   { 
-    name: 'Sarah Johnson',
+    name: 'Ayo J.',
     role: 'AI/ML Engineer',
     achievement: 'Published 3 research papers',
     score: 96,
@@ -27,11 +27,11 @@ const students = [
     color: 'from-blue-700 to-blue-500',
     skills: ['TensorFlow', 'PyTorch', 'Computer Vision'],
     feedback: 'Brilliant researcher with innovative ideas',
-    projects: 12,
+    projects: 24,
     certifications: 6
   },
   { 
-    name: 'Michael Park',
+    name: 'Eze Chidi.',
     role: 'Cloud Architect',
     achievement: 'AWS Certified Expert',
     score: 95,
@@ -40,18 +40,18 @@ const students = [
     color: 'from-blue-800 to-blue-600',
     skills: ['AWS', 'Kubernetes', 'Terraform'],
     feedback: 'Architected solutions for 10+ enterprises',
-    projects: 20,
+    projects: 50,
     certifications: 12
   },
   { 
-    name: 'Emily Rodriguez',
-    role: 'UX/UI Designer',
-    achievement: '5x Design Award Winner',
+    name: 'Expensive O.',
+    role: 'Full Stack Web Dev',
+    achievement: '2x Design Award Winner',
     score: 94,
     rank: '4',
     image: 'pics/expensive.png',
     color: 'from-blue-600 to-blue-400',
-    skills: ['Figma', 'User Research', 'Prototyping'],
+    skills: ['Node js, Nextjs', 'User Research', 'Prototyping'],
     feedback: 'Creates intuitive and beautiful experiences',
     projects: 18,
     certifications: 5
