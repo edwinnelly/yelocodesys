@@ -55,7 +55,7 @@ export default function Hero() {
           
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-            <button className="group relative px-8 py-4 bg-white text-black-100 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
+            <button className="group relative px-8 py-4 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
               <span className="relative z-10">Get Started</span>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </button>
