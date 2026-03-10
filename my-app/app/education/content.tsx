@@ -10,6 +10,7 @@ import {
   MoveRight, ArrowUpRight, PlayCircle, Video, Headphones, Monitor,
   UserCheck, Building2, Network, Gift, Coffee as CoffeeIcon
 } from 'lucide-react'
+import Link from 'next/link'
 
 export default function EducationPage() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null)
@@ -89,7 +90,8 @@ export default function EducationPage() {
       description: 'Master full-stack development and build complete web applications from scratch.',
       outcomes: ['Full-stack developer', '$45k - $80k starting salary'],
       gradient: 'from-blue-600 to-indigo-600',
-      popular: true
+      popular: true,
+      link: '/webdevelopment'
     },
     {
       title: 'Data Science & AI',
@@ -100,7 +102,8 @@ export default function EducationPage() {
       description: 'Learn to extract insights from data and build AI-powered applications.',
       outcomes: ['Data Analyst', 'ML Engineer', '$50k - $90k starting salary'],
       gradient: 'from-purple-600 to-pink-600',
-      popular: false
+      popular: false,
+      link: '/programs/data-science'
     },
     {
       title: 'UI/UX Design',
@@ -111,7 +114,8 @@ export default function EducationPage() {
       description: 'Create beautiful, intuitive user experiences for web and mobile apps.',
       outcomes: ['UI/UX Designer', 'Product Designer', '$40k - $75k starting salary'],
       gradient: 'from-pink-600 to-rose-600',
-      popular: false
+      popular: false,
+      link: '/programs/ui-ux-design'
     },
     {
       title: 'Mobile App Development',
@@ -122,7 +126,8 @@ export default function EducationPage() {
       description: 'Build cross-platform mobile apps for iOS and Android.',
       outcomes: ['Mobile Developer', 'Flutter Developer', '$45k - $85k starting salary'],
       gradient: 'from-green-600 to-emerald-600',
-      popular: false
+      popular: false,
+      link: '/programs/mobile-development'
     },
     {
       title: 'Cybersecurity',
@@ -133,7 +138,8 @@ export default function EducationPage() {
       description: 'Learn to protect systems and networks from cyber threats.',
       outcomes: ['Security Analyst', 'Penetration Tester', '$50k - $95k starting salary'],
       gradient: 'from-red-600 to-orange-600',
-      popular: true
+      popular: true,
+      link: '/programs/cybersecurity'
     },
     {
       title: 'Cloud Computing',
@@ -144,7 +150,8 @@ export default function EducationPage() {
       description: 'Master cloud platforms and modern infrastructure management.',
       outcomes: ['Cloud Engineer', 'DevOps Specialist', '$55k - $100k starting salary'],
       gradient: 'from-cyan-600 to-blue-600',
-      popular: false
+      popular: false,
+      link: '/programs/cloud-computing'
     },
     {
       title: 'Python Programming',
@@ -155,7 +162,8 @@ export default function EducationPage() {
       description: 'Start your coding journey with the world\'s most versatile language.',
       outcomes: ['Python Developer', 'Automation Engineer', '$40k - $70k starting salary'],
       gradient: 'from-yellow-600 to-amber-600',
-      popular: false
+      popular: false,
+      link: '/python'
     },
     {
       title: 'Digital Marketing',
@@ -166,21 +174,22 @@ export default function EducationPage() {
       description: 'Master digital marketing strategies to grow businesses online.',
       outcomes: ['Digital Marketer', 'SEO Specialist', '$35k - $60k starting salary'],
       gradient: 'from-orange-600 to-red-600',
-      popular: false
+      popular: false,
+      link: '/digitalmarketing'
     }
   ]
 
   const testimonials = [
     {
-      name: 'Chioma Okonkwo',
-      role: 'Web Developer at PayStack',
+      name: 'Eze Chidi.',
+      role: 'Web Developer at Reaput',
       program: 'Web Development Bootcamp',
       quote: 'Yelocode transformed my career. From a complete beginner to landing my dream job at PayStack in just 6 months. The mentors really care about your success.',
-      image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&h=200&fit=crop',
-      before: 'Accountant',
+      image: 'pics/xxc.png',
+      before: 'Student',
       after: 'Frontend Developer',
       rating: 5,
-      change: '+150% salary increase'
+      change: '+34% salary increase'
     },
     {
       name: 'Emeka Nwachukwu',
@@ -202,7 +211,7 @@ export default function EducationPage() {
       before: 'Bank Teller',
       after: 'Data Analyst',
       rating: 5,
-      change: '+120% salary increase'
+      change: '+40% salary increase'
     },
     {
       name: 'Michael Obi',
@@ -363,7 +372,7 @@ export default function EducationPage() {
     { icon: Users, value: '500+', label: 'Students Trained' },
     { icon: Award, value: '92%', label: 'Placement Rate' },
     { icon: Building2, value: '40+', label: 'Industry Partners' },
-    { icon: Clock, value: '6+', label: 'Years Experience' }
+    { icon: Clock, value: '8+', label: 'Years Experience' }
   ]
 
   const handlePrevTestimonial = () => {
@@ -579,63 +588,75 @@ export default function EducationPage() {
             {programs.map((program, index) => {
               const Icon = program.icon
               return (
-                <div 
-                  key={index} 
-                  className="group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
-                >
-                  {/* Popular badge */}
-                  {program.popular && (
-                    <div className="absolute top-4 right-4 bg-gradient-to-r from-blue-600 to-blue-400 text-white text-xs font-medium px-3 py-1 rounded-full z-10">
-                      Most Popular
-                    </div>
-                  )}
+                <Link href={program.link} key={index}>
+                  <div 
+                    className="group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer"
+                  >
+                    {/* Popular badge */}
+                    {program.popular && (
+                      <div className="absolute top-4 right-4 bg-gradient-to-r from-blue-600 to-blue-400 text-white text-xs font-medium px-3 py-1 rounded-full z-10">
+                        Most Popular
+                      </div>
+                    )}
 
-                  {/* Gradient overlay on hover */}
-                  <div className={`absolute inset-0 bg-gradient-to-r ${program.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
-                  
-                  <div className="p-6">
-                    <div className={`w-14 h-14 bg-gradient-to-r ${program.gradient} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                      <Icon className="w-7 h-7 text-white" />
-                    </div>
+                    {/* Gradient overlay on hover */}
+                    <div className={`absolute inset-0 bg-gradient-to-r ${program.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
                     
-                    <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">{program.title}</h3>
-                    
-                    <div className="flex items-center gap-2 mb-3">
-                      <Clock className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-                      <span className="text-sm text-gray-600 dark:text-gray-400">{program.duration}</span>
-                    </div>
-                    
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">{program.description}</p>
-                    
-                    <div className="flex flex-wrap gap-1.5 mb-4">
-                      {program.skills.slice(0, 3).map((skill, i) => (
-                        <span key={i} className="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 rounded-full">
-                          {skill}
+                    <div className="p-6">
+                      <div className={`w-14 h-14 bg-gradient-to-r ${program.gradient} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                        <Icon className="w-7 h-7 text-white" />
+                      </div>
+                      
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 transition-colors">
+                        {program.title}
+                      </h3>
+                      
+                      <div className="flex items-center gap-2 mb-3">
+                        <Clock className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                        <span className="text-sm text-gray-600 dark:text-gray-400">{program.duration}</span>
+                      </div>
+                      
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">{program.description}</p>
+                      
+                      <div className="flex flex-wrap gap-1.5 mb-4">
+                        {program.skills.slice(0, 3).map((skill, i) => (
+                          <span key={i} className="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 rounded-full">
+                            {skill}
+                          </span>
+                        ))}
+                        {program.skills.length > 3 && (
+                          <span className="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 rounded-full">
+                            +{program.skills.length - 3}
+                          </span>
+                        )}
+                      </div>
+                      
+                      <div className="flex items-center justify-between mt-4 pt-4 border-t border-gray-100 dark:border-gray-700">
+                        <span className="text-xs text-green-600 dark:text-green-400">
+                          {program.outcomes[0]}
                         </span>
-                      ))}
-                      {program.skills.length > 3 && (
-                        <span className="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 rounded-full">
-                          +{program.skills.length - 3}
-                        </span>
-                      )}
-                    </div>
-                    
-                    <div className="flex items-center justify-between mt-4 pt-4 border-t border-gray-100 dark:border-gray-700">
-                      <span className="text-xs text-green-600 dark:text-green-400">
-                        {program.outcomes[0]}
-                      </span>
-                      <a 
-                        href="#" 
-                        className="inline-flex items-center gap-1 text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-700 transition-colors group/link"
-                      >
-                        Learn more
-                        <ArrowUpRight className="w-4 h-4 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform" />
-                      </a>
+                        <div className="inline-flex items-center gap-1 text-sm font-medium text-blue-600 dark:text-blue-400 group/link">
+                          Learn more
+                          <ArrowUpRight className="w-4 h-4 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform" />
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               )
             })}
+          </div>
+
+          {/* View All Courses Link */}
+          <div className="text-center mt-12">
+            <Link 
+              href="/coursecatalog" 
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-400 text-white font-semibold rounded-xl hover:shadow-lg transition-all group"
+            >
+              <BookOpen className="w-5 h-5" />
+              View Full Course Catalog
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
         </div>
       </section>
@@ -883,18 +904,15 @@ export default function EducationPage() {
                   <Phone className="w-4 h-4" />
                   <span>09162865693</span>
                 </a>
-                <a href="mailto:admissions@yelocode.com" className="flex items-center gap-2 px-6 py-3 bg-white/20 backdrop-blur-sm rounded-xl hover:bg-white/30 transition-all">
+                <a href="mailto:admissions@yelocodesys.com" className="flex items-center gap-2 px-6 py-3 bg-white/20 backdrop-blur-sm rounded-xl hover:bg-white/30 transition-all">
                   <Mail className="w-4 h-4" />
-                  <span>admissions@yelocode.com</span>
+                  <span>admissions@yelocodesys.com</span>
                 </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* ADMISSION PROCESS */}
-     
 
       {/* UPCOMING COHORTS */}
       <section 
@@ -934,12 +952,25 @@ export default function EducationPage() {
                   </span>
                   <span className="text-sm text-gray-500 dark:text-gray-400">{cohort.deadline}</span>
                 </div>
-                <button className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-blue-400 text-white rounded-xl hover:shadow-lg transition-all flex items-center justify-center gap-2">
-                  Apply Now
-                  <ArrowRight className="w-4 h-4" />
-                </button>
+                <Link href="/bootcampsapply">
+                  <button className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-blue-400 text-white rounded-xl hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                    Apply Now
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                </Link>
               </div>
             ))}
+          </div>
+
+          {/* View All Cohorts Link */}
+          <div className="text-center mt-8">
+            <Link 
+              href="/bootcampsapply" 
+              className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-medium hover:gap-3 transition-all"
+            >
+              View all upcoming cohorts
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>
@@ -987,6 +1018,17 @@ export default function EducationPage() {
               </div>
             ))}
           </div>
+
+          {/* Contact Support Link */}
+          <div className="text-center mt-8">
+            <Link 
+              href="/contact" 
+              className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-medium hover:gap-3 transition-all"
+            >
+              Still have questions? Contact us
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -998,21 +1040,21 @@ export default function EducationPage() {
             Join hundreds of students who have transformed their careers with Yelocode Systems.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a 
-              href="#programs" 
+            <Link 
+              href="/coursecatalog" 
               className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl hover:bg-gray-100 transition-all hover:shadow-xl inline-flex items-center gap-2 group"
             >
               <GraduationCap className="w-5 h-5" />
               Explore Programs
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
-            <a 
-              href="#contact" 
+            </Link>
+            <Link 
+              href="/contact" 
               className="px-8 py-4 bg-white/20 backdrop-blur-sm border border-white/30 text-white font-semibold rounded-xl hover:bg-white/30 transition-all inline-flex items-center gap-2"
             >
               <MessageCircle className="w-5 h-5" />
               Schedule Consultation
-            </a>
+            </Link>
           </div>
           <p className="text-sm text-white/80 mt-6">
             📍 No. 11 Elekahia, Port Harcourt | 📞 09162865693 | ✉️ admissions@yelocodesys.com

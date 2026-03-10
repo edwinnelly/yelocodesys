@@ -18,6 +18,7 @@ import {
   Bot, Network, BarChart3, LineChart, PieChart, Box, Binary, Cpu as CpuIcon,
   Lock
 } from 'lucide-react'
+import Link from 'next/link'
 
 export default function PythonPage() {
   const [activeTab, setActiveTab] = useState('overview')
@@ -386,44 +387,52 @@ export default function PythonPage() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
-      {/* Hero Section */}
-      <section className="relative py-20 md:py-28 overflow-hidden bg-gradient-to-br from-gray-900 to-gray-950 text-white">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
-            backgroundSize: '40px 40px'
-          }} />
+      
+      {/* HERO SECTION - Full Width Image */}
+      <section className="relative h-screen flex items-center overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1526379095098-40076a3b79f0?w=1920&h=1080&fit=crop"
+            alt="Python Programming"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/90 to-blue-900/80" />
         </div>
         
-        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl" />
+        {/* Gradient orbs */}
+        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse animation-delay-2000" />
 
-        <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 text-white">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-medium px-4 py-2 rounded-full mb-6">
               <Code className="w-4 h-4" />
               Complete 16-Week Python Mastery Bootcamp
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Become a Professional{' '}
               <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                 Python Developer
               </span>
             </h1>
             
-            <p className="text-lg text-gray-300 mb-8 max-w-2xl leading-relaxed">
+            <p className="text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed">
               Master Python from basics to advanced with 30+ hands-on projects. 
               Learn web development, data science, automation, and more. 
               No prior experience required.
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <button className="px-6 py-3 bg-white text-gray-900 font-medium rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2">
-                <GraduationCap className="w-5 h-5" />
-                Enroll Now
-              </button>
-              <button className="px-6 py-3 border border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors flex items-center gap-2">
+              <Link href="/Careers">
+                <button className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-xl overflow-hidden transition-all hover:shadow-xl hover:shadow-blue-500/25 flex items-center gap-2">
+                  <GraduationCap className="w-5 h-5" />
+                  Enroll Now
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </Link>
+              <button className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/30 text-white font-semibold rounded-xl hover:bg-white/20 transition-all flex items-center gap-2">
                 <FileText className="w-5 h-5" />
                 Download Syllabus
               </button>
@@ -447,6 +456,13 @@ export default function PythonPage() {
                 <div className="text-sm text-gray-400">Technologies</div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-blue-500 rounded-full mt-2 animate-scroll" />
           </div>
         </div>
       </section>
@@ -819,143 +835,20 @@ export default function PythonPage() {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
-              Choose Your <span className="text-blue-600 dark:text-blue-400">Learning Path</span>
-            </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
-              Select the option that best fits your learning style and career goals
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-6">
-            {/* Self-Paced */}
-            <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all">
-              <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Self-Paced</h4>
-              <div className="mb-4">
-                <span className="text-3xl font-bold text-gray-900 dark:text-white">₦85,000</span>
-              </div>
-              <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
-                Learn at your own pace with pre-recorded lessons and exercises.
-              </p>
-              
-              <ul className="space-y-3 mb-6">
-                {[
-                  'Full 16-week curriculum access',
-                  '30+ hands-on Python projects',
-                  'Lifetime access to materials',
-                  'Community forum support',
-                  { label: 'Instructor feedback', included: false },
-                  { label: 'Live Q&A sessions', included: false },
-                  { label: 'Project code reviews', included: false },
-                  { label: 'Career coaching', included: false }
-                ].map((item, i) => {
-                  if (typeof item === 'string') {
-                    return (
-                      <li key={i} className="flex items-center gap-2 text-sm">
-                        <Check className="w-4 h-4 text-green-500" />
-                        <span className="text-gray-700 dark:text-gray-300">{item}</span>
-                      </li>
-                    )
-                  } else {
-                    return (
-                      <li key={i} className="flex items-center gap-2 text-sm">
-                        <X className="w-4 h-4 text-gray-400" />
-                        <span className="text-gray-400">{item.label}</span>
-                      </li>
-                    )
-                  }
-                })}
-              </ul>
-              
-              <button className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                Get Started
-              </button>
-            </div>
-
-            {/* Mentor-Led (Popular) */}
-            <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl border-2 border-blue-500 shadow-xl relative transform scale-105 z-10">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-cyan-600 text-white text-xs font-medium px-3 py-1 rounded-full">
-                Most Popular
-              </div>
-              <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Mentor-Led</h4>
-              <div className="mb-4">
-                <span className="text-3xl font-bold text-gray-900 dark:text-white">₦150,000</span>
-              </div>
-              <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
-                Instructor guidance and peer collaboration for faster learning.
-              </p>
-              
-              <ul className="space-y-3 mb-6">
-                {[
-                  'Everything in Self-Paced',
-                  'Weekly live sessions',
-                  'Personalized project feedback',
-                  'Small group mentoring',
-                  'Peer code reviews',
-                  'Career guidance sessions',
-                  { label: 'Job placement assistance', included: false },
-                  { label: '1-on-1 coaching', included: false }
-                ].map((item, i) => {
-                  if (typeof item === 'string') {
-                    return (
-                      <li key={i} className="flex items-center gap-2 text-sm">
-                        <Check className="w-4 h-4 text-green-500" />
-                        <span className="text-gray-700 dark:text-gray-300">{item}</span>
-                      </li>
-                    )
-                  } else {
-                    return (
-                      <li key={i} className="flex items-center gap-2 text-sm">
-                        <X className="w-4 h-4 text-gray-400" />
-                        <span className="text-gray-400">{item.label}</span>
-                      </li>
-                    )
-                  }
-                })}
-              </ul>
-              
-              <button className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg hover:shadow-lg transition-all">
-                Enroll Now
-              </button>
-            </div>
-
-            {/* Career Track */}
-            <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all">
-              <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Career Track</h4>
-              <div className="mb-4">
-                <span className="text-3xl font-bold text-gray-900 dark:text-white">₦250,000</span>
-              </div>
-              <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
-                Complete career support with job placement assistance.
-              </p>
-              
-              <ul className="space-y-3 mb-6">
-                {[
-                  'Everything in Mentor-Led',
-                  '1-on-1 career coaching',
-                  'Resume and portfolio review',
-                  'Mock technical interviews',
-                  'Job placement assistance',
-                  'Exclusive Python job board',
-                  'Networking events',
-                  'Alumni community'
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-2 text-sm">
-                    <Check className="w-4 h-4 text-green-500" />
-                    <span className="text-gray-700 dark:text-gray-300">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              
-              <button className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                Get Started
-              </button>
-            </div>
-          </div>
+      {/* Career Paths Section */}
+      <section className="py-16 bg-blue-600 text-white">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Launch Your Python Career?</h2>
+          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            Join our Python bootcamp and get access to our career support team. We'll help you prepare for interviews, build your portfolio, and connect with hiring companies.
+          </p>
+          <Link href="/Careers">
+            <button className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl hover:bg-gray-100 transition-all hover:shadow-xl inline-flex items-center gap-2 group">
+              <Briefcase className="w-5 h-5" />
+              Explore Career Opportunities
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </button>
+          </Link>
         </div>
       </section>
 
@@ -1001,10 +894,12 @@ export default function PythonPage() {
               <p className="text-blue-100">Join thousands of students who have mastered Python with Yelocode.</p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <button className="px-6 py-3 bg-white text-blue-600 font-medium rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2">
-                <GraduationCap className="w-5 h-5" />
-                Enroll Now
-              </button>
+              <Link href="/Careers">
+                <button className="px-6 py-3 bg-white text-blue-600 font-medium rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2">
+                  <GraduationCap className="w-5 h-5" />
+                  Enroll Now
+                </button>
+              </Link>
               <button className="px-6 py-3 border border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors flex items-center gap-2">
                 <Calendar className="w-5 h-5" />
                 Schedule Consultation
@@ -1013,6 +908,40 @@ export default function PythonPage() {
           </div>
         </div>
       </section>
+
+      {/* Animation styles */}
+      <style jsx>{`
+        @keyframes pulse {
+          0%, 100% { opacity: 0.5; }
+          50% { opacity: 1; }
+        }
+        
+        @keyframes scroll {
+          0% {
+            transform: translateY(0);
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(15px);
+            opacity: 0;
+          }
+        }
+        
+        .animation-delay-2000 {
+          animation-delay: 2s;
+        }
+        
+        .animate-scroll {
+          animation: scroll 1.5s ease-in-out infinite;
+        }
+      `}</style>
     </div>
   )
 }
+
+// Add missing ArrowRight icon
+const ArrowRight = ({ className }: { className?: string }) => (
+  <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+  </svg>
+)

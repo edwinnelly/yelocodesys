@@ -1,5 +1,5 @@
 "use client";
-import type { Metadata } from "next";
+
 import { useState } from 'react'
 import { 
   Globe, Smartphone, Cloud, Shield, Users, Code, BarChart3, Cpu,
@@ -9,68 +9,114 @@ import {
   Github, Twitter, Linkedin, Facebook, Instagram, Sparkles,
   Rocket, Layers, Gauge, Network, Workflow, Eye, Settings
 } from 'lucide-react'
-
+import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: {
-    default: "Yelocode Systems | Tech Training & Software Development in Port Harcourt",
+    default: "Yelocode Systems | Software Development & Tech Solutions in Port Harcourt",
     template: "%s | Yelocode Systems",
   },
 
   description:
-    "Yelocode Systems is a technology training and software development company in Port Harcourt, Nigeria. Learn programming, cybersecurity, data science, DevOps, UI/UX design, and digital marketing from industry professionals.",
+    "Yelocode Systems delivers custom software and technology solutions in Port Harcourt, Nigeria. Specializing in web development, mobile apps, cloud solutions, cybersecurity, and DevOps. Transform your business with expert consulting at No. 11 Elekahia.",
 
   keywords: [
+    // Brand
     "Yelocode Systems",
-    "coding school Port Harcourt",
-    "software development Nigeria",
-    "programming training Port Harcourt",
-    "cybersecurity training Nigeria",
-    "data science training Nigeria",
-    "DevOps training Nigeria",
-    "tech academy Port Harcourt",
+    "yelocodesys.com",
+    
+    // Services
+    "software development Port Harcourt",
+    "web development Nigeria",
+    "mobile app development",
+    "cloud solutions",
+    "cybersecurity services",
+    "IT consulting Port Harcourt",
+    "DevOps services",
+    "custom software Nigeria",
+    "data analytics",
+    "enterprise software",
+    "business automation",
+    "API integration",
+    
+    // Location
+    "tech company Port Harcourt",
+    "software company Nigeria",
+    "No. 11 Elekahia",
+    "IT services Rivers State",
+    
+    // Business intent
+    "digital transformation Nigeria",
+    "software outsourcing",
+    "cloud migration services",
+    "business technology solutions",
   ],
 
-  authors: [{ name: "Yelocode Systems" }],
+  authors: [{ name: "Yelocode Systems", url: "https://yelocodesys.com/about" }],
   creator: "Yelocode Systems",
   publisher: "Yelocode Systems",
 
-  metadataBase: new URL("https://yelocode.com"),
+  metadataBase: new URL("https://yelocodesys.com"),
 
   openGraph: {
-    title: "Yelocode Systems | Technology Training in Nigeria",
+    title: "Yelocode Systems | Software Development & Tech Solutions",
     description:
-      "Start your tech career with Yelocode Systems. Professional training in software engineering, cybersecurity, data science, DevOps, and digital marketing in Port Harcourt.",
-    url: "https://yelocode.com",
+      "Transform your business with Yelocode Systems' technology solutions. Custom web, mobile, cloud, and cybersecurity services in Port Harcourt, Nigeria.",
+    url: "https://yelocodesys.com/solutions",
     siteName: "Yelocode Systems",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-solutions.png", // Use a descriptive name
         width: 1200,
         height: 630,
-        alt: "Yelocode Systems Technology Training",
+        alt: "Yelocode Systems - Software Development & Tech Solutions in Port Harcourt",
       },
     ],
     locale: "en_NG",
     type: "website",
+    // Add these for richer sharing
+    phoneNumbers: ["+2349162865693"],
+    countryName: "Nigeria",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Yelocode Systems | Tech Training",
+    title: "Yelocode Systems | Software & Tech Solutions",
     description:
-      "Learn high-income tech skills in Port Harcourt with Yelocode Systems.",
-    images: ["/og-image.png"],
+      "Custom software, web, mobile, cloud, and cybersecurity solutions for businesses in Port Harcourt.",
+    images: ["/twitter-solutions.png"], // Could use different image for Twitter
+    site: "@yelocode", // If you have Twitter handle
+    creator: "@yelocode",
   },
 
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 
   icons: {
     icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
   },
-};
+
+  manifest: "/site.webmanifest", // If you have one
+
+  alternates: {
+    canonical: "https://yelocodesys.com/solutions",
+  },
+
+  // If you have multiple language versions
+  // languages: {
+  //   'en-NG': 'https://yelocodesys.com/solutions',
+  // },
+}
 
 export default function TechSolutionsPage() {
   const [activeFilter, setActiveFilter] = useState('all')

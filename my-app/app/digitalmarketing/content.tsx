@@ -23,6 +23,7 @@ import {
   ChevronUp, ChevronLeft, ChevronRight, Menu, X as XIcon,
   ImageIcon
 } from 'lucide-react'
+import Link from 'next/link'
 
 export default function DigitalMarketingPage() {
   const [activeTab, setActiveTab] = useState('overview')
@@ -314,43 +315,51 @@ export default function DigitalMarketingPage() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
-      {/* Hero Section */}
-      <section className="relative py-20 md:py-28 overflow-hidden bg-gradient-to-br from-gray-900 to-gray-950 text-white">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
-            backgroundSize: '40px 40px'
-          }} />
+      
+      {/* HERO SECTION - Full Width Image */}
+      <section className="relative h-screen flex items-center overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&h=1080&fit=crop"
+            alt="Digital Marketing"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/90 to-blue-900/80" />
         </div>
         
-        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl" />
+        {/* Gradient orbs */}
+        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse animation-delay-2000" />
 
-        <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 text-white">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-medium px-4 py-2 rounded-full mb-6">
               <Sparkles className="w-4 h-4" />
               Complete 12-Week Digital Marketing with AI Automation Bootcamp
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Become a{' '}
               <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                 AI-Powered Digital Marketer
               </span>
             </h1>
             
-            <p className="text-lg text-gray-300 mb-8 max-w-2xl leading-relaxed">
+            <p className="text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed">
               Master digital marketing with AI automation tools. Learn content creation, SEO, social media, email, 
               paid ads, and analytics - all powered by AI. No prior experience required.
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <button className="px-6 py-3 bg-white text-gray-900 font-medium rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2">
-                <GraduationCap className="w-5 h-5" />
-                Enroll Now
-              </button>
-              <button className="px-6 py-3 border border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors flex items-center gap-2">
+              <Link href="/Careers">
+                <button className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-xl overflow-hidden transition-all hover:shadow-xl hover:shadow-blue-500/25 flex items-center gap-2">
+                  <GraduationCap className="w-5 h-5" />
+                  Enroll Now
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </Link>
+              <button className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/30 text-white font-semibold rounded-xl hover:bg-white/20 transition-all flex items-center gap-2">
                 <FileText className="w-5 h-5" />
                 Download Syllabus
               </button>
@@ -374,6 +383,13 @@ export default function DigitalMarketingPage() {
                 <div className="text-sm text-gray-400">Channels</div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-blue-500 rounded-full mt-2 animate-scroll" />
           </div>
         </div>
       </section>
@@ -403,8 +419,8 @@ export default function DigitalMarketingPage() {
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="p-1 bg-cyan-100 dark:bg-cyan-900/30 rounded mt-1">
-                    <Target className="w-4 h-4 text-cyan-600 dark:text-cyan-400" />
+                  <div className="p-1 bg-purple-100 dark:bg-purple-900/30 rounded mt-1">
+                    <Target className="w-4 h-4 text-purple-600 dark:text-purple-400" />
                   </div>
                   <div>
                     <span className="font-semibold text-gray-900 dark:text-white">Audience Targeting:</span>
@@ -421,8 +437,8 @@ export default function DigitalMarketingPage() {
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="p-1 bg-blue-100 dark:bg-blue-900/30 rounded mt-1">
-                    <Bot className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                  <div className="p-1 bg-green-100 dark:bg-green-900/30 rounded mt-1">
+                    <Bot className="w-4 h-4 text-green-600 dark:text-green-400" />
                   </div>
                   <div>
                     <span className="font-semibold text-gray-900 dark:text-white">Automation:</span>
@@ -548,8 +564,8 @@ export default function DigitalMarketingPage() {
               {[
                 { phase: 'Phase 1', title: 'Marketing Fundamentals', weeks: 'Weeks 1-3', color: 'blue', topics: ['Digital Marketing Basics', 'Content Marketing', 'SEO Fundamentals'] },
                 { phase: 'Phase 2', title: 'Channel Marketing', weeks: 'Weeks 4-6', color: 'cyan', topics: ['Social Media', 'Email Marketing', 'Paid Advertising'] },
-                { phase: 'Phase 3', title: 'AI & Automation', weeks: 'Weeks 7-9', color: 'indigo', topics: ['Analytics & AI', 'Chatbots', 'Video Marketing'] },
-                { phase: 'Phase 4', title: 'Integration & Career', weeks: 'Weeks 10-12', color: 'blue', topics: ['Influencer Marketing', 'Marketing Automation', 'Capstone Projects'] }
+                { phase: 'Phase 3', title: 'AI & Automation', weeks: 'Weeks 7-9', color: 'purple', topics: ['Analytics & AI', 'Chatbots', 'Video Marketing'] },
+                { phase: 'Phase 4', title: 'Integration & Career', weeks: 'Weeks 10-12', color: 'green', topics: ['Influencer Marketing', 'Marketing Automation', 'Capstone Projects'] }
               ].map((phase, idx) => (
                 <div key={idx} className="relative md:ml-16">
                   <div className={`absolute left-0 top-2 w-8 h-8 rounded-full bg-${phase.color}-500 hidden md:flex items-center justify-center text-white font-bold`}>
@@ -743,143 +759,20 @@ export default function DigitalMarketingPage() {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
-              Choose Your <span className="text-blue-600 dark:text-blue-400">Learning Path</span>
-            </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
-              Select the option that best fits your learning style and career goals
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-6">
-            {/* Self-Paced */}
-            <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all">
-              <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Self-Paced</h4>
-              <div className="mb-4">
-                <span className="text-3xl font-bold text-gray-900 dark:text-white">₦85,000</span>
-              </div>
-              <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
-                Learn at your own pace with pre-recorded lessons and exercises.
-              </p>
-              
-              <ul className="space-y-3 mb-6">
-                {[
-                  'Full 12-week curriculum access',
-                  '25+ hands-on marketing projects',
-                  'Lifetime access to materials',
-                  'Community forum support',
-                  { label: 'Instructor feedback', included: false },
-                  { label: 'Live Q&A sessions', included: false },
-                  { label: 'Project reviews', included: false },
-                  { label: 'Career coaching', included: false }
-                ].map((item, i) => {
-                  if (typeof item === 'string') {
-                    return (
-                      <li key={i} className="flex items-center gap-2 text-sm">
-                        <Check className="w-4 h-4 text-green-500" />
-                        <span className="text-gray-700 dark:text-gray-300">{item}</span>
-                      </li>
-                    )
-                  } else {
-                    return (
-                      <li key={i} className="flex items-center gap-2 text-sm">
-                        <X className="w-4 h-4 text-gray-400" />
-                        <span className="text-gray-400">{item.label}</span>
-                      </li>
-                    )
-                  }
-                })}
-              </ul>
-              
-              <button className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                Get Started
-              </button>
-            </div>
-
-            {/* Mentor-Led (Popular) */}
-            <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl border-2 border-blue-500 shadow-xl relative transform scale-105 z-10">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-cyan-600 text-white text-xs font-medium px-3 py-1 rounded-full">
-                Most Popular
-              </div>
-              <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Mentor-Led</h4>
-              <div className="mb-4">
-                <span className="text-3xl font-bold text-gray-900 dark:text-white">₦150,000</span>
-              </div>
-              <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
-                Instructor guidance and peer collaboration for faster learning.
-              </p>
-              
-              <ul className="space-y-3 mb-6">
-                {[
-                  'Everything in Self-Paced',
-                  'Weekly live sessions',
-                  'Personalized project feedback',
-                  'Small group mentoring',
-                  'Peer campaign reviews',
-                  'Career guidance sessions',
-                  { label: 'Job placement assistance', included: false },
-                  { label: '1-on-1 coaching', included: false }
-                ].map((item, i) => {
-                  if (typeof item === 'string') {
-                    return (
-                      <li key={i} className="flex items-center gap-2 text-sm">
-                        <Check className="w-4 h-4 text-green-500" />
-                        <span className="text-gray-700 dark:text-gray-300">{item}</span>
-                      </li>
-                    )
-                  } else {
-                    return (
-                      <li key={i} className="flex items-center gap-2 text-sm">
-                        <X className="w-4 h-4 text-gray-400" />
-                        <span className="text-gray-400">{item.label}</span>
-                      </li>
-                    )
-                  }
-                })}
-              </ul>
-              
-              <button className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg hover:shadow-lg transition-all">
-                Enroll Now
-              </button>
-            </div>
-
-            {/* Career Track */}
-            <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all">
-              <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Career Track</h4>
-              <div className="mb-4">
-                <span className="text-3xl font-bold text-gray-900 dark:text-white">₦250,000</span>
-              </div>
-              <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
-                Complete career support with job placement assistance.
-              </p>
-              
-              <ul className="space-y-3 mb-6">
-                {[
-                  'Everything in Mentor-Led',
-                  '1-on-1 career coaching',
-                  'Resume and portfolio review',
-                  'Mock marketing interviews',
-                  'Job placement assistance',
-                  'Exclusive marketing job board',
-                  'Networking events',
-                  'Alumni community'
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-2 text-sm">
-                    <Check className="w-4 h-4 text-green-500" />
-                    <span className="text-gray-700 dark:text-gray-300">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              
-              <button className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                Get Started
-              </button>
-            </div>
-          </div>
+      {/* Career Paths Section */}
+      <section className="py-16 bg-blue-600 text-white">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Launch Your Marketing Career?</h2>
+          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            Join our Digital Marketing bootcamp and get access to our career support team. We'll help you prepare for interviews, build your portfolio, and connect with top marketing agencies and companies.
+          </p>
+          <Link href="/Careers">
+            <button className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl hover:bg-gray-100 transition-all hover:shadow-xl inline-flex items-center gap-2 group">
+              <Briefcase className="w-5 h-5" />
+              Explore Career Opportunities
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </button>
+          </Link>
         </div>
       </section>
 
@@ -925,10 +818,12 @@ export default function DigitalMarketingPage() {
               <p className="text-blue-100">Join thousands of students who have transformed their marketing careers with Yelocode.</p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <button className="px-6 py-3 bg-white text-blue-600 font-medium rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2">
-                <GraduationCap className="w-5 h-5" />
-                Enroll Now
-              </button>
+              <Link href="/Careers">
+                <button className="px-6 py-3 bg-white text-blue-600 font-medium rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2">
+                  <GraduationCap className="w-5 h-5" />
+                  Enroll Now
+                </button>
+              </Link>
               <button className="px-6 py-3 border border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors flex items-center gap-2">
                 <Calendar className="w-5 h-5" />
                 Schedule Consultation
@@ -937,6 +832,40 @@ export default function DigitalMarketingPage() {
           </div>
         </div>
       </section>
+
+      {/* Animation styles */}
+      <style jsx>{`
+        @keyframes pulse {
+          0%, 100% { opacity: 0.5; }
+          50% { opacity: 1; }
+        }
+        
+        @keyframes scroll {
+          0% {
+            transform: translateY(0);
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(15px);
+            opacity: 0;
+          }
+        }
+        
+        .animation-delay-2000 {
+          animation-delay: 2s;
+        }
+        
+        .animate-scroll {
+          animation: scroll 1.5s ease-in-out infinite;
+        }
+      `}</style>
     </div>
   )
 }
+
+// ArrowRight component
+const ArrowRight = ({ className }: { className?: string }) => (
+  <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+  </svg>
+)
