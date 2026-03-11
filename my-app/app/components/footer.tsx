@@ -29,7 +29,7 @@ export default function Footer() {
           {/* Column 1: Company Info */}
           <div className="col-span-1">
             <div className="mb-6">
-              <div className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-gray-400 bg-clip-text text-transparent mb-4">
+              <div className="text-2xl font-bold dark:text-white bg-black bg-clip-text text-transparent mb-4">
                 Yelocode Systems
               </div>
               <p className="text-gray-400 text-sm leading-relaxed mb-4">
@@ -81,7 +81,7 @@ export default function Footer() {
 
           {/* Column 2: Quick Links */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-300 mb-4">
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-600 mb-4">
               Quick Links
             </h4>
             <ul className="space-y-2">
@@ -96,7 +96,7 @@ export default function Footer() {
                 { name: 'Partner with Us', href: '/partner' }
               ].map((item, i) => (
                 <li key={i}>
-                  <a href={item.href} className="text-sm text-gray-400 hover:text-white transition-colors">
+                  <a href={item.href} className="text-sm text-gray-500 hover:text-white transition-colors">
                     {item.name}
                   </a>
                 </li>
@@ -106,7 +106,7 @@ export default function Footer() {
 
           {/* Column 3: Programs & Resources */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-300 mb-4">
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-600 mb-4">
               Programs
             </h4>
             <ul className="space-y-2 mb-6">
@@ -121,14 +121,14 @@ export default function Footer() {
                 'Digital Marketing'
               ].map((item, i) => (
                 <li key={i}>
-                  <a href={`/programs/${item.toLowerCase().replace(/\s+/g, '-')}`} className="text-sm text-gray-400 hover:text-white transition-colors">
+                  <a href={`/programs/${item.toLowerCase().replace(/\s+/g, '-')}`} className="text-sm text-gray-500 hover:text-white transition-colors">
                     {item}
                   </a>
                 </li>
               ))}
             </ul>
 
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-300 mb-4 mt-6">
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-600 mb-4 mt-6">
               Resources
             </h4>
             <ul className="space-y-2">
@@ -141,7 +141,7 @@ export default function Footer() {
                 'Alumni Network'
               ].map((item, i) => (
                 <li key={i}>
-                  <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  <a href="#" className="text-sm text-gray-500 hover:text-white transition-colors">
                     {item}
                   </a>
                 </li>
@@ -151,7 +151,7 @@ export default function Footer() {
 
           {/* Column 4: Contact & Updates */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-300 mb-4">
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-600 mb-4">
               Get In Touch
             </h4>
             
@@ -168,16 +168,16 @@ export default function Footer() {
             {/* Office Hours */}
             <div className="mb-6">
               <h5 className="text-sm font-medium text-white mb-2">Office Hours</h5>
-              <p className="text-xs text-gray-400">Monday - Friday: 9am - 6pm</p>
-              <p className="text-xs text-gray-400">Saturday: 10am - 4pm</p>
-              <p className="text-xs text-gray-400">Sunday: Closed</p>
+              <p className="text-xs text-gray-500">Monday - Friday: 9am - 6pm</p>
+              <p className="text-xs text-gray-500">Saturday: 10am - 4pm</p>
+              <p className="text-xs text-gray-500">Sunday: Closed</p>
             </div>
 
             {/* Download Brochure */}
             <a 
               href="/brochure.pdf" 
               download
-              className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+              className="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-gray transition-colors"
             >
               <BookOpen className="w-4 h-4" />
               Download Program Brochure
@@ -192,7 +192,7 @@ export default function Footer() {
               <h5 className="text-lg font-semibold text-white mb-2">
                 Stay in the loop
               </h5>
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-gray-500">
                 Get the latest updates on new courses, events, and tech insights from Yelocode Systems.
               </p>
             </div>
@@ -205,7 +205,7 @@ export default function Footer() {
                     placeholder="Enter your email"
                     className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-yellow-500 transition-colors"
                   />
-                  <Mail className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
+                  <Mail className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white" />
                 </div>
                 <button className="px-6 py-3 bg-gradient-to-r from-yellow-600 to-gray-600 text-white rounded-lg hover:shadow-lg hover:shadow-yellow-500/25 transition-all flex items-center gap-2 whitespace-nowrap">
                   <Send className="w-4 h-4" />
@@ -238,7 +238,7 @@ export default function Footer() {
               ))}
             </div>
             
-            <div className="flex items-center gap-1 text-xs text-gray-500">
+            <div className="flex items-center gap-1 text-xs text-gray-400">
               <span>Made with</span>
               <Heart className="w-3 h-3 text-red-500 fill-yellow-500" />
               <span>in Port Harcourt for learners worldwide</span>
