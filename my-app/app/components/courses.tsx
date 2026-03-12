@@ -90,7 +90,7 @@ export default function CoursesSection() {
             Professional courses
           </h2>
           <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
-            Master in-demand skills with our industry-aligned curriculum
+            Master in-demand skills with our industry aligned curriculum
           </p>
         </div>
 

@@ -34,7 +34,7 @@ export default function TopStudents() {
               </div>
               <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Innovation First</h3>
               <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-                We embrace creativity and cutting-edge technology to design future-ready solutions. 
+                We embrace creativity and cutting-edge technology to design future ready solutions. 
                 Our curriculum evolves with industry trends to ensure you learn the most relevant skills.
               </p>
             </div>
@@ -84,7 +84,7 @@ export default function TopStudents() {
               </div>
               <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Integrity & Trust</h3>
               <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-                We operate with transparency and honesty, building long-lasting relationships. 
+                We operate with transparency and honesty, building long lasting relationships. 
                 Your success is our success, and we're committed to your growth.
               </p>
             </div>

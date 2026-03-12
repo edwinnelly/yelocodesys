@@ -89,7 +89,7 @@ export default function EducationPage() {
       skills: ['HTML/CSS', 'JavaScript', 'React', 'Node.js', 'MongoDB'],
       description: 'Master full-stack development and build complete web applications from scratch.',
       outcomes: ['Full-stack developer', '$45k - $80k starting salary'],
-      gradient: 'from-blue-600 to-indigo-600',
+      gradient: 'from-yellow-600 to-indigo-600',
       popular: true,
       link: '/webdevelopment'
     },
@@ -125,7 +125,7 @@ export default function EducationPage() {
       skills: ['Flutter', 'React Native', 'Firebase', 'API Integration', 'App Store'],
       description: 'Build cross-platform mobile apps for iOS and Android.',
       outcomes: ['Mobile Developer', 'Flutter Developer', '$45k - $85k starting salary'],
-      gradient: 'from-green-600 to-emerald-600',
+      gradient: 'from-white-600 to-emerald-600',
       popular: false,
       link: '/programs/mobile-development'
     },
@@ -149,7 +149,7 @@ export default function EducationPage() {
       skills: ['AWS', 'Azure', 'DevOps', 'Docker', 'Kubernetes'],
       description: 'Master cloud platforms and modern infrastructure management.',
       outcomes: ['Cloud Engineer', 'DevOps Specialist', '$55k - $100k starting salary'],
-      gradient: 'from-cyan-600 to-blue-600',
+      gradient: 'from-cyan-600 to-yellow-600',
       popular: false,
       link: '/programs/cloud-computing'
     },
@@ -196,7 +196,7 @@ export default function EducationPage() {
       role: 'Security Analyst at Interswitch',
       program: 'Cybersecurity',
       quote: 'The hands-on projects and real-world scenarios prepared me for the challenges I face daily at work. The instructors are industry experts with practical knowledge.',
-      image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop',
+      image: 'pics/avatar.avif',
       before: 'IT Support',
       after: 'Security Analyst',
       rating: 5,
@@ -207,7 +207,7 @@ export default function EducationPage() {
       role: 'Data Analyst at KPMG',
       program: 'Data Science & AI',
       quote: 'The curriculum is perfectly structured for beginners. Within 3 months of graduating, I got a job at KPMG. The career support was invaluable.',
-      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop',
+      image: 'pics/avatar.avif',
       before: 'Bank Teller',
       after: 'Data Analyst',
       rating: 5,
@@ -218,7 +218,7 @@ export default function EducationPage() {
       role: 'Product Designer at Terragon',
       program: 'UI/UX Design',
       quote: 'The portfolio I built during the program got me multiple job offers. The design critiques and feedback helped me grow tremendously.',
-      image: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=200&h=200&fit=crop',
+      image: 'pics/avatar.avif',
       before: 'Graphic Designer',
       after: 'Product Designer',
       rating: 5,
@@ -405,11 +405,11 @@ export default function EducationPage() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&h=1080&fit=crop"
+            src="pics/200.jpg"
             alt="Students learning"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/90 to-blue-900/80" />
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/90 to-yellow-900/80" />
         </div>
 
         {/* Animated particles with stable positions */}
@@ -417,7 +417,7 @@ export default function EducationPage() {
           {particlePositions.map((pos, i) => (
             <div
               key={i}
-              className="absolute w-1 h-1 bg-blue-400/30 rounded-full animate-float"
+              className="absolute w-1 h-1 bg-yellow-400/30 rounded-full animate-float"
               style={{
                 top: pos.top,
                 left: pos.left,
@@ -439,7 +439,7 @@ export default function EducationPage() {
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Transform Your{' '}
               <span className="relative">
-                <span className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent">
                   Future
                 </span>
                 <svg className="absolute -bottom-2 left-0 w-full" height="12" viewBox="0 0 300 12" fill="none">
@@ -457,13 +457,13 @@ export default function EducationPage() {
             <div className="flex flex-wrap gap-4">
               <a 
                 href="#programs" 
-                className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-xl overflow-hidden transition-all hover:shadow-xl hover:shadow-blue-500/25"
+                className="group relative px-8 py-4 bg-gradient-to-r from-yellow-600 to-yellow-500 text-white font-semibold rounded-xl overflow-hidden transition-all hover:shadow-xl hover:shadow-yellow-500/25"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   Explore Programs
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute inset-0 bg-gradient-to-r from-yellow-700 to-yellow-600 opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
               
               <a 
@@ -493,7 +493,7 @@ export default function EducationPage() {
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-blue-500 rounded-full mt-2 animate-scroll" />
+            <div className="w-1 h-3 bg-yellow-500 rounded-full mt-2 animate-scroll" />
           </div>
         </div>
       </section>
@@ -502,7 +502,7 @@ export default function EducationPage() {
       <section className="py-24 bg-white dark:bg-gray-950">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
               <Sparkles className="w-4 h-4" />
               Our Approach
             </div>
@@ -521,7 +521,7 @@ export default function EducationPage() {
                 icon: Code,
                 title: 'Hands-on Learning',
                 description: 'Project-based curriculum with real-world applications',
-                color: 'from-blue-600 to-blue-400'
+                color: 'from-yellow-600 to-yellow-400'
               },
               {
                 icon: Users,
@@ -533,7 +533,7 @@ export default function EducationPage() {
                 icon: Target,
                 title: 'Career-Focused',
                 description: 'Skills that lead to jobs and freelance opportunities',
-                color: 'from-green-600 to-emerald-600'
+                color: 'from-white-600 to-emerald-600'
               },
               {
                 icon: Heart,
@@ -570,14 +570,14 @@ export default function EducationPage() {
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
               <BookOpen className="w-4 h-4" />
               Our Programs
             </div>
             
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
               Courses Designed for{' '}
-              <span className="text-blue-600 dark:text-blue-400">Your Future</span>
+              <span className="text-yellow-600 dark:text-yellow-400">Your Future</span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
               Choose from our comprehensive range of tech programs
@@ -594,7 +594,7 @@ export default function EducationPage() {
                   >
                     {/* Popular badge */}
                     {program.popular && (
-                      <div className="absolute top-4 right-4 bg-gradient-to-r from-blue-600 to-blue-400 text-white text-xs font-medium px-3 py-1 rounded-full z-10">
+                      <div className="absolute top-4 right-4 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white text-xs font-medium px-3 py-1 rounded-full z-10">
                         Most Popular
                       </div>
                     )}
@@ -607,12 +607,12 @@ export default function EducationPage() {
                         <Icon className="w-7 h-7 text-white" />
                       </div>
                       
-                      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 transition-colors">
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-yellow-600 transition-colors">
                         {program.title}
                       </h3>
                       
                       <div className="flex items-center gap-2 mb-3">
-                        <Clock className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                        <Clock className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                         <span className="text-sm text-gray-600 dark:text-gray-400">{program.duration}</span>
                       </div>
                       
@@ -632,10 +632,10 @@ export default function EducationPage() {
                       </div>
                       
                       <div className="flex items-center justify-between mt-4 pt-4 border-t border-gray-100 dark:border-gray-700">
-                        <span className="text-xs text-green-600 dark:text-green-400">
+                        <span className="text-xs text-white-600 dark:text-white-400">
                           {program.outcomes[0]}
                         </span>
-                        <div className="inline-flex items-center gap-1 text-sm font-medium text-blue-600 dark:text-blue-400 group/link">
+                        <div className="inline-flex items-center gap-1 text-sm font-medium text-yellow-600 dark:text-yellow-400 group/link">
                           Learn more
                           <ArrowUpRight className="w-4 h-4 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform" />
                         </div>
@@ -651,7 +651,7 @@ export default function EducationPage() {
           <div className="text-center mt-12">
             <Link 
               href="/coursecatalog" 
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-400 text-white font-semibold rounded-xl hover:shadow-lg transition-all group"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white font-semibold rounded-xl hover:shadow-lg transition-all group"
             >
               <BookOpen className="w-5 h-5" />
               View Full Course Catalog
@@ -672,14 +672,14 @@ export default function EducationPage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
+              <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
                 <Laptop className="w-4 h-4" />
                 Student Experience
               </div>
               
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
                 Learn in an{' '}
-                <span className="text-blue-600 dark:text-blue-400">Engaging Environment</span>
+                <span className="text-yellow-600 dark:text-yellow-400">Engaging Environment</span>
               </h2>
               
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
@@ -692,8 +692,8 @@ export default function EducationPage() {
                   const Icon = feature.icon
                   return (
                     <div key={index} className="flex items-start gap-3 group">
-                      <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                        <Icon className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                      <div className="w-10 h-10 bg-yellow-100 dark:bg-yellow-900/30 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <Icon className="w-5 h-5 text-yellow-600 dark:text-yellow-400" />
                       </div>
                       <div>
                         <h3 className="font-semibold text-gray-900 dark:text-white">{feature.title}</h3>
@@ -707,7 +707,7 @@ export default function EducationPage() {
 
             {/* Image collage */}
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-400 rounded-3xl blur-2xl opacity-20 animate-pulse" />
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-600 to-yellow-400 rounded-3xl blur-2xl opacity-20 animate-pulse" />
               <div className="relative grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <img 
@@ -749,14 +749,14 @@ export default function EducationPage() {
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
               <Star className="w-4 h-4" />
               Student Success Stories
             </div>
             
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
               From Beginners to{' '}
-              <span className="text-blue-600 dark:text-blue-400">Tech Professionals</span>
+              <span className="text-yellow-600 dark:text-yellow-400">Tech Professionals</span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
               Real stories from our graduates who transformed their careers
@@ -772,7 +772,7 @@ export default function EducationPage() {
                 ))}
               </div>
               
-              <Quote className="w-12 h-12 text-blue-600/20 mb-4" />
+              <Quote className="w-12 h-12 text-yellow-600/20 mb-4" />
               
               <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
                 "{testimonials[activeTestimonial].quote}"
@@ -782,14 +782,14 @@ export default function EducationPage() {
                 <img 
                   src={testimonials[activeTestimonial].image} 
                   alt={testimonials[activeTestimonial].name}
-                  className="w-16 h-16 rounded-full object-cover ring-4 ring-blue-100 dark:ring-blue-900/30"
+                  className="w-16 h-16 rounded-full object-cover ring-4 ring-yellow-100 dark:ring-yellow-900/30"
                 />
                 <div className="flex-1">
                   <h4 className="text-lg font-bold text-gray-900 dark:text-white">
                     {testimonials[activeTestimonial].name}
                   </h4>
                   <p className="text-gray-600 dark:text-gray-400">{testimonials[activeTestimonial].role}</p>
-                  <p className="text-sm text-blue-600 dark:text-blue-400">{testimonials[activeTestimonial].program}</p>
+                  <p className="text-sm text-yellow-600 dark:text-yellow-400">{testimonials[activeTestimonial].program}</p>
                 </div>
               </div>
 
@@ -800,13 +800,13 @@ export default function EducationPage() {
                     <p className="text-xs text-gray-500 dark:text-gray-400">Before</p>
                     <p className="font-medium text-gray-900 dark:text-white">{testimonials[activeTestimonial].before}</p>
                   </div>
-                  <ArrowRight className="w-5 h-5 text-blue-600" />
+                  <ArrowRight className="w-5 h-5 text-yellow-600" />
                   <div className="text-center">
                     <p className="text-xs text-gray-500 dark:text-gray-400">After</p>
                     <p className="font-medium text-gray-900 dark:text-white">{testimonials[activeTestimonial].after}</p>
                   </div>
-                  <div className="bg-green-100 dark:bg-green-900/30 px-3 py-1 rounded-full">
-                    <span className="text-xs font-semibold text-green-600 dark:text-green-400">
+                  <div className="bg-white-100 dark:bg-white-900/30 px-3 py-1 rounded-full">
+                    <span className="text-xs font-semibold text-white-600 dark:text-white-400">
                       {testimonials[activeTestimonial].change}
                     </span>
                   </div>
@@ -818,7 +818,7 @@ export default function EducationPage() {
             <div className="flex items-center justify-center gap-4 mt-8">
               <button
                 onClick={handlePrevTestimonial}
-                className="w-12 h-12 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors group shadow-lg"
+                className="w-12 h-12 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-600 hover:text-white transition-colors group shadow-lg"
               >
                 <ChevronRight className="w-5 h-5 rotate-180 group-hover:-translate-x-1 transition-transform" />
               </button>
@@ -830,8 +830,8 @@ export default function EducationPage() {
                     onClick={() => setActiveTestimonial(index)}
                     className={`w-2 h-2 rounded-full transition-all ${
                       index === activeTestimonial
-                        ? 'w-8 bg-blue-600'
-                        : 'bg-gray-300 dark:bg-gray-600 hover:bg-blue-400'
+                        ? 'w-8 bg-yellow-600'
+                        : 'bg-gray-300 dark:bg-gray-600 hover:bg-yellow-400'
                     }`}
                   />
                 ))}
@@ -839,7 +839,7 @@ export default function EducationPage() {
               
               <button
                 onClick={handleNextTestimonial}
-                className="w-12 h-12 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors group shadow-lg"
+                className="w-12 h-12 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-600 hover:text-white transition-colors group shadow-lg"
               >
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
@@ -858,14 +858,14 @@ export default function EducationPage() {
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
               <Heart className="w-4 h-4" />
               Why Choose Yelocode
             </div>
             
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
               The Best Place to{' '}
-              <span className="text-blue-600 dark:text-blue-400">Start Your Tech Journey</span>
+              <span className="text-yellow-600 dark:text-yellow-400">Start Your Tech Journey</span>
             </h2>
           </div>
 
@@ -877,7 +877,7 @@ export default function EducationPage() {
                   key={index} 
                   className="group bg-gray-50 dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800 hover:shadow-xl transition-all hover:-translate-y-2"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-400 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 bg-gradient-to-r from-yellow-600 to-yellow-400 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">{feature.title}</h3>
@@ -888,7 +888,7 @@ export default function EducationPage() {
           </div>
 
           {/* Campus Address Card */}
-          <div className="mt-12 bg-gradient-to-r from-blue-600 to-blue-400 rounded-2xl p-8 text-white">
+          <div className="mt-12 bg-gradient-to-r from-yellow-600 to-yellow-400 rounded-2xl p-8 text-white">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex items-center gap-4">
                 <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
@@ -924,14 +924,14 @@ export default function EducationPage() {
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
               <Calendar className="w-4 h-4" />
               Upcoming Cohorts
             </div>
             
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
               Start Your Journey{' '}
-              <span className="text-blue-600 dark:text-blue-400">This Year</span>
+              <span className="text-yellow-600 dark:text-yellow-400">This Year</span>
             </h2>
           </div>
 
@@ -941,19 +941,19 @@ export default function EducationPage() {
                 key={index} 
                 className="group bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 border border-gray-200 dark:border-gray-800 hover:shadow-xl transition-all hover:-translate-y-2"
               >
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-400 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 bg-gradient-to-r from-yellow-600 to-yellow-400 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Calendar className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{cohort.season}</h3>
-                <p className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">{cohort.date}</p>
+                <p className="text-2xl font-bold text-yellow-600 dark:text-yellow-400 mb-2">{cohort.date}</p>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-sm text-green-600 dark:text-green-400 bg-green-100 dark:bg-green-900/30 px-3 py-1 rounded-full">
+                  <span className="text-sm text-white-600 dark:text-white-400 bg-white-100 dark:bg-white-900/30 px-3 py-1 rounded-full">
                     {cohort.spots}
                   </span>
                   <span className="text-sm text-gray-500 dark:text-gray-400">{cohort.deadline}</span>
                 </div>
                 <Link href="/bootcampsapply">
-                  <button className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-blue-400 text-white rounded-xl hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                  <button className="w-full px-4 py-3 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white rounded-xl hover:shadow-lg transition-all flex items-center justify-center gap-2">
                     Apply Now
                     <ArrowRight className="w-4 h-4" />
                   </button>
@@ -966,7 +966,7 @@ export default function EducationPage() {
           <div className="text-center mt-8">
             <Link 
               href="/bootcampsapply" 
-              className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-medium hover:gap-3 transition-all"
+              className="inline-flex items-center gap-2 text-yellow-600 dark:text-yellow-400 font-medium hover:gap-3 transition-all"
             >
               View all upcoming cohorts
               <ArrowRight className="w-4 h-4" />
@@ -985,14 +985,14 @@ export default function EducationPage() {
       >
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
               <MessageCircle className="w-4 h-4" />
               Got Questions?
             </div>
             
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
               Frequently Asked{' '}
-              <span className="text-blue-600 dark:text-blue-400">Questions</span>
+              <span className="text-yellow-600 dark:text-yellow-400">Questions</span>
             </h2>
           </div>
 
@@ -1023,7 +1023,7 @@ export default function EducationPage() {
           <div className="text-center mt-8">
             <Link 
               href="/contact" 
-              className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-medium hover:gap-3 transition-all"
+              className="inline-flex items-center gap-2 text-yellow-600 dark:text-yellow-400 font-medium hover:gap-3 transition-all"
             >
               Still have questions? Contact us
               <ArrowRight className="w-4 h-4" />
@@ -1033,7 +1033,7 @@ export default function EducationPage() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-400 text-white">
+      <section className="py-20 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Start Your Journey?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
@@ -1042,7 +1042,7 @@ export default function EducationPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link 
               href="/coursecatalog" 
-              className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl hover:bg-gray-100 transition-all hover:shadow-xl inline-flex items-center gap-2 group"
+              className="px-8 py-4 bg-white text-yellow-600 font-semibold rounded-xl hover:bg-gray-100 transition-all hover:shadow-xl inline-flex items-center gap-2 group"
             >
               <GraduationCap className="w-5 h-5" />
               Explore Programs

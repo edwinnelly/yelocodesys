@@ -7,7 +7,7 @@ import {
 const projects = [
   {
     title: 'AI Analytics Dashboard',
-    description: 'Enterprise-grade real-time analytics platform with machine learning insights for Fortune 500 clients.',
+    description: 'Enterprise grade real time analytics platform with machine learning insights for Fortune 500 clients.',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
     tags: ['React', 'Python', 'TensorFlow', 'AWS'],
     industry: 'FinTech',

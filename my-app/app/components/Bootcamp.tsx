@@ -208,7 +208,7 @@ export default function BootcampPrograms() {
 
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Accelerate your career with our intensive, mentor-led programs
-            designed to make you job-ready
+            designed to make you job ready
           </p>
         </div>
 

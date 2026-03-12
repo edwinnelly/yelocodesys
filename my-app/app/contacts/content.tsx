@@ -56,7 +56,7 @@ export default function ContactPage() {
       description: 'Round-the-clock assistance for urgent inquiries',
       action: 'Chat Now',
       link: '#',
-      color: 'from-blue-600 to-blue-400'
+      color: 'from-yellow-600 to-yellow-400'
     },
     {
       icon: Video,
@@ -93,14 +93,14 @@ export default function ContactPage() {
       <section className="relative pt-24 pb-16 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-950">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
               <MessageCircle className="w-4 h-4" />
               Let's Talk
             </div>
             
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
               Get in{' '}
-              <span className="text-blue-600 dark:text-blue-400">Touch</span>
+              <span className="text-yellow-600 dark:text-yellow-400">Touch</span>
             </h1>
             
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
@@ -129,7 +129,7 @@ export default function ContactPage() {
                     </div>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">{method.title}</h3>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">{method.description}</p>
-                    <span className="inline-flex items-center gap-1 text-sm font-medium text-blue-600 dark:text-blue-400 group-hover:gap-2 transition-all">
+                    <span className="inline-flex items-center gap-1 text-sm font-medium text-yellow-600 dark:text-yellow-400 group-hover:gap-2 transition-all">
                       {method.action}
                       <ArrowRight className="w-4 h-4" />
                     </span>
@@ -154,15 +154,15 @@ export default function ContactPage() {
                 <div className="space-y-6">
                   {/* Address */}
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                    <div className="w-10 h-10 bg-yellow-100 dark:bg-yellow-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-5 h-5 text-yellow-600 dark:text-yellow-400" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Visit Us</h4>
                       <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">No11 Elekahia, Port Harcourt, Rivers State, Nigeria</p>
                       <button 
                         onClick={() => handleCopy('No11 Elekahia, Port Harcourt, Rivers State, Nigeria', 'address')}
-                        className="text-xs text-blue-600 dark:text-blue-400 hover:text-blue-700 flex items-center gap-1"
+                        className="text-xs text-yellow-600 dark:text-yellow-400 hover:text-yellow-700 flex items-center gap-1"
                       >
                         {copied === 'address' ? (
                           <>
@@ -181,8 +181,8 @@ export default function ContactPage() {
 
                   {/* Phone */}
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                    <div className="w-10 h-10 bg-yellow-100 dark:bg-yellow-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-5 h-5 text-yellow-600 dark:text-yellow-400" />
                     </div>
                     <div className="flex-1">
                       <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Call Us</h4>
@@ -191,7 +191,7 @@ export default function ContactPage() {
                           <span className="text-gray-600 dark:text-gray-400 text-sm">+234 (0) 9162865693</span>
                           <button 
                             onClick={() => handleCopy('+2349162865693', 'phone1')}
-                            className="text-xs text-blue-600 dark:text-blue-400 hover:text-blue-700"
+                            className="text-xs text-yellow-600 dark:text-yellow-400 hover:text-yellow-700"
                           >
                             {copied === 'phone1' ? 'Copied!' : 'Copy'}
                           </button>
@@ -200,7 +200,7 @@ export default function ContactPage() {
                           <span className="text-gray-600 dark:text-gray-400 text-sm">+234 (0) 8036255713</span>
                           <button 
                             onClick={() => handleCopy('+2348036255713', 'phone2')}
-                            className="text-xs text-blue-600 dark:text-blue-400 hover:text-blue-700"
+                            className="text-xs text-yellow-600 dark:text-yellow-400 hover:text-yellow-700"
                           >
                             {copied === 'phone2' ? 'Copied!' : 'Copy'}
                           </button>
@@ -211,8 +211,8 @@ export default function ContactPage() {
 
                   {/* Email */}
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                    <div className="w-10 h-10 bg-yellow-100 dark:bg-yellow-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-5 h-5 text-yellow-600 dark:text-yellow-400" />
                     </div>
                     <div className="flex-1">
                       <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Email Us</h4>
@@ -221,7 +221,7 @@ export default function ContactPage() {
                           <span className="text-gray-600 dark:text-gray-400 text-sm">info@yelocodesys.com</span>
                           <button 
                             onClick={() => handleCopy('info@yelocodesys.com', 'email1')}
-                            className="text-xs text-blue-600 dark:text-blue-400 hover:text-blue-700"
+                            className="text-xs text-yellow-600 dark:text-yellow-400 hover:text-yellow-700"
                           >
                             {copied === 'email1' ? 'Copied!' : 'Copy'}
                           </button>
@@ -230,7 +230,7 @@ export default function ContactPage() {
                           <span className="text-gray-600 dark:text-gray-400 text-sm">admissions@yelocodesys.com</span>
                           <button 
                             onClick={() => handleCopy('admissions@yelocodesys.com', 'email2')}
-                            className="text-xs text-blue-600 dark:text-blue-400 hover:text-blue-700"
+                            className="text-xs text-yellow-600 dark:text-yellow-400 hover:text-yellow-700"
                           >
                             {copied === 'email2' ? 'Copied!' : 'Copy'}
                           </button>
@@ -241,8 +241,8 @@ export default function ContactPage() {
 
                   {/* Hours */}
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                    <div className="w-10 h-10 bg-yellow-100 dark:bg-yellow-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Clock className="w-5 h-5 text-yellow-600 dark:text-yellow-400" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Office Hours</h4>
@@ -257,9 +257,9 @@ export default function ContactPage() {
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Follow Us</h4>
                   <div className="flex gap-3">
                     {[
-                      { icon: Facebook, href: '#', color: 'hover:bg-blue-600' },
+                      { icon: Facebook, href: '#', color: 'hover:bg-yellow-600' },
                       { icon: Twitter, href: '#', color: 'hover:bg-sky-500' },
-                      { icon: Linkedin, href: '#', color: 'hover:bg-blue-700' },
+                      { icon: Linkedin, href: '#', color: 'hover:bg-yellow-700' },
                       { icon: Instagram, href: '#', color: 'hover:bg-pink-600' },
                       { icon: Github, href: '#', color: 'hover:bg-gray-800' }
                     ].map((social, i) => {
@@ -268,7 +268,7 @@ export default function ContactPage() {
                         <a
                           key={i}
                           href={social.href}
-                          className="w-10 h-10 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center hover:scale-110 transition-all duration-300 text-gray-600 dark:text-gray-400 hover:text-white hover:bg-blue-600"
+                          className="w-10 h-10 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center hover:scale-110 transition-all duration-300 text-gray-600 dark:text-gray-400 hover:text-white hover:bg-yellow-600"
                         >
                           <Icon className="w-5 h-5" />
                         </a>
@@ -302,7 +302,7 @@ export default function ContactPage() {
                   onClick={() => setActiveTab('message')}
                   className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                     activeTab === 'message'
-                      ? 'bg-blue-600 text-white'
+                      ? 'bg-yellow-600 text-white'
                       : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800'
                   }`}
                 >
@@ -312,7 +312,7 @@ export default function ContactPage() {
                   onClick={() => setActiveTab('callback')}
                   className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                     activeTab === 'callback'
-                      ? 'bg-blue-600 text-white'
+                      ? 'bg-yellow-600 text-white'
                       : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800'
                   }`}
                 >
@@ -342,7 +342,7 @@ export default function ContactPage() {
                           value={formData.name}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                          className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition"
                           placeholder="John Doe"
                         />
                       </div>
@@ -358,7 +358,7 @@ export default function ContactPage() {
                             value={formData.email}
                             onChange={handleChange}
                             required
-                            className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                            className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition"
                             placeholder="john@example.com"
                           />
                         </div>
@@ -372,7 +372,7 @@ export default function ContactPage() {
                             name="phone"
                             value={formData.phone}
                             onChange={handleChange}
-                            className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                            className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition"
                             placeholder="+234 800 000 0000"
                           />
                         </div>
@@ -387,7 +387,7 @@ export default function ContactPage() {
                           value={formData.subject}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                          className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition"
                         >
                           <option value="">Select a subject</option>
                           <option value="enrollment">Enrollment Inquiry</option>
@@ -408,7 +408,7 @@ export default function ContactPage() {
                           onChange={handleChange}
                           required
                           rows={5}
-                          className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                          className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition"
                           placeholder="How can we help you?"
                         />
                       </div>
@@ -425,7 +425,7 @@ export default function ContactPage() {
                           value={formData.name}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                          className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition"
                           placeholder="John Doe"
                         />
                       </div>
@@ -440,7 +440,7 @@ export default function ContactPage() {
                           value={formData.phone}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                          className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition"
                           placeholder="+234 800 000 0000"
                         />
                       </div>
@@ -453,7 +453,7 @@ export default function ContactPage() {
                           <input
                             type="date"
                             name="date"
-                            className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                            className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition"
                           />
                         </div>
 
@@ -463,7 +463,7 @@ export default function ContactPage() {
                           </label>
                           <select
                             name="time"
-                            className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                            className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition"
                           >
                             <option value="">Select time</option>
                             <option value="morning">Morning (9am - 12pm)</option>
@@ -482,7 +482,7 @@ export default function ContactPage() {
                           value={formData.message}
                           onChange={handleChange}
                           rows={4}
-                          className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                          className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition"
                           placeholder="Briefly tell us what you'd like to discuss..."
                         />
                       </div>
@@ -491,7 +491,7 @@ export default function ContactPage() {
 
                   <button
                     type="submit"
-                    className="w-full px-6 py-4 bg-gradient-to-r from-blue-600 to-blue-400 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-blue-500/25 transition-all flex items-center justify-center gap-2 group"
+                    className="w-full px-6 py-4 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-yellow-500/25 transition-all flex items-center justify-center gap-2 group"
                   >
                     <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     {activeTab === 'message' ? 'Send Message' : 'Request Callback'}
@@ -510,14 +510,14 @@ export default function ContactPage() {
       <section id="faq" className="py-20 bg-white dark:bg-gray-950">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
               <HelpCircle className="w-4 h-4" />
               Quick Answers
             </div>
             
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Frequently Asked{' '}
-              <span className="text-blue-600 dark:text-blue-400">Questions</span>
+              <span className="text-yellow-600 dark:text-yellow-400">Questions</span>
             </h2>
           </div>
 
@@ -547,7 +547,7 @@ export default function ContactPage() {
             <div className="text-center mt-6">
               <a 
                 href="/faq" 
-                className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-700 transition-colors"
+                className="inline-flex items-center gap-2 text-sm font-medium text-yellow-600 dark:text-yellow-400 hover:text-yellow-700 transition-colors"
               >
                 View all FAQs
                 <ArrowRight className="w-4 h-4" />
@@ -558,16 +558,16 @@ export default function ContactPage() {
       </section>
 
       {/* BOTTOM CTA */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-400 text-white">
+      <section className="py-16 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Start Your Journey?</h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-yellow-100 mb-8 max-w-2xl mx-auto">
             Join thousands of students who have transformed their careers with Yelocode Systems.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a 
               href="/coursecatalog" 
-              className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-all hover:shadow-xl inline-flex items-center gap-2"
+              className="px-8 py-4 bg-white text-yellow-600 font-semibold rounded-lg hover:bg-gray-100 transition-all hover:shadow-xl inline-flex items-center gap-2"
             >
               <GraduationCap className="w-5 h-5" />
               Browse Programs

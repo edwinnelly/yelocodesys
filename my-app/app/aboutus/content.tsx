@@ -38,19 +38,19 @@ export default function AboutPage() {
           }} />
         </div>
         
-        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl" />
+        <div className="absolute top-20 left-10 w-96 h-96 bg-yellow-500/20 rounded-full blur-3xl" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl" />
 
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-yellow-600 to-gray-100 bg-clip-text text-transparent">
                 “Our Legacy: Shaping the Next Era of IT Innovation”
               </span>
             </h1>
             
             <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Fueled by innovation, Yelocode Systems helps businesses and individuals thrive in the digital era—shaping the future of technology with every solution we deliver.
+              Fueled by innovation, Yelocode Systems helps businesses and individuals thrive in the digital era, shaping the future of technology with every solution we deliver.
             </p>
           </div>
         </div>
@@ -61,17 +61,17 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
+              <div className="inline-flex items-center gap-2 bg-yellow-50 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
                 <Sparkles className="w-4 h-4" />
                 Our Driving Force
               </div>
               
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-                “Driven by innovation, Yelocode Systems empowers businesses and individuals to thrive in the digital age—shaping the future of IT with every solution.”
+                “Driven by innovation, Yelocode Systems empowers businesses and individuals to thrive in the digital age, Shaping the future of IT with every solution.”
               </h2>
               
               <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
-                At Yelocode Systems, we are more than just a tech company—we are innovators, educators, and problem-solvers dedicated to building the future with cutting-edge technology. By merging creativity with the power of artificial intelligence, we design and develop smart, scalable solutions that empower businesses and enrich lives. Through our training programs, we also empower individuals and teams to unlock their full potential in the ever-evolving world of technology.
+                At Yelocode Systems, we are more than just a tech company, We are innovators, educators, and problem solvers dedicated to building the future with cutting edge technology. By merging creativity with the power of artificial intelligence, we design and develop smart, scalable solutions that empower businesses and enrich lives. Through our training programs, we also empower individuals and teams to unlock their full potential in the ever-evolving world of technology.
               </p>
 
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
@@ -80,7 +80,7 @@ export default function AboutPage() {
             </div>
             
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl blur-2xl opacity-20" />
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-cyan-500 rounded-2xl blur-2xl opacity-20" />
               <div className="relative bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-800">
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Promise</h3>
                 <ul className="space-y-4">
@@ -93,8 +93,8 @@ export default function AboutPage() {
                     const Icon = item.icon
                     return (
                       <li key={i} className="flex items-center gap-3">
-                        <div className="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
-                          <Icon className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                        <div className="p-2 bg-yellow-100 dark:bg-yellow-900/30 rounded-lg">
+                          <Icon className="w-5 h-5 text-yellow-600 dark:text-yellow-400" />
                         </div>
                         <span className="text-gray-700 dark:text-gray-300">{item.text}</span>
                       </li>
@@ -121,7 +121,7 @@ export default function AboutPage() {
               <div key={i} className="text-center">
                 {'number' in stat ? (
                   <>
-                    <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+                    <div className="text-4xl md:text-5xl font-bold text-yellow-600 dark:text-yellow-400 mb-2">
                       {stat.number}
                     </div>
                     <div className="text-sm text-gray-600 dark:text-gray-400">{stat.label}</div>
@@ -143,7 +143,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
+              <div className="inline-flex items-center gap-2 bg-yellow-50 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
                 <Building2 className="w-4 h-4" />
                 Port Harcourt's Leading Tech Partner
               </div>
@@ -153,7 +153,7 @@ export default function AboutPage() {
               </h2>
               
               <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
-                At Yelocode Systems, we stand as Port Harcourt's top technology partner—driving innovation, education, and digital transformation. We go beyond being just a tech firm by combining creativity with artificial intelligence to deliver smart, scalable IT solutions that fuel business growth and improve everyday lives.
+                At Yelocode Systems, we stand as Port Harcourt's top technology partner driving innovation, education, and digital transformation. We go beyond being just a tech firm by combining creativity with artificial intelligence to deliver smart, scalable IT solutions that fuel business growth and improve everyday lives.
               </p>
 
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
@@ -171,7 +171,7 @@ export default function AboutPage() {
             </div>
             
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl blur-2xl opacity-20" />
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-cyan-500 rounded-2xl blur-2xl opacity-20" />
               <img 
                 src="pics/200.jpg" 
                 alt="Yelocode Systems Innovation" 
@@ -187,17 +187,17 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
-              Who <span className="text-blue-600 dark:text-blue-400">We Are</span>
+              Who <span className="text-yellow-600 dark:text-yellow-400">We Are</span>
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Mission */}
             <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl blur opacity-0 group-hover:opacity-20 transition-opacity" />
-              <div className="relative bg-white dark:bg-gray-800 rounded-2xl p-8 h-full border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-700 transition-all">
-                <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6">
-                  <TargetIcon className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-cyan-500 rounded-2xl blur opacity-0 group-hover:opacity-20 transition-opacity" />
+              <div className="relative bg-white dark:bg-gray-800 rounded-2xl p-8 h-full border border-gray-200 dark:border-gray-700 hover:border-yellow-300 dark:hover:border-yellow-700 transition-all">
+                <div className="w-16 h-16 bg-yellow-100 dark:bg-yellow-900/30 rounded-2xl flex items-center justify-center mb-6">
+                  <TargetIcon className="w-8 h-8 text-yellow-600 dark:text-yellow-400" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Mission</h3>
                 <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
@@ -208,8 +208,8 @@ export default function AboutPage() {
 
             {/* Vision */}
             <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl blur opacity-0 group-hover:opacity-20 transition-opacity" />
-              <div className="relative bg-white dark:bg-gray-800 rounded-2xl p-8 h-full border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-700 transition-all">
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-cyan-500 rounded-2xl blur opacity-0 group-hover:opacity-20 transition-opacity" />
+              <div className="relative bg-white dark:bg-gray-800 rounded-2xl p-8 h-full border border-gray-200 dark:border-gray-700 hover:border-yellow-300 dark:hover:border-yellow-700 transition-all">
                 <div className="w-16 h-16 bg-cyan-100 dark:bg-cyan-900/30 rounded-2xl flex items-center justify-center mb-6">
                   <EyeIcon className="w-8 h-8 text-cyan-600 dark:text-cyan-400" />
                 </div>
@@ -233,12 +233,12 @@ export default function AboutPage() {
       <section className="py-16 bg-white dark:bg-gray-950">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
+            <div className="inline-flex items-center gap-2 bg-yellow-50 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
               <HeartIcon className="w-4 h-4" />
               Core Principles
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
-              Empowerment Through <span className="text-blue-600 dark:text-blue-400">Knowledge</span>
+              Empowerment Through <span className="text-yellow-600 dark:text-yellow-400">Knowledge</span>
             </h2>
           </div>
 
@@ -246,7 +246,7 @@ export default function AboutPage() {
             {/* Principle 1 */}
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="order-2 md:order-1">
-                <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
+                <div className="inline-flex items-center gap-2 bg-yellow-50 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
                   <Lightbulb className="w-4 h-4" />
                   Principle 1
                 </div>
@@ -257,7 +257,7 @@ export default function AboutPage() {
               </div>
               <div className="order-1 md:order-2">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl blur-2xl opacity-20" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-cyan-500 rounded-2xl blur-2xl opacity-20" />
                   <img 
                     src="pics/db.jpg" 
                     alt="Innovation First"
@@ -271,7 +271,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl blur-2xl opacity-20" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-cyan-500 rounded-2xl blur-2xl opacity-20" />
                   <img 
                    src="pics/40606.jpg" 
                     alt="Excellence Always"
@@ -280,7 +280,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div>
-                <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
+                <div className="inline-flex items-center gap-2 bg-yellow-50 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
                   <Award className="w-4 h-4" />
                   Principle 2
                 </div>
@@ -294,7 +294,7 @@ export default function AboutPage() {
             {/* Principle 3 */}
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="order-2 md:order-1">
-                <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
+                <div className="inline-flex items-center gap-2 bg-yellow-50 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
                   <ShieldIcon className="w-4 h-4" />
                   Principle 3
                 </div>
@@ -305,7 +305,7 @@ export default function AboutPage() {
               </div>
               <div className="order-1 md:order-2">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl blur-2xl opacity-20" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-cyan-500 rounded-2xl blur-2xl opacity-20" />
                   <img 
                     src="pics/37243.jpg"  
                     alt="Integrity & Trust"
@@ -319,17 +319,17 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-cyan-600 text-white">
+      <section className="py-16 bg-gradient-to-r from-yellow-600 to-cyan-600 text-white">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-10 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Connect with our team for personalized guidance and solutions.
           </h2>
           
-          <p className="text-blue-100 mb-8 max-w-2xl mx-auto text-lg">
+          <p className="text-yellow-100 mb-8 max-w-2xl mx-auto text-lg">
             Curious about how Yelocode Systems can help you or your business? Whether you're looking for innovative IT solutions, expert training, or guidance on digital transformation, we're here to support your journey.
           </p>
 
-          <button className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all hover:shadow-xl transform hover:-translate-y-1">
+          <button className="inline-flex items-center gap-2 bg-white text-yellow-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all hover:shadow-xl transform hover:-translate-y-1">
             Get In Touch
             <ArrowRight className="w-5 h-5" />
           </button>

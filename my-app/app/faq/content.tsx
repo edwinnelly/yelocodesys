@@ -33,7 +33,7 @@ export default function FAQPage() {
     {
       name: 'General Questions',
       icon: HelpCircle,
-      color: 'from-blue-600 to-blue-400',
+      color: 'from-yellow-600 to-yellow-400',
       faqs: [
         {
           question: 'What is Yelocode Systems?',
@@ -60,7 +60,7 @@ export default function FAQPage() {
     {
       name: 'Programs & Courses',
       icon: BookOpen,
-      color: 'from-blue-600 to-blue-400',
+      color: 'from-yellow-600 to-yellow-400',
       faqs: [
         {
           question: 'What programs do you offer?',
@@ -87,7 +87,7 @@ export default function FAQPage() {
     {
       name: 'Admissions & Enrollment',
       icon: Users,
-      color: 'from-blue-600 to-blue-400',
+      color: 'from-yellow-600 to-yellow-400',
       faqs: [
         {
           question: 'How do I enroll in a program?',
@@ -114,7 +114,7 @@ export default function FAQPage() {
     {
       name: 'Tuition & Payment',
       icon: CreditCard,
-      color: 'from-blue-600 to-blue-400',
+      color: 'from-yellow-600 to-yellow-400',
       faqs: [
         {
           question: 'How much do programs cost?',
@@ -141,7 +141,7 @@ export default function FAQPage() {
     {
       name: 'Learning Experience',
       icon: GraduationCap,
-      color: 'from-blue-600 to-blue-400',
+      color: 'from-yellow-600 to-yellow-400',
       faqs: [
         {
           question: 'What is the class size?',
@@ -168,7 +168,7 @@ export default function FAQPage() {
     {
       name: 'Career Support',
       icon: Briefcase,
-      color: 'from-blue-600 to-blue-400',
+      color: 'from-yellow-600 to-yellow-400',
       faqs: [
         {
           question: 'Do you offer job placement assistance?',
@@ -195,7 +195,7 @@ export default function FAQPage() {
     {
       name: 'Certification',
       icon: Award,
-      color: 'from-blue-600 to-blue-400',
+      color: 'from-yellow-600 to-yellow-400',
       faqs: [
         {
           question: 'What certification will I receive?',
@@ -214,7 +214,7 @@ export default function FAQPage() {
     {
       name: 'Facilities & Resources',
       icon: Globe,
-      color: 'from-blue-600 to-blue-400',
+      color: 'from-yellow-600 to-yellow-400',
       faqs: [
         {
           question: 'What facilities do you have on campus?',
@@ -233,7 +233,7 @@ export default function FAQPage() {
     {
       name: 'Support Services',
       icon: MessageCircle,
-      color: 'from-blue-600 to-blue-400',
+      color: 'from-yellow-600 to-yellow-400',
       faqs: [
         {
           question: 'What kind of student support do you offer?',
@@ -273,8 +273,8 @@ export default function FAQPage() {
           }} />
         </div>
         
-        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl animate-pulse animation-delay-2000" />
+        <div className="absolute top-20 left-10 w-96 h-96 bg-yellow-500/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-yellow-300/20 rounded-full blur-3xl animate-pulse animation-delay-2000" />
 
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-4xl mx-auto">
@@ -285,7 +285,7 @@ export default function FAQPage() {
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               How Can We{' '}
-              <span className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent">
                 Help You?
               </span>
             </h1>
@@ -302,7 +302,7 @@ export default function FAQPage() {
                   placeholder="Search for questions..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full px-6 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition pl-14"
+                  className="w-full px-6 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition pl-14"
                 />
                 <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
               </div>
@@ -340,7 +340,7 @@ export default function FAQPage() {
                     const element = document.getElementById(`category-${index}`)
                     element?.scrollIntoView({ behavior: 'smooth' })
                   }}
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900/30 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full hover:bg-yellow-100 dark:hover:bg-yellow-900/30 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors"
                 >
                   <Icon className="w-4 h-4" />
                   <span className="text-sm font-medium">{category.name}</span>
@@ -419,7 +419,7 @@ export default function FAQPage() {
               </p>
               <button
                 onClick={() => setSearchTerm('')}
-                className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                className="mt-4 px-6 py-2 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700 transition-colors"
               >
                 Clear search
               </button>
@@ -432,7 +432,7 @@ export default function FAQPage() {
       <section className="py-16 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-10 text-center">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl border border-gray-200 dark:border-gray-700">
-            <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-gradient-to-r from-yellow-600 to-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4">
               <MessageCircle className="w-8 h-8 text-white" />
             </div>
             
@@ -446,16 +446,16 @@ export default function FAQPage() {
                 href="/contact" 
                 className="p-4 bg-gray-50 dark:bg-gray-900 rounded-xl hover:shadow-md transition border border-gray-200 dark:border-gray-700"
               >
-                <Mail className="w-6 h-6 text-blue-600 dark:text-blue-400 mx-auto mb-2" />
+                <Mail className="w-6 h-6 text-yellow-600 dark:text-yellow-400 mx-auto mb-2" />
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Email Us</h3>
-                <p className="text-xs text-gray-500 dark:text-gray-400">info@yelocode.com</p>
+                <p className="text-xs text-gray-500 dark:text-gray-400">Hello@yelocodesys.com</p>
               </a>
 
               <a 
                 href="tel:+2349162865693" 
                 className="p-4 bg-gray-50 dark:bg-gray-900 rounded-xl hover:shadow-md transition border border-gray-200 dark:border-gray-700"
               >
-                <Phone className="w-6 h-6 text-blue-600 dark:text-blue-400 mx-auto mb-2" />
+                <Phone className="w-6 h-6 text-yellow-600 dark:text-yellow-400 mx-auto mb-2" />
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Call Us</h3>
                 <p className="text-xs text-gray-500 dark:text-gray-400">+234 916 286 5693</p>
               </a>
@@ -464,7 +464,7 @@ export default function FAQPage() {
                 href="#" 
                 className="p-4 bg-gray-50 dark:bg-gray-900 rounded-xl hover:shadow-md transition border border-gray-200 dark:border-gray-700"
               >
-                <MessageCircle className="w-6 h-6 text-blue-600 dark:text-blue-400 mx-auto mb-2" />
+                <MessageCircle className="w-6 h-6 text-yellow-600 dark:text-yellow-400 mx-auto mb-2" />
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Live Chat</h3>
                 <p className="text-xs text-gray-500 dark:text-gray-400">Mon-Fri, 9am-6pm</p>
               </a>
@@ -484,17 +484,17 @@ export default function FAQPage() {
       </section>
 
       {/* CTA SECTION */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-400 text-white">
+      <section className="py-16 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div>
               <h2 className="text-3xl font-bold mb-2">Ready to Start Your Tech Journey?</h2>
-              <p className="text-blue-100">Join thousands of students who have transformed their careers with Yelocode.</p>
+              <p className="text-yellow-100">Join thousands of students who have transformed their careers with Yelocode.</p>
             </div>
             <div className="flex flex-wrap gap-4">
               <a 
                 href="/coursecatalog" 
-                className="px-6 py-3 bg-white text-blue-600 font-medium rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2"
+                className="px-6 py-3 bg-white text-yellow-600 font-medium rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2"
               >
                 <GraduationCap className="w-5 h-5" />
                 Browse Programs

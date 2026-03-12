@@ -13,10 +13,10 @@ const tiers = [
   {
     name: 'Foundational Tier',
     title: 'Build essential skills and gain the qualifications for entry-level positions',
-    price: '₦180,000 - ₦300,000',
+    price: '₦180,000 - ₦350,000',
     duration: '2-3 months',
     projects: '5-10 projects',
-    color: 'from-blue-600 to-blue-400',
+    color: 'from-yellow-600 to-yellow-600',
     features: [
       'Essential Industry Knowledge',
       'Fundamental Technical Skills',
@@ -31,10 +31,10 @@ const tiers = [
   {
     name: 'Intermediate Tier',
     title: 'Deepen your expertise with more complex tools, technologies, and processes',
-    price: '₦350,000 - ₦600,000',
+    price: '₦400,000 - ₦700,000',
     duration: '4-6 months',
     projects: '15-25 projects',
-    color: 'from-blue-700 to-blue-500',
+    color: 'from-yellow-600 to-yellow-600',
     features: [
       'Specialized Knowledge Areas',
       'Real-World Projects & Case Studies',
@@ -51,7 +51,7 @@ const tiers = [
     price: '₦850,000 - ₦1.5M',
     duration: '7-12 months',
     projects: '30-60 projects',
-    color: 'from-blue-800 to-blue-600',
+    color: 'from-yellow-600 to-yellow-600',
     features: [
       'Leadership & Strategic Thinking Development',
       'Complex Problem Solving & Innovation Projects',
@@ -69,7 +69,7 @@ const courseCategories = [
   {
     name: 'Web Development',
     icon: Code,
-    color: 'blue',
+    color: 'yellow',
     courses: [
       {
         name: 'NOVA PRIME',
@@ -125,7 +125,7 @@ const courseCategories = [
   {
     name: 'Graphics Design / UI-UX Design',
     icon: Palette,
-    color: 'blue',
+    color: 'yellow',
     courses: [
       {
         name: 'NOVA PRIME',
@@ -165,7 +165,7 @@ const courseCategories = [
   {
     name: 'Data Analysis',
     icon: PieChart,
-    color: 'blue',
+    color: 'yellow',
     courses: [
       {
         name: 'NOVA PRIME',
@@ -223,7 +223,7 @@ const courseCategories = [
   {
     name: 'Python Program',
     icon: Database,
-    color: 'blue',
+    color: 'yellow',
     courses: [
       {
         name: 'NOVA PRIME',
@@ -280,7 +280,7 @@ const courseCategories = [
   {
     name: 'Digital Marketing Program',
     icon: TrendingUp,
-    color: 'blue',
+    color: 'yellow',
     courses: [
       {
         name: 'NOVA PRIME',
@@ -318,7 +318,7 @@ const courseCategories = [
   {
     name: 'Mobile App Development',
     icon: Cpu,
-    color: 'blue',
+    color: 'yellow',
     courses: [
       {
         name: 'NOVA PRIME',
@@ -360,7 +360,7 @@ const courseCategories = [
   {
     name: 'Cybersecurity Program',
     icon: Lock,
-    color: 'blue',
+    color: 'yellow',
     courses: [
       {
         name: 'NOVA PRIME',
@@ -418,7 +418,7 @@ const courseCategories = [
   {
     name: 'Database Management',
     icon: Database,
-    color: 'blue',
+    color: 'yellow',
     courses: [
       {
         name: 'NOVA PRIME',
@@ -470,7 +470,7 @@ const courseCategories = [
   {
     name: 'Cloud Computing Program',
     icon: Cloud,
-    color: 'blue',
+    color: 'yellow',
     courses: [
       {
         name: 'NOVA PRIME',
@@ -590,41 +590,44 @@ export default function PricingPage() {
     )
   }
 
-  // Function to get color classes based on color name (now all blue)
+  // Function to get color classes based on color name (now all yellow)
   const getColorClasses = (color: string) => {
-    return 'from-blue-600 to-blue-400'
+    return 'from-yellow-600 to-yellow-400'
   }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900">
       
-      {/* HERO SECTION - Pricing Tiers */}
-      <section className="relative py-20 md:py-28 overflow-hidden bg-gradient-to-br from-gray-900 to-gray-950 text-white">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
-            backgroundSize: '40px 40px'
-          }} />
+      {/* HERO SECTION - Pricing Tiers with Cover Image */}
+      <section className="relative py-20 md:py-28 overflow-hidden">
+        {/* Background Cover Image with Overlay */}
+        <div 
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url("pics/db.jpg")', // Replace with your image path
+          }}
+        >
+          {/* Dark overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/70" />
+          {/* Gradient overlay for visual interest */}
+          <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/30 to-transparent" />
         </div>
-        
-        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl" />
 
-        <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-4xl mx-auto mb-16">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-medium px-4 py-2 rounded-full mb-6">
               <GraduationCap className="w-4 h-4" />
               Learning Paths for Every Level
             </div>
             
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Choose Your{' '}
-              <span className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">
+              <span className="text-yellow-400">
                 Learning Journey
               </span>
             </h1>
             
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-200 max-w-3xl mx-auto">
               Each level prepares you for progressively higher-paying opportunities. 
               Our structured learning path is designed to do more than build your skills, 
               It propels your career forward.
@@ -634,7 +637,7 @@ export default function PricingPage() {
           {/* Tiers Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {tiers.map((tier, index) => (
-              <div key={index} className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div key={index} className="group relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                 {/* Gradient border on hover */}
                 <div className={`absolute inset-0 bg-gradient-to-r ${tier.color} opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
                 
@@ -643,14 +646,14 @@ export default function PricingPage() {
                     {tier.name}
                   </div>
                   
-                  <h4 className="text-gray-300 text-sm mb-4">{tier.title}</h4>
+                  <h4 className="text-gray-200 text-sm mb-4">{tier.title}</h4>
                   
                   <div className="flex items-center gap-4 mb-4 text-sm">
-                    <div className="flex items-center gap-1 text-gray-400">
+                    <div className="flex items-center gap-1 text-gray-300">
                       <Clock className="w-4 h-4" />
                       {tier.duration}
                     </div>
-                    <div className="flex items-center gap-1 text-gray-400">
+                    <div className="flex items-center gap-1 text-gray-300">
                       <Rocket className="w-4 h-4" />
                       {tier.projects}
                     </div>
@@ -660,19 +663,19 @@ export default function PricingPage() {
                     <span className="text-2xl font-bold text-white">{tier.price}</span>
                   </div>
                   
-                  <button className="w-full mb-6 px-4 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg transition-colors">
+                  <button className="w-full mb-6 px-4 py-3 bg-white/20 hover:bg-white/30 text-white rounded-lg transition-colors">
                     Get Started
                   </button>
                   
                   <div className="space-y-2">
                     {tier.features.slice(0, 5).map((feature, i) => (
-                      <p key={i} className="text-gray-300 text-sm flex items-start gap-2">
-                        <Check className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
+                      <p key={i} className="text-gray-200 text-sm flex items-start gap-2">
+                        <Check className="w-4 h-4 text-white flex-shrink-0 mt-0.5" />
                         <span>{feature}</span>
                       </p>
                     ))}
                     {tier.features.length > 5 && (
-                      <p className="text-gray-400 text-sm mt-2">+{tier.features.length - 5} more features</p>
+                      <p className="text-gray-300 text-sm mt-2">+{tier.features.length - 5} more features</p>
                     )}
                   </div>
                 </div>
@@ -680,7 +683,7 @@ export default function PricingPage() {
             ))}
           </div>
 
-          <div className="text-center max-w-3xl mx-auto mt-12 text-gray-300">
+          <div className="text-center max-w-3xl mx-auto mt-12 text-gray-200">
             <p>
               The Advanced Tier equips you with the expertise, confidence, 
               and recognition to thrive in top-tier roles and command higher earning potential.
@@ -694,14 +697,14 @@ export default function PricingPage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
+              <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
                 <Star className="w-4 h-4" />
                 Why Choose Us
               </div>
               
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
                 At Yelocode Systems,{' '}
-                <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-yellow-600 to-yellow-400 bg-clip-text text-transparent">
                   your success is our priority
                 </span>
               </h2>
@@ -726,7 +729,7 @@ export default function PricingPage() {
                   const Icon = stat.icon
                   return (
                     <div key={i} className="text-center">
-                      <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400 mx-auto mb-2" />
+                      <Icon className="w-6 h-6 text-yellow-600 dark:text-yellow-400 mx-auto mb-2" />
                       <div className="text-xl font-bold text-gray-900 dark:text-white">{stat.value}</div>
                       <div className="text-xs text-gray-500 dark:text-gray-400">{stat.label}</div>
                     </div>
@@ -751,7 +754,7 @@ export default function PricingPage() {
                     role: "Data Analyst"
                   }
                 ].map((testimonial, i) => (
-                  <div key={i} className="border-l-4 border-blue-600 pl-4">
+                  <div key={i} className="border-l-4 border-yellow-600 pl-4">
                     <p className="text-gray-600 dark:text-gray-400 italic mb-2">"{testimonial.quote}"</p>
                     <p className="font-semibold text-gray-900 dark:text-white">{testimonial.name}</p>
                     <p className="text-sm text-gray-500 dark:text-gray-400">{testimonial.role}</p>
@@ -767,13 +770,13 @@ export default function PricingPage() {
       <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
               <BookOpen className="w-4 h-4" />
               Course Catalog
             </div>
             
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Courses <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">Price List</span>
+              Courses <span className="bg-gradient-to-r from-yellow-600 to-yellow-400 bg-clip-text text-transparent">Price List</span>
             </h2>
             
             <p className="text-lg text-gray-600 dark:text-gray-400">
@@ -808,7 +811,7 @@ export default function PricingPage() {
                         {category.courses.map((course, idx) => (
                           <div key={idx} className="relative bg-gray-50 dark:bg-gray-900 rounded-xl p-6 hover:shadow-lg transition-all border border-gray-200 dark:border-gray-800">
                             {course.popular && (
-                              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-blue-400 text-white text-xs font-medium px-3 py-1 rounded-full whitespace-nowrap">
+                              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white text-xs font-medium px-3 py-1 rounded-full whitespace-nowrap">
                                 Most Popular
                               </div>
                             )}
@@ -831,7 +834,7 @@ export default function PricingPage() {
                               <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">{course.description}</p>
                             </div>
                             
-                            <button className="w-full mb-4 px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-400 text-white rounded-lg hover:shadow-lg transition-all">
+                            <button className="w-full mb-4 px-4 py-2 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white rounded-lg hover:shadow-lg transition-all">
                               Get Started
                             </button>
                             
@@ -859,13 +862,13 @@ export default function PricingPage() {
       <section className="py-20 bg-white dark:bg-gray-950">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
               <MessageSquare className="w-4 h-4" />
               Got Questions?
             </div>
             
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Frequently Asked <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">Questions</span>
+              Frequently Asked <span className="bg-gradient-to-r from-yellow-600 to-yellow-400 bg-clip-text text-transparent">Questions</span>
             </h2>
           </div>
 
@@ -879,7 +882,7 @@ export default function PricingPage() {
                 <div className="bg-gray-50 dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800">
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Still need help?</h4>
                   <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">Contact our admissions team for personalized assistance.</p>
-                  <button className="w-full px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-400 text-white rounded-lg hover:shadow-lg transition-all">
+                  <button className="w-full px-4 py-2 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white rounded-lg hover:shadow-lg transition-all">
                     Contact Us
                   </button>
                 </div>
@@ -910,15 +913,15 @@ export default function PricingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-400 text-white">
+      <section className="py-16 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div>
               <h2 className="text-3xl font-bold mb-2">Ready to Start Your Learning Journey?</h2>
-              <p className="text-blue-100">Join thousands of students who have transformed their careers with Yelocode.</p>
+              <p className="text-yellow-100">Join thousands of students who have transformed their careers with Yelocode.</p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <button className="px-6 py-3 bg-white text-blue-600 font-medium rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2">
+              <button className="px-6 py-3 bg-white text-yellow-600 font-medium rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2">
                 <GraduationCap className="w-5 h-5" />
                 Browse Courses
               </button>
