@@ -132,7 +132,7 @@ export default function TopStudents() {
             Excellence in Performance
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-yellow-500 mb-6 tracking-tight">
             Top{' '}
             <span className="text-yellow-500">
               Performing Students
@@ -177,7 +177,7 @@ export default function TopStudents() {
                   {/* Student info */}
                   <div className="text-center mb-4">
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">{student.name}</h3>
-                    <p className="text-sm text-black-600 mb-3">{student.role}</p>
+                    <p className="text-sm text-black mb-3">{student.role}</p>
                     
                     {/* Score */}
                     <div className="inline-flex items-center gap-1.5 bg-blue-50 px-3 py-1.5 rounded-lg">

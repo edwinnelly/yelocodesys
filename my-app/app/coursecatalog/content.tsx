@@ -23,8 +23,8 @@ const allCourses = [
     id: 1,
     name: 'Web Development',
     icon: Code,
-    color: 'blue',
-    badgeColor: 'from-blue-600 to-blue-400',
+    color: 'yellow',
+    badgeColor: 'from-yellow-600 to-yellow-400',
     description: 'Master frontend and backend development to build modern, responsive websites and web applications.',
     longDescription: 'Learn HTML, CSS, JavaScript, React, Node.js, and databases. Build full-stack applications from scratch.',
     programs: [
@@ -58,8 +58,8 @@ const allCourses = [
     id: 2,
     name: 'Graphics Design / UI-UX Design',
     icon: Palette,
-    color: 'blue',
-    badgeColor: 'from-blue-600 to-blue-400',
+    color: 'yellow',
+    badgeColor: 'from-yellow-600 to-yellow-400',
     description: 'Create stunning visuals and intuitive user experiences for web and mobile applications.',
     longDescription: 'Master design tools, user research, wireframing, prototyping, and visual design principles.',
     programs: [
@@ -92,8 +92,8 @@ const allCourses = [
     id: 3,
     name: 'Data Analysis',
     icon: PieChart,
-    color: 'blue',
-    badgeColor: 'from-blue-600 to-blue-400',
+    color: 'yellow',
+    badgeColor: 'from-yellow-600 to-yellow-400',
     description: 'Transform raw data into actionable insights for business decision-making.',
     longDescription: 'Master Excel, SQL, Python, Pandas, Tableau, and Power BI for comprehensive data analysis.',
     programs: [
@@ -127,8 +127,8 @@ const allCourses = [
     id: 4,
     name: 'Python Program',
     icon: Database,
-    color: 'blue',
-    badgeColor: 'from-blue-600 to-blue-400',
+    color: 'yellow',
+    badgeColor: 'from-yellow-600 to-yellow-400',
     description: 'Master Python programming for web development, automation, data science, and more.',
     longDescription: 'Learn Python fundamentals, OOP, web frameworks, data analysis, and machine learning basics.',
     programs: [
@@ -162,8 +162,8 @@ const allCourses = [
     id: 5,
     name: 'Digital Marketing',
     icon: TrendingUp,
-    color: 'blue',
-    badgeColor: 'from-blue-600 to-blue-400',
+    color: 'yellow',
+    badgeColor: 'from-yellow-600 to-yellow-400',
     description: 'Master digital marketing strategies with AI automation tools for business growth.',
     longDescription: 'Learn SEO, social media, email marketing, paid ads, content marketing, and analytics.',
     programs: [
@@ -196,8 +196,8 @@ const allCourses = [
     id: 6,
     name: 'Mobile App Development',
     icon: Smartphone,
-    color: 'blue',
-    badgeColor: 'from-blue-600 to-blue-400',
+    color: 'yellow',
+    badgeColor: 'from-yellow-600 to-yellow-400',
     description: 'Build cross-platform and native mobile applications for iOS and Android.',
     longDescription: 'Master Flutter, React Native, and native development with Kotlin/Swift.',
     programs: [
@@ -230,8 +230,8 @@ const allCourses = [
     id: 7,
     name: 'Cybersecurity',
     icon: Shield,
-    color: 'blue',
-    badgeColor: 'from-blue-600 to-blue-400',
+    color: 'yellow',
+    badgeColor: 'from-yellow-600 to-yellow-400',
     description: 'Protect systems, networks, and data from cyber threats and attacks.',
     longDescription: 'Master network security, ethical hacking, penetration testing, and security operations.',
     programs: [
@@ -265,8 +265,8 @@ const allCourses = [
     id: 8,
     name: 'Cloud Computing',
     icon: Cloud,
-    color: 'blue',
-    badgeColor: 'from-blue-600 to-blue-400',
+    color: 'yellow',
+    badgeColor: 'from-yellow-600 to-yellow-400',
     description: 'Master cloud platforms for scalable, reliable, and cost-effective infrastructure.',
     longDescription: 'Learn AWS, Azure, Google Cloud, DevOps practices, and cloud architecture.',
     programs: [
@@ -300,8 +300,8 @@ const allCourses = [
     id: 9,
     name: 'Database Management',
     icon: Database,
-    color: 'blue',
-    badgeColor: 'from-blue-600 to-blue-400',
+    color: 'yellow',
+    badgeColor: 'from-yellow-600 to-yellow-400',
     description: 'Master database design, administration, and optimization for modern applications.',
     longDescription: 'Learn SQL, NoSQL, database design, performance tuning, and data modeling.',
     programs: [
@@ -393,8 +393,8 @@ export default function AllCoursesPage() {
           }} />
         </div>
         
-        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl" />
+        <div className="absolute top-20 left-10 w-96 h-96 bg-yellow-500/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-yellow-300/20 rounded-full blur-3xl" />
 
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-4xl mx-auto">
@@ -405,7 +405,7 @@ export default function AllCoursesPage() {
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Choose Your{' '}
-              <span className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent">
                 Learning Path
               </span>
             </h1>
@@ -452,7 +452,7 @@ export default function AllCoursesPage() {
                         <div className="lg:col-span-1 space-y-4">
                           <div className="bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700">
                             <h4 className="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
-                              <GraduationCap className="w-4 h-4 text-blue-600" />
+                              <GraduationCap className="w-4 h-4 text-yellow-600" />
                               Programs Available
                             </h4>
                             <div className="space-y-2">
@@ -470,12 +470,12 @@ export default function AllCoursesPage() {
 
                           <div className="bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700">
                             <h4 className="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
-                              <Zap className="w-4 h-4 text-blue-600" />
+                              <Zap className="w-4 h-4 text-yellow-600" />
                               Skills You'll Learn
                             </h4>
                             <div className="flex flex-wrap gap-2">
                               {course.skills.map((skill, idx) => (
-                                <span key={idx} className="text-xs px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full">
+                                <span key={idx} className="text-xs px-2 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 rounded-full">
                                   {skill}
                                 </span>
                               ))}
@@ -487,7 +487,7 @@ export default function AllCoursesPage() {
                         <div className="lg:col-span-1 space-y-4">
                           <div className="bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700">
                             <h4 className="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
-                              <Target className="w-4 h-4 text-blue-600" />
+                              <Target className="w-4 h-4 text-yellow-600" />
                               What You'll Achieve
                             </h4>
                             <ul className="space-y-2">
@@ -502,7 +502,7 @@ export default function AllCoursesPage() {
 
                           <div className="bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700">
                             <h4 className="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
-                              <Briefcase className="w-4 h-4 text-blue-600" />
+                              <Briefcase className="w-4 h-4 text-yellow-600" />
                               Career Opportunities
                             </h4>
                             <div className="space-y-3">
@@ -527,13 +527,13 @@ export default function AllCoursesPage() {
                         <div className="lg:col-span-1 space-y-4">
                           <div className="bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700">
                             <h4 className="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
-                              <Globe className="w-4 h-4 text-blue-600" />
+                              <Globe className="w-4 h-4 text-yellow-600" />
                               Where to Find Jobs
                             </h4>
                             <div className="space-y-2">
                               {course.jobPortals.map((portal, idx) => (
                                 <div key={idx} className="flex items-center gap-2 text-sm">
-                                  <ExternalLink className="w-3 h-3 text-blue-600" />
+                                  <ExternalLink className="w-3 h-3 text-yellow-600" />
                                   <span className="text-gray-600 dark:text-gray-400">{portal}</span>
                                 </div>
                               ))}
@@ -542,13 +542,13 @@ export default function AllCoursesPage() {
 
                           <div className="bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700">
                             <h4 className="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
-                              <Rocket className="w-4 h-4 text-blue-600" />
+                              <Rocket className="w-4 h-4 text-yellow-600" />
                               How to Build Your Portfolio
                             </h4>
                             <ul className="space-y-2">
                               {course.portfolioSetup.map((step, idx) => (
                                 <li key={idx} className="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-2">
-                                  <span className="text-blue-600 font-bold mr-1">{idx + 1}.</span>
+                                  <span className="text-yellow-600 font-bold mr-1">{idx + 1}.</span>
                                   <span>{step}</span>
                                 </li>
                               ))}
@@ -577,7 +577,7 @@ export default function AllCoursesPage() {
 
                       {/* CTA Button */}
                       <div className="mt-6 flex justify-center">
-                        <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-400 text-white font-medium rounded-lg hover:shadow-lg transition-all flex items-center gap-2">
+                        <button className="px-8 py-3 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white font-medium rounded-lg hover:shadow-lg transition-all flex items-center gap-2">
                           <GraduationCap className="w-5 h-5" />
                           Enroll in {course.name}
                         </button>
@@ -595,13 +595,13 @@ export default function AllCoursesPage() {
       <section className="py-16 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
               <Rocket className="w-4 h-4" />
               Portfolio Building Guide
             </div>
             
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              How to Build a <span className="text-blue-600 dark:text-blue-400">Standout Portfolio</span>
+              How to Build a <span className="text-yellow-600 dark:text-yellow-400">Standout Portfolio</span>
             </h2>
             
             <p className="text-lg text-gray-600 dark:text-gray-400">
@@ -639,7 +639,7 @@ export default function AllCoursesPage() {
               const Icon = item.icon
               return (
                 <div key={item.step} className="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
-                  <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg mb-4">
+                  <div className="w-10 h-10 bg-yellow-600 rounded-lg flex items-center justify-center text-white font-bold text-lg mb-4">
                     {item.step}
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">{item.title}</h3>
@@ -655,13 +655,13 @@ export default function AllCoursesPage() {
       <section className="py-16 bg-white dark:bg-gray-950">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
               <Briefcase className="w-4 h-4" />
               Job Search Resources
             </div>
             
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Where to Find <span className="text-blue-600 dark:text-blue-400">Tech Jobs</span>
+              Where to Find <span className="text-yellow-600 dark:text-yellow-400">Tech Jobs</span>
             </h2>
             
             <p className="text-lg text-gray-600 dark:text-gray-400">
@@ -684,23 +684,23 @@ export default function AllCoursesPage() {
               return (
                 <div key={i} className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg hover:shadow-md transition cursor-pointer">
                   <div className="flex items-center gap-3 mb-2">
-                    <Icon className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                    <Icon className="w-5 h-5 text-yellow-600 dark:text-yellow-400" />
                     <span className="font-semibold text-gray-900 dark:text-white">{site.name}</span>
                   </div>
                   <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">{site.type}</p>
-                  <p className="text-xs text-blue-600 dark:text-blue-400">{site.url}</p>
+                  <p className="text-xs text-yellow-600 dark:text-yellow-400">{site.url}</p>
                 </div>
               )
             })}
           </div>
 
-          <div className="mt-8 p-6 bg-gradient-to-r from-blue-600 to-blue-400 rounded-xl text-white">
+          <div className="mt-8 p-6 bg-gradient-to-r from-yellow-600 to-yellow-400 rounded-xl text-white">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div>
                 <h3 className="text-xl font-bold mb-2">Access Our Exclusive Job Board</h3>
-                <p className="text-blue-100">Get access to job openings from our 300+ partner companies.</p>
+                <p className="text-yellow-100">Get access to job openings from our 300+ partner companies.</p>
               </div>
-              <button className="px-6 py-3 bg-white text-blue-600 font-medium rounded-lg hover:bg-gray-100 transition-colors whitespace-nowrap">
+              <button className="px-6 py-3 bg-white text-yellow-600 font-medium rounded-lg hover:bg-gray-100 transition-colors whitespace-nowrap">
                 Learn More
               </button>
             </div>
@@ -712,13 +712,13 @@ export default function AllCoursesPage() {
       <section className="py-16 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
               <MessageSquare className="w-4 h-4" />
               Got Questions?
             </div>
             
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Frequently Asked <span className="text-blue-600 dark:text-blue-400">Questions</span>
+              Frequently Asked <span className="text-yellow-600 dark:text-yellow-400">Questions</span>
             </h2>
           </div>
 
@@ -745,15 +745,15 @@ export default function AllCoursesPage() {
       </section>
 
       {/* CTA SECTION */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-400 text-white">
+      <section className="py-16 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div>
               <h2 className="text-3xl font-bold mb-2">Ready to Start Your Journey?</h2>
-              <p className="text-blue-100">Choose your course and begin building your future today.</p>
+              <p className="text-yellow-100">Choose your course and begin building your future today.</p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <button className="px-6 py-3 bg-white text-blue-600 font-medium rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2">
+              <button className="px-6 py-3 bg-white text-yellow-600 font-medium rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2">
                 <BookOpen className="w-5 h-5" />
                 Browse All Courses
               </button>

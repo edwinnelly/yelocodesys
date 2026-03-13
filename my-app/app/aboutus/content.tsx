@@ -329,10 +329,13 @@ export default function AboutPage() {
             Curious about how Yelocode Systems can help you or your business? Whether you're looking for innovative IT solutions, expert training, or guidance on digital transformation, we're here to support your journey.
           </p>
 
-          <button className="inline-flex items-center gap-2 bg-white text-yellow-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all hover:shadow-xl transform hover:-translate-y-1">
+{/* <Link href='/contacts'> */}
+<button className="inline-flex items-center gap-2 bg-white text-yellow-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all hover:shadow-xl transform hover:-translate-y-1">
             Get In Touch
             <ArrowRight className="w-5 h-5" />
           </button>
+{/* </Link> */}
+          
         </div>
       </section>
     </div>
