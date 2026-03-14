@@ -93,17 +93,18 @@ export default function EducationPage() {
       popular: true,
       link: '/webdevelopment'
     },
+    
     {
       title: 'Data Science & AI',
       icon: BarChart3,
-      duration: '14 weeks',
+      duration: '16 weeks',
       level: 'Intermediate',
       skills: ['Python', 'Pandas', 'Machine Learning', 'TensorFlow', 'SQL'],
       description: 'Learn to extract insights from data and build AI-powered applications.',
       outcomes: ['Data Analyst', 'ML Engineer', '$50k - $90k starting salary'],
       gradient: 'from-purple-600 to-pink-600',
       popular: false,
-      link: '/programs/data-science'
+      link: '/datascience'
     },
     {
       title: 'UI/UX Design',
@@ -115,7 +116,7 @@ export default function EducationPage() {
       outcomes: ['UI/UX Designer', 'Product Designer', '$40k - $75k starting salary'],
       gradient: 'from-pink-600 to-rose-600',
       popular: false,
-      link: '/programs/ui-ux-design'
+      link: '/ui-ux-design'
     },
     {
       title: 'Mobile App Development',
@@ -127,7 +128,7 @@ export default function EducationPage() {
       outcomes: ['Mobile Developer', 'Flutter Developer', '$45k - $85k starting salary'],
       gradient: 'from-white-600 to-emerald-600',
       popular: false,
-      link: '/programs/mobile-development'
+      link: '/mobile-development'
     },
     {
       title: 'Cybersecurity',
@@ -432,7 +433,7 @@ export default function EducationPage() {
           <div className="max-w-3xl">
           
             <div className="hidden sm:inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-medium px-4 py-2 rounded-full mb-6 group hover:bg-white/20 transition-all">
-  <GraduationCap className="w-4 h-4 group-hover:rotate-12 transition-transform" />
+  {/* <GraduationCap className="w-4 h-4 group-hover:rotate-12 transition-transform" /> */}
   Education That Transforms
 </div>
             
@@ -1022,7 +1023,7 @@ export default function EducationPage() {
           {/* Contact Support Link */}
           <div className="text-center mt-8">
             <Link 
-              href="/contact" 
+              href="/contacts" 
               className="inline-flex items-center gap-2 text-yellow-600 dark:text-yellow-400 font-medium hover:gap-3 transition-all"
             >
               Still have questions? Contact us
@@ -1049,7 +1050,7 @@ export default function EducationPage() {
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link 
-              href="/contact" 
+              href="/contacts" 
               className="px-8 py-4 bg-white/20 backdrop-blur-sm border border-white/30 text-white font-semibold rounded-xl hover:bg-white/30 transition-all inline-flex items-center gap-2"
             >
               <MessageCircle className="w-5 h-5" />

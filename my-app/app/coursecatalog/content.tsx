@@ -384,15 +384,27 @@ export default function AllCoursesPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900">
       
-      {/* HERO SECTION */}
+      {/* HERO SECTION WITH COVER IMAGE */}
       <section className="relative py-20 md:py-28 overflow-hidden bg-gradient-to-br from-gray-900 to-gray-950 text-white">
-        <div className="absolute inset-0 opacity-10">
+        {/* Cover Image Background */}
+        <div className="absolute inset-0">
+          <img 
+            src="pics/200.jpg" 
+            alt="Courses Background" 
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-900/90 to-gray-950/90"></div>
+        </div>
+        
+        {/* Pattern Overlay */}
+        <div className="absolute inset-0 opacity-10 mix-blend-overlay">
           <div className="absolute inset-0" style={{
             backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
             backgroundSize: '40px 40px'
           }} />
         </div>
         
+        {/* Glow Effects */}
         <div className="absolute top-20 left-10 w-96 h-96 bg-yellow-500/20 rounded-full blur-3xl" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-yellow-300/20 rounded-full blur-3xl" />
 
@@ -577,10 +589,12 @@ export default function AllCoursesPage() {
 
                       {/* CTA Button */}
                       <div className="mt-6 flex justify-center">
-                        <button className="px-8 py-3 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white font-medium rounded-lg hover:shadow-lg transition-all flex items-center gap-2">
+                        <a href="education">
+                          <button className="px-8 py-3 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white font-medium rounded-lg hover:shadow-lg transition-all flex items-center gap-2">
                           <GraduationCap className="w-5 h-5" />
                           Enroll in {course.name}
                         </button>
+                        </a>
                       </div>
                     </div>
                   )}
@@ -753,14 +767,18 @@ export default function AllCoursesPage() {
               <p className="text-yellow-100">Choose your course and begin building your future today.</p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <button className="px-6 py-3 bg-white text-yellow-600 font-medium rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2">
+              <a href="education">
+                <button className="px-6 py-3 bg-white text-yellow-600 font-medium rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2">
                 <BookOpen className="w-5 h-5" />
                 Browse All Courses
               </button>
-              <button className="px-6 py-3 border border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors flex items-center gap-2">
+              </a>
+              <a href="contacts">
+                <button className="px-6 py-3 border border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors flex items-center gap-2">
                 <Calendar className="w-5 h-5" />
                 Schedule Consultation
               </button>
+              </a>
             </div>
           </div>
         </div>

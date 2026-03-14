@@ -84,27 +84,36 @@ export default function ContactPage() {
     }
   ]
 
-  
-
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
       
-      {/* HERO SECTION - Minimal */}
-      <section className="relative pt-24 pb-16 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-950">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+      {/* HERO SECTION - With Cover Image */}
+      <section className="relative pt-24 pb-16 overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2070&q=80" 
+            alt="Team collaboration in modern office" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/60" />
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-yellow-500/20 backdrop-blur-sm text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6 border border-yellow-500/30">
               <MessageCircle className="w-4 h-4" />
               Let's Talk
             </div>
             
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
               Get in{' '}
-              <span className="text-yellow-600 dark:text-yellow-400">Touch</span>
+              <span className="text-yellow-400">Touch</span>
             </h1>
             
-            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Have questions? We'd love to hear from you. Our team is always ready to help.
+            <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+              Have questions? We'd love to hear from you. Our team is always ready to help.
             </p>
           </div>
         </div>
@@ -502,9 +511,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
-      {/* TEAM SECTION */}
-      
 
       {/* FAQ PREVIEW */}
       <section id="faq" className="py-20 bg-white dark:bg-gray-950">

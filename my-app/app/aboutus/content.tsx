@@ -29,13 +29,10 @@ import {
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
-      {/* Hero Section */}
+      {/* Hero Section - No Cover Image */}
       <section className="relative py-20 md:py-28 overflow-hidden bg-gradient-to-br from-gray-900 to-gray-950 text-white">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
-            backgroundSize: '40px 40px'
-          }} />
+          
         </div>
         
         <div className="absolute top-20 left-10 w-96 h-96 bg-yellow-500/20 rounded-full blur-3xl" />
@@ -329,12 +326,10 @@ export default function AboutPage() {
             Curious about how Yelocode Systems can help you or your business? Whether you're looking for innovative IT solutions, expert training, or guidance on digital transformation, we're here to support your journey.
           </p>
 
-{/* <Link href='/contacts'> */}
-<button className="inline-flex items-center gap-2 bg-white text-yellow-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all hover:shadow-xl transform hover:-translate-y-1">
+          <button className="inline-flex items-center gap-2 bg-white text-yellow-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all hover:shadow-xl transform hover:-translate-y-1">
             Get In Touch
             <ArrowRight className="w-5 h-5" />
           </button>
-{/* </Link> */}
           
         </div>
       </section>

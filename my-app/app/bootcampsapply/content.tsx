@@ -188,13 +188,13 @@ export default function BootcampEnrollment() {
       {/* HERO SECTION */}
       <section className="relative py-20 md:py-28 overflow-hidden bg-gradient-to-br from-gray-900 to-gray-950 text-white">
         <div className="absolute inset-0 opacity-10">
-          <div
+          {/* <div
             className="absolute inset-0"
             style={{
               backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
               backgroundSize: "40px 40px",
             }}
-          />
+          /> */}
         </div>
 
         <div className="absolute top-20 left-10 w-96 h-96 bg-yellow-500/20 rounded-full blur-3xl animate-pulse" />
@@ -219,7 +219,7 @@ export default function BootcampEnrollment() {
                 An intensive training program designed to transform beginners
                 into skilled technology professionals. Gain hands-on experience,
                 build real-world projects, and receive mentorship from
-                experienced industry experts—preparing you for global
+                experienced industry experts preparing you for global
                 opportunities in the tech industry.
               </p>
 

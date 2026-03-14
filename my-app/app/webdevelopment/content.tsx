@@ -430,10 +430,10 @@ export default function WebDevPage() {
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
               </Link>
-              <button className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/30 text-white font-semibold rounded-xl hover:bg-white/20 transition-all flex items-center gap-2">
+              {/* <button className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/30 text-white font-semibold rounded-xl hover:bg-white/20 transition-all flex items-center gap-2">
                 <FileText className="w-5 h-5" />
                 Download Syllabus
-              </button>
+              </button> */}
             </div>
 
             <div className="flex flex-wrap gap-8 mt-12">
@@ -490,8 +490,8 @@ export default function WebDevPage() {
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="p-1 bg-green-100 dark:bg-green-900/30 rounded mt-1">
-                    <Server className="w-4 h-4 text-green-600 dark:text-green-400" />
+                  <div className="p-1 bg-yellow-100 dark:bg-yellow-900/30 rounded mt-1">
+                    <Server className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                   </div>
                   <div>
                     <span className="font-semibold text-gray-900 dark:text-white">Backend Development:</span>
@@ -626,7 +626,7 @@ export default function WebDevPage() {
               {[
                 { phase: 'Phase 1', title: 'Foundations', weeks: 'Weeks 1-4', color: 'yellow', topics: ['HTML5', 'CSS3', 'JavaScript Basics', 'Responsive Design'] },
                 { phase: 'Phase 2', title: 'Frontend Development', weeks: 'Weeks 5-8', color: 'cyan', topics: ['Advanced JavaScript', 'React.js', 'State Management', 'API Integration'] },
-                { phase: 'Phase 3', title: 'Backend Development', weeks: 'Weeks 9-12', color: 'green', topics: ['Node.js', 'Express.js', 'MongoDB', 'PostgreSQL'] },
+                { phase: 'Phase 3', title: 'Backend Development', weeks: 'Weeks 9-12', color: 'yellow', topics: ['Node.js', 'Express.js', 'MongoDB', 'PostgreSQL'] },
                 { phase: 'Phase 4', title: 'Full Stack & Deployment', weeks: 'Weeks 13-16', color: 'purple', topics: ['Full Stack Integration', 'Testing', 'DevOps', 'Career Prep'] }
               ].map((phase, idx) => (
                 <div key={idx} className="relative md:ml-16">
@@ -666,7 +666,7 @@ export default function WebDevPage() {
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-4">
               Week-by-week breakdown of your learning journey with 30+ projects
             </p>
-            <div className="inline-flex items-center gap-2 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 px-4 py-2 rounded-full">
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 px-4 py-2 rounded-full">
               <Rocket className="w-4 h-4" />
               <span className="font-medium">{weeklyCurriculum.reduce((acc, week) => acc + 1, 0)} Weeks • 30+ Projects</span>
             </div>
@@ -683,7 +683,7 @@ export default function WebDevPage() {
                       </span>
                       <h3 className="text-lg font-bold text-gray-900 dark:text-white">{week.title}</h3>
                     </div>
-                    <span className="text-sm px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full">
+                    <span className="text-sm px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 rounded-full">
                       Project: {week.project.title}
                     </span>
                   </div>
@@ -710,7 +710,7 @@ export default function WebDevPage() {
                     
                     <div>
                       <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
-                        <Rocket className="w-4 h-4 text-green-600" />
+                        <Rocket className="w-4 h-4 text-yellow-600" />
                         Project: {week.project.title}
                       </h4>
                       <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{week.project.description}</p>
@@ -746,7 +746,7 @@ export default function WebDevPage() {
             {additionalProjects.map((project, i) => {
               const Icon = project.icon
               const difficultyColor = 
-                project.difficulty === 'Beginner' ? 'text-green-600 bg-green-100 dark:bg-green-900/30 dark:text-green-400' :
+                project.difficulty === 'Beginner' ? 'text-yellow-600 bg-yellow-100 dark:bg-yellow-900/30 dark:text-yellow-400' :
                 project.difficulty === 'Intermediate' ? 'text-yellow-600 bg-yellow-100 dark:bg-yellow-900/30 dark:text-yellow-400' :
                 'text-red-600 bg-red-100 dark:bg-red-900/30 dark:text-red-400'
               

@@ -616,7 +616,7 @@ export default function PricingPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-4xl mx-auto mb-16">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-medium px-4 py-2 rounded-full mb-6">
-              <GraduationCap className="w-4 h-4" />
+              {/* <GraduationCap className="w-4 h-4" /> */}
               Learning Paths for Every Level
             </div>
             
