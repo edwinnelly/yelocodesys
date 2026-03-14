@@ -11,7 +11,7 @@ import {
   Layers, Cpu, Gauge, Shield, Users2, Workflow,
   FolderCode, TestTube, Cloud, Palette,
   TrendingUp, DollarSign, Home, Smartphone,
-  ShoppingCart, Newspaper, Youtube, Camera,
+  ShoppingCart, Newspaper, Camera,
   Music, Gamepad, Plane, Car, Heart,
   Building2, Map, Sun, Moon, Activity,
   Wallet, Trophy, Gift, Truck, Dog, Leaf, Bike, Ticket, GlassWater, Shirt, Watch,
