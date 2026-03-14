@@ -197,8 +197,8 @@ export default function BootcampEnrollment() {
           />
         </div>
 
-        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl animate-pulse animation-delay-2000" />
+        <div className="absolute top-20 left-10 w-96 h-96 bg-yellow-500/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-yellow-300/20 rounded-full blur-3xl animate-pulse animation-delay-2000" />
 
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -210,7 +210,7 @@ export default function BootcampEnrollment() {
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                 Transform Your Career with{" "}
-                <span className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent">
                   Intensive Tech Training
                 </span>
               </h1>
@@ -226,7 +226,7 @@ export default function BootcampEnrollment() {
               <div className="flex flex-wrap gap-4">
                 <a
                   href="#enroll-form"
-                  className="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-400 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-blue-500/25 transition-all flex items-center gap-2"
+                  className="px-8 py-4 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-yellow-500/25 transition-all flex items-center gap-2"
                 >
                   <GraduationCap className="w-5 h-5" />
                   Enroll Now
@@ -255,7 +255,7 @@ export default function BootcampEnrollment() {
                     key={i}
                     className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 text-center"
                   >
-                    <Icon className="w-6 h-6 text-blue-400 mx-auto mb-2" />
+                    <Icon className="w-6 h-6 text-yellow-400 mx-auto mb-2" />
                     <div className="text-xl font-bold text-white">
                       {stat.value}
                     </div>
@@ -272,14 +272,14 @@ export default function BootcampEnrollment() {
       <section id="programs" className="py-20 bg-white dark:bg-gray-950">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
               <BookOpen className="w-4 h-4" />
               What This Bootcamp Is About
             </div>
 
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Practical Learning with{" "}
-              <span className="text-blue-600 dark:text-blue-400">
+              <span className="text-yellow-600 dark:text-yellow-400">
                 Real Industry Tools
               </span>
             </h2>
@@ -333,9 +333,9 @@ export default function BootcampEnrollment() {
               return (
                 <div
                   key={i}
-                  className="group bg-gray-50 dark:bg-gray-900 rounded-xl p-6 hover:shadow-xl transition-all border border-gray-200 dark:border-gray-800 hover:border-blue-300"
+                  className="group bg-gray-50 dark:bg-gray-900 rounded-xl p-6 hover:shadow-xl transition-all border border-gray-200 dark:border-gray-800 hover:border-yellow-300"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-400 rounded-lg flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-yellow-600 to-yellow-400 rounded-lg flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
@@ -355,14 +355,14 @@ export default function BootcampEnrollment() {
       <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
               <Target className="w-4 h-4" />
               What You Will Learn
             </div>
 
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Master{" "}
-              <span className="text-blue-600 dark:text-blue-400">
+              <span className="text-yellow-600 dark:text-yellow-400">
                 Essential Skills
               </span>
             </h2>
@@ -390,8 +390,8 @@ export default function BootcampEnrollment() {
                   key={i}
                   className="flex items-center gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-md transition"
                 >
-                  <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
-                    <Icon className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                  <div className="w-10 h-10 bg-yellow-100 dark:bg-yellow-900/30 rounded-lg flex items-center justify-center">
+                    <Icon className="w-5 h-5 text-yellow-600 dark:text-yellow-400" />
                   </div>
                   <span className="font-medium text-gray-900 dark:text-white">
                     {skill.label}
@@ -408,14 +408,14 @@ export default function BootcampEnrollment() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
+              <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
                 <Rocket className="w-4 h-4" />
                 How Good You Will Become
               </div>
 
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
                 Transform into a{" "}
-                <span className="text-blue-600 dark:text-blue-400">
+                <span className="text-yellow-600 dark:text-yellow-400">
                   Job-Ready Developer
                 </span>
               </h2>
@@ -435,7 +435,7 @@ export default function BootcampEnrollment() {
                   "Become ready for tech jobs or freelancing",
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
                     <span className="text-gray-700 dark:text-gray-300">
                       {item}
                     </span>
@@ -473,7 +473,7 @@ export default function BootcampEnrollment() {
                     key={i}
                     className="bg-gray-50 dark:bg-gray-900 rounded-xl p-6 text-center border border-gray-200 dark:border-gray-800"
                   >
-                    <Icon className="w-8 h-8 text-blue-600 dark:text-blue-400 mx-auto mb-3" />
+                    <Icon className="w-8 h-8 text-yellow-600 dark:text-yellow-400 mx-auto mb-3" />
                     <h3 className="font-bold text-gray-900 dark:text-white mb-1">
                       {item.title}
                     </h3>
@@ -492,14 +492,14 @@ export default function BootcampEnrollment() {
       <section id="enroll-form" className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6">
               <FileText className="w-4 h-4" />
               Start Your Application
             </div>
 
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Enroll in the{" "}
-              <span className="text-blue-600 dark:text-blue-400">Bootcamp</span>
+              <span className="text-yellow-600 dark:text-yellow-400">Bootcamp</span>
             </h2>
 
             <p className="text-lg text-gray-600 dark:text-gray-400">
@@ -508,8 +508,8 @@ export default function BootcampEnrollment() {
           </div>
 
           {formSubmitted ? (
-            <div className="bg-green-100 dark:bg-green-900/30 border border-green-500 text-green-700 dark:text-green-400 rounded-xl p-8 text-center">
-              <Check className="w-16 h-16 mx-auto mb-4 text-green-500" />
+            <div className="bg-yellow-100 dark:bg-yellow-900/30 border border-yellow-500 text-yellow-700 dark:text-yellow-400 rounded-xl p-8 text-center">
+              <Check className="w-16 h-16 mx-auto mb-4 text-yellow-500" />
               <h3 className="text-2xl font-bold mb-2">
                 Application Submitted!
               </h3>
@@ -537,7 +537,7 @@ export default function BootcampEnrollment() {
                     value={formData.fullName}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition"
                     placeholder="John Doe"
                   />
                 </div>
@@ -552,7 +552,7 @@ export default function BootcampEnrollment() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -569,7 +569,7 @@ export default function BootcampEnrollment() {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition"
                     placeholder="+234 800 000 0000"
                   />
                 </div>
@@ -583,7 +583,7 @@ export default function BootcampEnrollment() {
                     value={formData.program}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition"
                   >
                     <option value="">Select a program</option>
                     {programs.map((program) => (
@@ -605,7 +605,7 @@ export default function BootcampEnrollment() {
                     value={formData.experience}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition"
                   >
                     <option value="">Select your level</option>
                     <option value="beginner">Beginner (No experience)</option>
@@ -625,7 +625,7 @@ export default function BootcampEnrollment() {
                   <input
                     type="date"
                     name="startDate"
-                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition"
                   />
                 </div>
               </div>
@@ -641,7 +641,7 @@ export default function BootcampEnrollment() {
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                  className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition"
                   placeholder="Tell us about your goals and motivation..."
                 />
               </div>
@@ -653,34 +653,34 @@ export default function BootcampEnrollment() {
                 </h3>
                 <ul className="space-y-2 mb-4 text-sm text-gray-600 dark:text-gray-400">
                   <li className="flex items-start gap-2">
-                    <Check className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <Check className="w-4 h-4 text-yellow-600 flex-shrink-0 mt-0.5" />
                     <span>
                       Students must attend classes regularly and participate
                       actively
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Check className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <Check className="w-4 h-4 text-yellow-600 flex-shrink-0 mt-0.5" />
                     <span>
                       All assignments and projects must be completed on time
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Check className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <Check className="w-4 h-4 text-yellow-600 flex-shrink-0 mt-0.5" />
                     <span>
                       A respectful learning environment is required for all
                       participants
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Check className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <Check className="w-4 h-4 text-yellow-600 flex-shrink-0 mt-0.5" />
                     <span>
                       Tuition payment must be completed before the program
                       starts
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Check className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <Check className="w-4 h-4 text-yellow-600 flex-shrink-0 mt-0.5" />
                     <span>
                       Certificates are issued upon successful completion of all
                       requirements
@@ -694,7 +694,7 @@ export default function BootcampEnrollment() {
                     id="terms"
                     checked={agreeTerms}
                     onChange={(e) => setAgreeTerms(e.target.checked)}
-                    className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                    className="w-4 h-4 text-yellow-600 border-gray-300 rounded focus:ring-yellow-500"
                   />
                   <label
                     htmlFor="terms"
@@ -709,10 +709,10 @@ export default function BootcampEnrollment() {
               <button
                 type="submit"
                 disabled={!agreeTerms || isSubmitting}
-                className={`w-full px-6 py-4 bg-gradient-to-r from-blue-600 to-blue-400 text-white font-semibold rounded-lg transition-all flex items-center justify-center gap-2 ${
+                className={`w-full px-6 py-4 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white font-semibold rounded-lg transition-all flex items-center justify-center gap-2 ${
                   !agreeTerms || isSubmitting
                     ? "opacity-50 cursor-not-allowed"
-                    : "hover:shadow-xl hover:shadow-blue-500/25"
+                    : "hover:shadow-xl hover:shadow-yellow-500/25"
                 }`}
               >
                 {isSubmitting ? (
@@ -733,19 +733,19 @@ export default function BootcampEnrollment() {
       </section>
 
       {/* FINAL CALL TO ACTION */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-400 text-white">
+      <section className="py-20 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-10 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Start Your Tech Journey Today
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-yellow-100 mb-8 max-w-2xl mx-auto">
             Join the Yelocode Systems bootcamp in Port Harcourt and gain the
             skills needed to build software, solve real problems, and create
             opportunities in the technology industry.
           </p>
           <a
             href="#enroll-form"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-all hover:shadow-xl text-lg"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-yellow-600 font-semibold rounded-lg hover:bg-gray-100 transition-all hover:shadow-xl text-lg"
           >
             <Rocket className="w-5 h-5" />
             Start Your Tech Journey

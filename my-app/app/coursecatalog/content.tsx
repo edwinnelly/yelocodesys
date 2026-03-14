@@ -493,7 +493,7 @@ export default function AllCoursesPage() {
                             <ul className="space-y-2">
                               {course.outcomes.map((outcome, idx) => (
                                 <li key={idx} className="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-2">
-                                  <Check className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                                  <Check className="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" />
                                   <span>{outcome}</span>
                                 </li>
                               ))}
@@ -510,7 +510,7 @@ export default function AllCoursesPage() {
                                 <div key={idx} className="border-b border-gray-100 dark:border-gray-700 last:border-0 pb-2 last:pb-0">
                                   <div className="flex items-center justify-between mb-1">
                                     <span className="font-medium text-gray-900 dark:text-white text-sm">{career.title}</span>
-                                    <span className="text-xs px-2 py-0.5 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full">
+                                    <span className="text-xs px-2 py-0.5 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 rounded-full">
                                       {career.salary}
                                     </span>
                                   </div>

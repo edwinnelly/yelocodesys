@@ -469,8 +469,8 @@ export default function TechSolutionsPage() {
                   'Competitive pricing with flexible engagement'
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Check className="w-4 h-4 text-green-600 dark:text-green-400" />
+                    <div className="w-6 h-6 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <Check className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                     </div>
                     <span className="text-gray-700 dark:text-gray-300">{item}</span>
                   </div>
