@@ -216,7 +216,7 @@ export default function BootcampPrograms() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-12">
           {[
             { label: "Programs", value: "4", icon: BookOpen },
-            { label: "Graduates", value: "675+", icon: Users },
+            { label: "Graduates", value: "1675+", icon: Users },
             { label: "Placement Rate", value: "72%", icon: Target },
             { label: "Avg Salary Boost", value: "$25k", icon: TrendingUp },
           ].map((metric, index) => {

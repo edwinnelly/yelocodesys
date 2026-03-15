@@ -6,12 +6,12 @@ import Content from "./content";
 export const metadata: Metadata = {
   title: {
     default:
-      "Data Science & AI Bootcamp | Machine Learning Course in Port Harcourt | Yelocode Systems",
+      "Mobile App Development Bootcamp | Android & iOS Course in Port Harcourt | Yelocode Systems",
     template: "%s | Yelocode Systems",
   },
 
   description:
-    "Master Data Science and Artificial Intelligence at Yelocode Systems in Port Harcourt. 16-week intensive bootcamp with 30+ hands-on projects. Learn Python, Machine Learning, Deep Learning, NLP, and LLMs. No experience required. Enroll now at No. 11 Elekahia.",
+    "Master Mobile App Development at Yelocode Systems in Port Harcourt. 16-week intensive bootcamp with 30+ hands-on projects. Learn Android (Kotlin), iOS (Swift), React Native, and Flutter. No experience required. Enroll now at No. 11 Elekahia.",
 
   keywords: [
     // Brand
@@ -19,48 +19,61 @@ export const metadata: Metadata = {
     "yelocodesys.com",
 
     // Course specific
-    "data science bootcamp Port Harcourt",
-    "AI course Nigeria",
-    "machine learning training Port Harcourt",
-    "artificial intelligence course Rivers State",
-    "data science certification Nigeria",
-    "AI bootcamp Port Harcourt",
+    "mobile app development bootcamp Port Harcourt",
+    "android development course Nigeria",
+    "iOS development training Port Harcourt",
+    "app development course Rivers State",
+    "mobile developer certification Nigeria",
+    "cross platform app development bootcamp Port Harcourt",
+    "react native training Port Harcourt",
+    "flutter course Nigeria",
 
-    // Python & Data Science
-    "Python for data science",
-    "Pandas training",
-    "NumPy course",
-    "data visualization with Python",
-    "statistical analysis course",
+    // Android Development
+    "Kotlin training Port Harcourt",
+    "Android Studio course",
+    "Android app development Nigeria",
+    "Jetpack Compose training",
+    "Room database course",
+    "Material Design for Android",
 
-    // Machine Learning
-    "machine learning course Nigeria",
-    "scikit-learn training",
-    "regression analysis course",
-    "classification algorithms",
-    "clustering techniques",
+    // iOS Development
+    "Swift programming course",
+    "iOS app development Port Harcourt",
+    "SwiftUI training Nigeria",
+    "Xcode course",
+    "CoreData training",
+    "iOS design patterns",
 
-    // Deep Learning & AI
-    "deep learning course Port Harcourt",
-    "TensorFlow training Nigeria",
-    "neural networks course",
-    "NLP training",
-    "computer vision course",
-    "large language models course",
-    "generative AI training",
+    // Cross-Platform
+    "React Native bootcamp Port Harcourt",
+    "Flutter development course Nigeria",
+    "Dart programming language",
+    "cross platform app development",
+    "write once deploy anywhere",
 
-    // Specialized areas
-    "time series analysis course",
-    "recommendation systems training",
-    "MLOps course",
-    "big data analytics",
-    "Apache Spark training",
+    // Mobile Technologies
+    "Firebase training Port Harcourt",
+    "REST APIs mobile development",
+    "mobile app database course",
+    "push notifications training",
+    "mobile payment integration",
+    "Google Maps API course",
+    "camera integration in apps",
 
-    // Outcomes
-    "become data scientist",
-    "AI career Nigeria",
-    "machine learning engineer jobs",
-    "data analyst training",
+    // App Store & Deployment
+    "Google Play Console training",
+    "App Store Connect course",
+    "app publishing Nigeria",
+    "mobile app monetization",
+    "TestFlight testing",
+    "Firebase App Distribution",
+
+    // Career Outcomes
+    "become mobile developer",
+    "Android developer jobs Nigeria",
+    "iOS developer career",
+    "freelance app developer",
+    "mobile app entrepreneur",
 
     // Location
     "Port Harcourt",
@@ -69,10 +82,11 @@ export const metadata: Metadata = {
     "Nigeria",
 
     // Program specifics
-    "16-week data science bootcamp",
-    "hands-on AI projects",
-    "data science certification",
-    "mentor-led ML training",
+    "16-week mobile bootcamp",
+    "hands-on app projects",
+    "mobile development certification",
+    "mentor-led app training",
+    "portfolio of 30+ apps",
   ],
 
   authors: [
@@ -85,17 +99,17 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Data Science & AI Bootcamp | Machine Learning Course | Yelocode Systems Port Harcourt",
+      "Mobile App Development Bootcamp | Android & iOS Course | Yelocode Systems Port Harcourt",
     description:
-      "Join Yelocode Systems' 16-week Data Science & AI bootcamp in Port Harcourt. Master machine learning, deep learning, and AI with 30+ hands-on projects. Learn Python, TensorFlow, NLP, and LLMs. Start your AI career at No. 11 Elekahia.",
-    url: "https://yelocodesys.com/datascience",
+      "Join Yelocode Systems' 16-week Mobile App Development bootcamp in Port Harcourt. Master Android, iOS, and cross-platform development with 30+ hands-on projects. Learn Kotlin, Swift, React Native, and Flutter. Start your app development career at No. 11 Elekahia.",
+    url: "https://yelocodesys.com/mobile-development",
     siteName: "Yelocode Systems",
     images: [
       {
-        url: "/og-datascience.png",
+        url: "/og-mobileapp.png",
         width: 1200,
         height: 630,
-        alt: "Yelocode Systems Data Science & AI Bootcamp in Port Harcourt",
+        alt: "Yelocode Systems Mobile App Development Bootcamp in Port Harcourt",
       },
     ],
     locale: "en_NG",
@@ -106,10 +120,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Data Science & AI Bootcamp | Yelocode Systems",
+    title: "Mobile App Development Bootcamp | Yelocode Systems",
     description:
-      "Learn Data Science and AI in Port Harcourt. 16-week bootcamp with 30+ projects. Master Python, ML, Deep Learning, and LLMs. No experience required.",
-    images: ["/twitter-datascience.png"],
+      "Learn Mobile App Development in Port Harcourt. 16-week bootcamp with 30+ projects. Master Android, iOS, React Native, and Flutter. No experience required.",
+    images: ["/twitter-mobileapp.png"],
     site: "@yelocode",
     creator: "@yelocode",
   },
@@ -135,16 +149,16 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 
   alternates: {
-    canonical: "https://yelocodesys.com/datascience",
+    canonical: "https://yelocodesys.com/mobile-development",
   },
 
   // Structured data for course
   other: {
     "og:type": "website",
     "og:see_also": "https://yelocodesys.com/coursecatalog",
-    "course:title": "Data Science & AI Bootcamp",
+    "course:title": "Mobile App Development Bootcamp",
     "course:description":
-      "16-week intensive Data Science and Artificial Intelligence bootcamp. Master Python, Machine Learning, Deep Learning, NLP, Computer Vision, and LLMs with 30+ hands-on projects.",
+      "16-week intensive Mobile App Development bootcamp. Master Android (Kotlin), iOS (Swift), and cross-platform development (React Native, Flutter) with 30+ hands-on projects. Learn to build and deploy real-world apps to Google Play and App Store.",
     "course:duration": "16 weeks",
     "course:numberOfProjects": "30+",
     "course:difficulty": "Beginner to Advanced",
@@ -162,14 +176,38 @@ export const metadata: Metadata = {
     "business:hours:day:6": "Saturday 10:00 AM - 4:00 PM",
     "business:hours:day:7": "Sunday Closed",
 
-    // Additional structured data specific to Data Science
+    // Additional structured data specific to Mobile Development
     "course:skills":
-      "Python, Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, NLP, Computer Vision, LLMs, SQL, Spark, MLOps",
+      "Kotlin, Swift, React Native, Flutter, Dart, Java, JavaScript, Android Studio, Xcode, Firebase, Room Database, CoreData, REST APIs, GraphQL, Git, Material Design, SwiftUI, Jetpack Compose, Push Notifications, Google Maps, Camera API, Biometric Authentication, In-App Purchases",
     "course:careers":
-      "Data Scientist, Machine Learning Engineer, AI Engineer, Data Analyst, ML Ops Engineer, Research Scientist",
+      "Android Developer, iOS Developer, React Native Developer, Flutter Developer, Mobile App Developer, Cross-Platform Developer, Freelance App Developer, Mobile Tech Lead, App Entrepreneur, Mobile Solutions Architect",
     "course:prerequisites":
-      "Basic computer literacy, no programming experience required",
+      "Basic computer literacy, logical thinking, no prior programming experience required",
     "course:mode": "In-person at No. 11 Elekahia, Port Harcourt",
+    
+    // Mobile-specific structured data
+    "mobile:platforms": "Android, iOS, Cross-Platform (React Native, Flutter)",
+    "mobile:tools": "Android Studio, Xcode, VS Code, Firebase, Git, Postman, Figma",
+    "mobile:languages": "Kotlin, Swift, JavaScript, TypeScript, Dart",
+    "mobile:features": "Camera, Location, Maps, Push Notifications, Biometrics, Offline Storage, Real-time Updates, Payments",
+    "mobile:portfolio": "30+ real-world apps for professional portfolio including e-commerce, social media, food delivery, and utility apps",
+    "mobile:certification": "Mobile App Development Professional Certificate",
+    
+    // Course outcomes
+    "course:outcome:1": "Build native Android apps with Kotlin and Jetpack Compose",
+    "course:outcome:2": "Create iOS apps with Swift and SwiftUI",
+    "course:outcome:3": "Develop cross-platform apps with React Native and Flutter",
+    "course:outcome:4": "Integrate Firebase, REST APIs, and third-party services",
+    "course:outcome:5": "Implement camera, location, maps, and push notifications",
+    "course:outcome:6": "Publish apps to Google Play Store and Apple App Store",
+    "course:outcome:7": "Build a portfolio with 30+ professional apps",
+    "course:outcome:8": "Master app testing, debugging, and performance optimization",
+    
+    // App categories covered
+    "mobile:app_types": "E-commerce Apps, Social Media Apps, Food Delivery Apps, Fitness Trackers, Expense Managers, Weather Apps, News Apps, QR Scanner Apps, Maps & Navigation Apps, Chat Apps, Video Streaming Apps, Music Apps, Gaming Apps",
+    
+    // Clone apps students will build
+    "mobile:clone_apps": "WhatsApp Clone, Instagram Clone, Spotify Clone, Uber Clone, Airbnb Clone, Amazon Clone, Twitter Clone, TikTok Clone",
   },
 };
 

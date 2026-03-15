@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { 
-  Brain, GraduationCap, Search, MessageSquare, Check, X,
+  Smartphone, GraduationCap, Search, MessageSquare, Check, X,
   Clock, Users, Award, Calendar, Laptop, BookOpen,
   PlayCircle, ChevronDown, ExternalLink, Star,
   Briefcase, Target, Zap, Globe, Mail, Phone,
@@ -10,394 +10,396 @@ import {
   GitBranch, Terminal, Database, Layout, Server,
   Layers, Cpu, Gauge, Shield, Users2, Workflow,
   FolderCode, TestTube, Cloud, Palette,
-  TrendingUp, DollarSign, Home, Smartphone,
-  ShoppingCart, Newspaper, Camera,
+  TrendingUp, DollarSign, Home,
+  ShoppingCart, Newspaper, Youtube, Camera,
   Music, Gamepad, Plane, Car, Heart,
   Building2, Map, Sun, Moon, Activity,
   Wallet, Trophy, Gift, Truck, Dog, Leaf, Bike, Ticket, GlassWater, Shirt, Watch,
-  BarChart, LineChart, PieChart, Network, Sigma, Calculator,
-  Binary, Sparkles, Bot, Eye, Mic, Fingerprint, QrCode,
-  ScanLine, MessageCircle, Twitter, Facebook, Instagram,
-  Linkedin, Youtube as YoutubeIcon, Twitch, Code,
+  Code, Figma, Chrome, Brain, 
+  Tablet, Monitor, Watch as WatchIcon,
+  Bluetooth, Wifi, Battery, Navigation,
+  Fingerprint, Scan, QrCode, 
+  PenTool, Layers as LayersIcon, Box, 
+  Apple as AppleIcon, Smartphone as SmartphoneIcon,
+  Bot, Eye, Mic, 
   type Icon as LucideIcon
 } from 'lucide-react'
 import Link from 'next/link'
 
-export default function DataSciencePage() {
-  const [activeTab, setActiveTab] = useState('overview')
+export default function MobileAppPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0)
 
   // 16-Week Curriculum with 30 projects
   const weeklyCurriculum = [
     {
       week: 1,
-      title: 'Python Programming Fundamentals',
-      description: 'Master Python programming language - the foundation of data science and AI.',
+      title: 'Mobile Development Fundamentals',
+      description: 'Understand the mobile ecosystem and set up your development environment.',
       topics: [
-        'Python Basics - variables, data types, operators, control flow',
-        'Data Structures - lists, tuples, dictionaries, sets, comprehensions',
-        'Functions and Modules - defining functions, lambda, imports',
-        'File Handling - reading/writing files, CSV, JSON, exceptions',
-        'NumPy Fundamentals - arrays, operations, broadcasting, indexing',
-        'Pandas Introduction - Series, DataFrames, basic operations'
+        'Mobile Platforms Overview - iOS vs Android vs Cross-Platform',
+        'Development Environment Setup - Android Studio, Xcode, VS Code',
+        'Mobile UI/UX Principles - touch targets, gestures, navigation patterns',
+        'Introduction to Programming Logic - variables, conditionals, loops',
+        'Mobile App Architecture - MVC, MVVM patterns',
+        'Version Control with Git - branching, commits, repositories'
       ],
       project: {
-        title: 'Project 1: Data Analysis CLI Tool',
-        description: 'Build a command-line tool to analyze CSV datasets',
-        features: ['Load CSV files', 'Basic statistics', 'Data filtering', 'Export results']
+        title: 'Project 1: Calculator App',
+        description: 'Build a basic calculator app to understand mobile app structure',
+        features: ['Basic arithmetic operations', 'Clean UI design', 'Portrait/landscape support', 'Error handling']
       }
     },
     {
       week: 2,
-      title: 'Data Manipulation with Pandas',
-      description: 'Deep dive into Pandas for efficient data manipulation and analysis.',
+      title: 'Kotlin for Android Development',
+      description: 'Master Kotlin programming language for Android app development.',
       topics: [
-        'DataFrames Deep Dive - indexing, selection, boolean indexing',
-        'Data Cleaning - handling missing values, duplicates, outliers',
-        'Data Transformation - apply, map, pivot tables, melting',
-        'GroupBy Operations - aggregation, transformation, filtering',
-        'Merging and Joining - concat, merge, join operations',
-        'Time Series Analysis - datetime indexing, resampling, rolling windows'
+        'Kotlin Basics - variables, data types, null safety',
+        'Object-Oriented Programming - classes, inheritance, interfaces',
+        'Functional Programming - lambdas, higher-order functions',
+        'Coroutines - async programming, flows, channels',
+        'Collections and Sequences - lists, maps, filtering',
+        'Error Handling - try-catch, runCatching, custom exceptions'
       ],
       project: {
-        title: 'Project 2: Sales Data Analyzer',
-        description: 'Analyze e-commerce sales data to find insights and trends',
-        features: ['Data cleaning', 'Monthly sales trends', 'Top products', 'Customer segmentation']
+        title: 'Project 2: Todo List App',
+        description: 'Create a feature-rich todo list app with Kotlin',
+        features: ['Add/edit/delete tasks', 'Task categories', 'Due dates', 'Data persistence']
       }
     },
     {
       week: 3,
-      title: 'Data Visualization',
-      description: 'Create compelling visualizations to communicate insights effectively.',
+      title: 'Android UI Development',
+      description: 'Create beautiful and responsive Android user interfaces.',
       topics: [
-        'Matplotlib Fundamentals - line plots, scatter plots, bar charts',
-        'Customizing Visualizations - colors, labels, legends, annotations',
-        'Seaborn Statistical Plots - distribution plots, categorical plots',
-        'Advanced Visualizations - heatmaps, pair plots, violin plots',
-        'Interactive Visualizations - Plotly basics, dashboards',
-        'Storytelling with Data - choosing the right chart, design principles'
+        'XML Layouts - ConstraintLayout, LinearLayout, RelativeLayout',
+        'Material Design Components - buttons, cards, text fields',
+        'RecyclerView - adapters, view holders, item animations',
+        'View Binding and Data Binding - type-safe UI access',
+        'Styles and Themes - consistent design, dark mode',
+        'Custom Views - drawing, touch handling, animations'
       ],
       project: {
-        title: 'Project 3: COVID-19 Dashboard',
-        description: 'Create an interactive dashboard showing COVID-19 trends',
-        features: ['Global map view', 'Time series charts', 'Country comparison', 'Predictions']
+        title: 'Project 3: Weather App UI',
+        description: 'Design a beautiful weather app interface',
+        features: ['Current weather card', 'Hourly forecast', '7-day forecast', 'Animated transitions']
       }
     },
     {
       week: 4,
-      title: 'Statistical Analysis',
-      description: 'Foundation in statistics for data science and machine learning.',
+      title: 'Swift for iOS Development',
+      description: 'Master Swift programming language for iOS app development.',
       topics: [
-        'Descriptive Statistics - mean, median, mode, variance, std deviation',
-        'Probability Theory - distributions, Bayes theorem, random variables',
-        'Hypothesis Testing - t-tests, chi-square, p-values, significance',
-        'Correlation and Regression - Pearson correlation, linear regression',
-        'Experimental Design - A/B testing, sampling methods',
-        'Bayesian Statistics - prior, likelihood, posterior'
+        'Swift Basics - variables, optionals, type inference',
+        'Object-Oriented Swift - classes, structs, protocols',
+        'Functional Swift - closures, map, filter, reduce',
+        'Concurrency - async/await, actors, Task',
+        'Memory Management - ARC, retain cycles, weak references',
+        'Error Handling - do-catch, throws, Result type'
       ],
       project: {
-        title: 'Project 4: A/B Test Analyzer',
-        description: 'Build a tool to analyze A/B test results and make recommendations',
-        features: ['Statistical significance', 'Effect size', 'Power analysis', 'Visualization']
+        title: 'Project 4: Notes App',
+        description: 'Build a notes app with rich text editing',
+        features: ['Create/edit notes', 'Format text', 'Search notes', 'iCloud sync']
       }
     },
     {
       week: 5,
-      title: 'SQL for Data Science',
-      description: 'Master SQL for data extraction and manipulation from databases.',
+      title: 'iOS UI Development with SwiftUI',
+      description: 'Create modern iOS interfaces with SwiftUI.',
       topics: [
-        'SQL Basics - SELECT, WHERE, ORDER BY, LIMIT',
-        'Aggregation Functions - COUNT, SUM, AVG, GROUP BY, HAVING',
-        'Joins - INNER, LEFT, RIGHT, FULL OUTER, self joins',
-        'Subqueries and CTEs - nested queries, common table expressions',
-        'Window Functions - ROW_NUMBER, RANK, LAG, LEAD',
-        'Query Optimization - indexes, execution plans'
+        'SwiftUI Basics - Views, modifiers, layout system',
+        'State Management - @State, @Binding, @ObservedObject',
+        'Navigation - NavigationView, NavigationLink, sheets',
+        'Lists and Forms - dynamic lists, sections, form inputs',
+        'Animations - implicit/explicit animations, transitions',
+        'Previews - multiple previews, device configurations'
       ],
       project: {
-        title: 'Project 5: E-commerce Database Analysis',
-        description: 'Analyze customer behavior from e-commerce database',
-        features: ['Customer lifetime value', 'Purchase patterns', 'Product recommendations', 'Churn analysis']
+        title: 'Project 5: Fitness Tracker UI',
+        description: 'Design a fitness tracking app interface',
+        features: ['Activity rings', 'Step counter', 'Workout logs', 'Progress charts']
       }
     },
     {
       week: 6,
-      title: 'Machine Learning Fundamentals',
-      description: 'Introduction to machine learning algorithms and workflows.',
+      title: 'Cross-Platform with React Native',
+      description: 'Build apps for both iOS and Android using React Native.',
       topics: [
-        'ML Pipeline Overview - data prep, training, evaluation, deployment',
-        'Supervised vs Unsupervised Learning - key differences',
-        'Linear Regression - simple, multiple, polynomial, regularization',
-        'Classification Algorithms - logistic regression, KNN, naive bayes',
-        'Model Evaluation - train/test split, cross-validation, metrics',
-        'Feature Engineering - scaling, encoding, feature selection'
+        'React Native Basics - components, props, state',
+        'Navigation - React Navigation, stack, tab, drawer',
+        'Styling - Flexbox, StyleSheet, responsive design',
+        'Native Modules - camera, location, notifications',
+        'State Management - Redux Toolkit, Context API',
+        'Debugging - React DevTools, Flipper, Chrome debugger'
       ],
       project: {
-        title: 'Project 6: House Price Predictor',
-        description: 'Build a regression model to predict house prices',
-        features: ['Feature engineering', 'Multiple models', 'Hyperparameter tuning', 'Price predictions']
+        title: 'Project 6: E-commerce App',
+        description: 'Build a cross-platform e-commerce app',
+        features: ['Product listings', 'Shopping cart', 'User authentication', 'Checkout flow']
       }
     },
     {
       week: 7,
-      title: 'Advanced Machine Learning',
-      description: 'Deep dive into advanced ML algorithms and techniques.',
+      title: 'Flutter Development',
+      description: 'Create beautiful native apps with Flutter and Dart.',
       topics: [
-        'Decision Trees and Random Forests - ensemble methods',
-        'Gradient Boosting - XGBoost, LightGBM, CatBoost',
-        'Support Vector Machines - kernels, margin optimization',
-        'Dimensionality Reduction - PCA, t-SNE, feature extraction',
-        'Clustering Algorithms - K-means, hierarchical, DBSCAN',
-        'Anomaly Detection - isolation forest, one-class SVM'
+        'Dart Basics - variables, functions, classes',
+        'Flutter Widgets - StatelessWidget, StatefulWidget',
+        'Layouts - Row, Column, Stack, Container',
+        'Navigation - routes, named routes, passing data',
+        'State Management - Provider, Bloc, GetX',
+        'Animations - implicit animations, explicit animations'
       ],
       project: {
-        title: 'Project 7: Customer Segmentation',
-        description: 'Segment customers using clustering algorithms',
-        features: ['RFM analysis', 'K-means clustering', 'Segment profiles', 'Marketing strategies']
+        title: 'Project 7: Food Delivery App',
+        description: 'Build a food delivery app with Flutter',
+        features: ['Restaurant listings', 'Menu browsing', 'Order tracking', 'Payment integration']
       }
     },
     {
       week: 8,
-      title: 'Deep Learning with TensorFlow',
-      description: 'Introduction to neural networks and deep learning.',
+      title: 'Database & Local Storage',
+      description: 'Implement data persistence in mobile apps.',
       topics: [
-        'Neural Networks Basics - perceptrons, activation functions',
-        'TensorFlow Fundamentals - tensors, operations, graphs',
-        'Building Neural Networks - sequential API, functional API',
-        'Training Neural Networks - backpropagation, optimizers, loss functions',
-        'Regularization - dropout, batch normalization, early stopping',
-        'Convolutional Neural Networks - CNN architecture, pooling'
+        'SQLite Database - Room (Android), CoreData (iOS)',
+        'NoSQL Options - Realm, Firebase Firestore',
+        'SharedPreferences/UserDefaults - key-value storage',
+        'File Storage - images, documents, caching',
+        'Database Migration - version management',
+        'Offline-First Architecture - sync strategies'
       ],
       project: {
-        title: 'Project 8: Image Classifier',
-        description: 'Build a CNN to classify images (CIFAR-10 or custom dataset)',
-        features: ['Data augmentation', 'CNN architecture', 'Transfer learning', 'Web interface']
+        title: 'Project 8: Expense Tracker',
+        description: 'Create an expense tracker with local database',
+        features: ['Add expenses', 'Categories', 'Monthly reports', 'Data export']
       }
     },
     {
       week: 9,
-      title: 'Natural Language Processing',
-      description: 'Process and analyze text data with NLP techniques.',
+      title: 'Networking & APIs',
+      description: 'Connect mobile apps to backend services.',
       topics: [
-        'Text Preprocessing - tokenization, stemming, lemmatization',
-        'Text Representation - bag-of-words, TF-IDF, word embeddings',
-        'NLP Libraries - NLTK, spaCy, transformers',
-        'Sentiment Analysis - VADER, TextBlob, custom models',
-        'Topic Modeling - LDA, NMF',
-        'Sequence Models - RNN, LSTM, GRU'
+        'RESTful APIs - Retrofit (Android), URLSession (iOS)',
+        'GraphQL - Apollo Client, queries, mutations',
+        'Authentication - JWT, OAuth 2.0, biometric',
+        'Offline Caching - Room, CoreData, Realm',
+        'WebSockets - real-time updates, chat',
+        'File Upload/Download - images, documents'
       ],
       project: {
-        title: 'Project 9: Sentiment Analysis App',
-        description: 'Build a sentiment analyzer for product reviews',
-        features: ['Review scraping', 'Sentiment prediction', 'Word clouds', 'Trend analysis']
+        title: 'Project 9: Social Media App',
+        description: 'Build a social media app with API integration',
+        features: ['User profiles', 'Post feed', 'Likes/comments', 'Image upload']
       }
     },
     {
       week: 10,
-      title: 'Time Series Analysis',
-      description: 'Analyze and forecast time-dependent data.',
+      title: 'Camera & Media',
+      description: 'Integrate camera and media features into apps.',
       topics: [
-        'Time Series Components - trend, seasonality, residual',
-        'Stationarity - ADF test, differencing, transformations',
-        'ARIMA Models - auto-regression, moving average, integration',
-        'Seasonal Decomposition - STL, seasonal ARIMA',
-        'Prophet by Facebook - automated forecasting',
-        'LSTM for Time Series - sequence prediction'
+        'Camera Integration - take photos, record video',
+        'Image Picker - gallery selection, cropping',
+        'Media Playback - audio/video players',
+        'QR/Barcode Scanner - scanning, generation',
+        'Image Processing - filters, editing',
+        'AR Integration - basic AR experiences'
       ],
       project: {
-        title: 'Project 10: Stock Price Predictor',
-        description: 'Forecast stock prices using multiple models',
-        features: ['Data fetching', 'Multiple models', 'Model comparison', 'Trading signals']
+        title: 'Project 10: QR Scanner App',
+        description: 'Build a QR code scanner and generator',
+        features: ['Scan QR codes', 'Generate QR codes', 'History', 'Share codes']
       }
     },
     {
       week: 11,
-      title: 'Big Data Technologies',
-      description: 'Work with large-scale data using big data tools.',
+      title: 'Location & Maps',
+      description: 'Add location-based features to mobile apps.',
       topics: [
-        'Big Data Concepts - 5 Vs of big data, distributed computing',
-        'Apache Spark - RDDs, DataFrames, Spark SQL',
-        'PySpark - working with large datasets',
-        'Hadoop Ecosystem - HDFS, MapReduce, Hive',
-        'Data Warehousing - star schema, fact/dimension tables',
-        'Cloud Platforms - AWS, GCP, Azure basics'
+        'Location Services - GPS, network location',
+        'Geocoding/Reverse Geocoding - addresses to coordinates',
+        'Map Integration - Google Maps, MapKit',
+        'Custom Map Markers - annotations, clusters',
+        'Route Planning - directions, polyline',
+        'Geofencing - location-based triggers'
       ],
       project: {
-        title: 'Project 11: Big Data Analyzer',
-        description: 'Process large dataset (10M+ rows) with PySpark',
-        features: ['Data loading', 'Distributed processing', 'Aggregations', 'Performance optimization']
+        title: 'Project 11: Restaurant Finder',
+        description: 'Create a restaurant finder with maps',
+        features: ['Nearby restaurants', 'Map view', 'Restaurant details', 'Directions']
       }
     },
     {
       week: 12,
-      title: 'Model Deployment & MLOps',
-      description: 'Deploy machine learning models to production.',
+      title: 'Push Notifications',
+      description: 'Implement push notifications for user engagement.',
       topics: [
-        'Model Serialization - pickle, joblib, ONNX',
-        'Web APIs with FastAPI - REST endpoints, documentation',
-        'Docker Containers - containerizing ML applications',
-        'Cloud Deployment - AWS SageMaker, GCP AI Platform',
-        'Model Monitoring - drift detection, performance tracking',
-        'CI/CD for ML - automated training and deployment'
+        'FCM (Firebase Cloud Messaging) - setup, messages',
+        'APNs (Apple Push Notification service) - certificates',
+        'Local Notifications - scheduling, actions',
+        'Notification Channels - Android categories',
+        'Rich Notifications - images, buttons, inputs',
+        'Notification Analytics - open rates, engagement'
       ],
       project: {
-        title: 'Project 12: ML Model API',
-        description: 'Deploy a trained model as a REST API',
-        features: ['FastAPI backend', 'Docker container', 'Cloud deployment', 'API documentation']
+        title: 'Project 12: News App',
+        description: 'Build a news app with push notifications',
+        features: ['News feed', 'Categories', 'Breaking news alerts', 'Save articles']
       }
     },
     {
       week: 13,
-      title: 'Generative AI & LLMs',
-      description: 'Work with cutting-edge generative AI technologies.',
+      title: 'Performance & Optimization',
+      description: 'Optimize mobile apps for best performance.',
       topics: [
-        'Generative AI Overview - GANs, VAEs, diffusion models',
-        'Large Language Models - GPT, BERT, transformer architecture',
-        'Prompt Engineering - techniques for effective prompting',
-        'LangChain Framework - chains, agents, memory',
-        'RAG Applications - retrieval augmented generation',
-        'Fine-tuning LLMs - adapting models to specific tasks'
+        'App Startup Time - lazy loading, initialization',
+        'Memory Management - leaks, profiling',
+        'Battery Optimization - background tasks, wake locks',
+        'Network Optimization - caching, compression',
+        'Image Optimization - loading, caching, sizing',
+        'Profiling Tools - Android Profiler, Instruments'
       ],
       project: {
-        title: 'Project 13: AI Chatbot Assistant',
-        description: 'Build a custom chatbot using LangChain and LLMs',
-        features: ['Document Q&A', 'Conversation memory', 'Custom knowledge base', 'Web interface']
+        title: 'Project 13: Performance Audit',
+        description: 'Audit and optimize an existing app',
+        features: ['Memory analysis', 'Network optimization', 'Startup time', 'Battery usage']
       }
     },
     {
       week: 14,
-      title: 'Computer Vision',
-      description: 'Advanced techniques for image and video analysis.',
+      title: 'Testing & Debugging',
+      description: 'Ensure app quality with comprehensive testing.',
       topics: [
-        'Image Processing - OpenCV basics, filters, transformations',
-        'Object Detection - YOLO, SSD, Faster R-CNN',
-        'Image Segmentation - U-Net, Mask R-CNN',
-        'Face Recognition - face detection, verification, recognition',
-        'Video Analysis - optical flow, action recognition',
-        'Generative Models for Images - GANs, stable diffusion'
+        'Unit Testing - JUnit, XCTest, mocking',
+        'UI Testing - Espresso, XCTestUI',
+        'Integration Testing - testing components together',
+        'Beta Testing - TestFlight, Firebase App Distribution',
+        'Crash Reporting - Crashlytics, Sentry',
+        'Analytics - Firebase Analytics, Mixpanel'
       ],
       project: {
-        title: 'Project 14: Object Detection System',
-        description: 'Build a real-time object detection application',
-        features: ['Video processing', 'Multiple object tracking', 'Custom object detection', 'Real-time alerts']
+        title: 'Project 14: Testing Suite',
+        description: 'Create comprehensive tests for an app',
+        features: ['Unit tests', 'UI tests', 'Integration tests', 'Test coverage report']
       }
     },
     {
       week: 15,
-      title: 'Responsible AI & Ethics',
-      description: 'Build fair, interpretable, and ethical AI systems.',
+      title: 'App Store Deployment',
+      description: 'Publish apps to Google Play and App Store.',
       topics: [
-        'Bias in AI - sources of bias, detection, mitigation',
-        'Model Interpretability - SHAP, LIME, feature importance',
-        'Fairness Metrics - demographic parity, equal opportunity',
-        'Privacy in AI - differential privacy, federated learning',
-        'Regulatory Compliance - GDPR, CCPA, AI regulations',
-        'Ethical Decision Making - framework and case studies'
+        'Google Play Console - setup, signing, publishing',
+        'App Store Connect - certificates, provisioning',
+        'App Store Guidelines - compliance, review process',
+        'Store Listings - screenshots, descriptions, keywords',
+        'App Monetization - in-app purchases, ads, subscriptions',
+        'App Analytics - downloads, revenue, retention'
       ],
       project: {
-        title: 'Project 15: Fairness Audit Tool',
-        description: 'Build a tool to audit ML models for bias',
-        features: ['Bias detection', 'Fairness metrics', 'Mitigation strategies', 'Visualization']
+        title: 'Project 15: App Store Prep',
+        description: 'Prepare an app for store submission',
+        features: ['Store listing', 'Screenshots', 'Privacy policy', 'Test notes']
       }
     },
     {
       week: 16,
       title: 'Capstone Project & Career Preparation',
-      description: 'Build a portfolio-ready project and prepare for data science interviews.',
+      description: 'Build a portfolio-ready app and prepare for job interviews.',
       topics: [
-        'End-to-End Project - problem definition to deployment',
-        'Project Presentation - storytelling with data',
-        'Portfolio Building - showcasing projects effectively',
-        'Resume Writing - highlighting DS skills and projects',
-        'Interview Preparation - technical questions, case studies',
-        'Networking - building professional connections'
+        'End-to-End Development - concept to deployment',
+        'App Architecture - planning, documentation',
+        'Portfolio Presentation - showcasing your apps',
+        'Resume Writing - highlighting mobile skills',
+        'Interview Preparation - technical questions, coding challenges',
+        'Freelancing - finding clients, pricing, contracts'
       ],
       project: {
         title: 'Project 16-30: Capstone Projects (Choose 15)',
         description: 'Select and build 15 additional projects from the list below',
-        features: ['Real-world datasets', 'End-to-end pipeline', 'Production deployment', 'Portfolio ready']
+        features: ['Full app development', 'Store deployment', 'Portfolio ready', 'Real-world features']
       }
     }
   ];
 
   // 30 Additional Projects
   const additionalProjects = [
-    { icon: Brain, title: 'Neural Style Transfer', description: 'Apply artistic styles to images', difficulty: 'Advanced' },
-    { icon: Bot, title: 'Personal Assistant Bot', description: 'AI assistant for daily tasks', difficulty: 'Advanced' },
-    { icon: Eye, title: 'Face Recognition System', description: 'Identify and verify faces', difficulty: 'Intermediate' },
-    { icon: Mic, title: 'Speech Recognition App', description: 'Convert speech to text', difficulty: 'Intermediate' },
-    { icon: Fingerprint, title: 'Biometric Authentication', description: 'Fingerprint-based login', difficulty: 'Advanced' },
-    { icon: QrCode, title: 'QR Code Generator/Analyzer', description: 'Generate and scan QR codes', difficulty: 'Beginner' },
-    { icon: ScanLine, title: 'Document Scanner', description: 'Scan and OCR documents', difficulty: 'Intermediate' },
-    { icon: MessageCircle, title: 'Customer Service Chatbot', description: 'AI-powered customer support', difficulty: 'Advanced' },
-    { icon: Twitter, title: 'Twitter Sentiment Analysis', description: 'Analyze tweet sentiments', difficulty: 'Intermediate' },
-    { icon: Facebook, title: 'Social Media Analyzer', description: 'Analyze engagement metrics', difficulty: 'Intermediate' },
-    { icon: Instagram, title: 'Image Hashtag Recommender', description: 'Recommend hashtags for images', difficulty: 'Intermediate' },
-    { icon: Linkedin, title: 'Job Recommendation System', description: 'Recommend jobs based on profile', difficulty: 'Advanced' },
-    { icon: YoutubeIcon, title: 'Video Recommendation Engine', description: 'Personalized video recommendations', difficulty: 'Advanced' },
-    { icon: Twitch, title: 'Stream Analytics Dashboard', description: 'Analyze streaming metrics', difficulty: 'Intermediate' },
-    { icon: Activity, title: 'Health Monitor', description: 'Predict health risks from vitals', difficulty: 'Advanced' },
-    { icon: Heart, title: 'Disease Prediction', description: 'Predict diseases from symptoms', difficulty: 'Advanced' },
-    { icon: Wallet, title: 'Credit Risk Model', description: 'Predict loan default risk', difficulty: 'Advanced' },
-    { icon: TrendingUp, title: 'Stock Market Analyzer', description: 'Technical analysis with ML', difficulty: 'Advanced' },
-    { icon: ShoppingCart, title: 'Recommendation System', description: 'Product recommendations', difficulty: 'Intermediate' },
-    { icon: Truck, title: 'Delivery Route Optimizer', description: 'Optimize delivery routes', difficulty: 'Intermediate' },
-    { icon: Car, title: 'Self-Driving Car Simulator', description: 'Basic autonomous driving', difficulty: 'Advanced' },
-    { icon: Plane, title: 'Flight Price Predictor', description: 'Predict flight prices', difficulty: 'Intermediate' },
-    { icon: Map, title: 'Traffic Predictor', description: 'Predict traffic congestion', difficulty: 'Advanced' },
-    { icon: Sun, title: 'Solar Energy Forecaster', description: 'Predict solar energy output', difficulty: 'Intermediate' },
-    { icon: Leaf, title: 'Crop Yield Predictor', description: 'Predict agricultural yields', difficulty: 'Intermediate' },
-    { icon: Dog, title: 'Pet Breed Classifier', description: 'Identify dog breeds', difficulty: 'Beginner' },
-    { icon: Ticket, title: 'Movie Success Predictor', description: 'Predict box office success', difficulty: 'Intermediate' },
-    { icon: Gamepad, title: 'Game Difficulty Adjuster', description: 'Adaptive game difficulty', difficulty: 'Intermediate' },
-    { icon: Gift, title: 'Gift Recommender', description: 'Personalized gift ideas', difficulty: 'Beginner' },
-    { icon: Coffee, title: 'Coffee Shop Analyzer', description: 'Analyze coffee shop reviews', difficulty: 'Beginner' }
+    { icon: ShoppingCart, title: 'Amazon Clone', description: 'Full e-commerce app with cart and payments', difficulty: 'Advanced' },
+    { icon: MessageSquare, title: 'WhatsApp Clone', description: 'Chat app with real-time messages', difficulty: 'Advanced' },
+    { icon: Instagram, title: 'Instagram Clone', description: 'Photo sharing social app', difficulty: 'Advanced' },
+    { icon: Youtube, title: 'YouTube Clone', description: 'Video streaming app', difficulty: 'Advanced' },
+    { icon: Music, title: 'Spotify Clone', description: 'Music streaming with playlists', difficulty: 'Advanced' },
+    { icon: Map, title: 'Uber Clone', description: 'Ride-hailing app with maps', difficulty: 'Advanced' },
+    { icon: Home, title: 'Airbnb Clone', description: 'Property booking platform', difficulty: 'Advanced' },
+    { icon: Coffee, title: 'Starbucks App', description: 'Coffee ordering and rewards', difficulty: 'Intermediate' },
+    { icon: Plane, title: 'Flight Booking App', description: 'Search and book flights', difficulty: 'Intermediate' },
+    { icon: Hotel, title: 'Hotel Booking App', description: 'Find and reserve hotels', difficulty: 'Intermediate' },
+    { icon: Car, title: 'Car Rental App', description: 'Rent cars locally', difficulty: 'Intermediate' },
+    { icon: Bike, title: 'Bike Sharing App', description: 'Find and rent bikes', difficulty: 'Intermediate' },
+    { icon: Heart, title: 'Fitness Trainer App', description: 'Workout plans and tracking', difficulty: 'Intermediate' },
+    { icon: Activity, title: 'Health Monitor', description: 'Track vitals and health', difficulty: 'Intermediate' },
+    { icon: Moon, title: 'Sleep Tracker', description: 'Monitor sleep patterns', difficulty: 'Intermediate' },
+    { icon: Calendar, title: 'Event Planner', description: 'Plan and manage events', difficulty: 'Intermediate' },
+    { icon: Ticket, title: 'Movie Ticket App', description: 'Book movie tickets', difficulty: 'Intermediate' },
+    { icon: Gamepad, title: 'Mobile Game', description: 'Simple casual game', difficulty: 'Intermediate' },
+    { icon: Camera, title: 'Photo Editor App', description: 'Edit photos with filters', difficulty: 'Advanced' },
+    { icon: Video, title: 'Video Editor App', description: 'Trim and edit videos', difficulty: 'Advanced' },
+    { icon: BookOpen, title: 'E-reader App', description: 'Read books and PDFs', difficulty: 'Intermediate' },
+    { icon: Newspaper, title: 'News Reader', description: 'Aggregate news sources', difficulty: 'Intermediate' },
+    { icon: Wallet, title: 'Budget Tracker', description: 'Personal finance app', difficulty: 'Intermediate' },
+    { icon: Trophy, title: 'Habit Tracker', description: 'Build and track habits', difficulty: 'Beginner' },
+    { icon: Gift, title: 'Wishlist App', description: 'Save and share wishlists', difficulty: 'Beginner' },
+    { icon: Dog, title: 'Pet Tracker', description: 'Track pet activities', difficulty: 'Beginner' },
+    { icon: Leaf, title: 'Plant Care App', description: 'Track plant watering', difficulty: 'Beginner' },
+    { icon: GlassWater, title: 'Water Tracker', description: 'Track daily water intake', difficulty: 'Beginner' },
+    { icon: Watch, title: 'Smart Watch App', description: 'Companion watch app', difficulty: 'Advanced' },
+    { icon: Bluetooth, title: 'IoT Controller', description: 'Control smart devices', difficulty: 'Advanced' }
   ];
 
   const faqs = [
     {
-      question: "What is Data Science and AI?",
-      answer: "Data Science is an interdisciplinary field that uses scientific methods, algorithms, and systems to extract insights from structured and unstructured data. Artificial Intelligence (AI) is a broader concept of machines simulating human intelligence. Together, they form a powerful combination: Data Science provides the tools to analyze data, while AI uses that data to make intelligent decisions. This field powers everything from recommendation systems (Netflix, Amazon) to autonomous vehicles, chatbots, medical diagnosis, and fraud detection."
+      question: "What is Mobile App Development?",
+      answer: "Mobile App Development is the process of creating software applications that run on mobile devices like smartphones and tablets. It involves three main approaches: Native Development (building separate apps for iOS using Swift and Android using Kotlin), Cross-Platform Development (using frameworks like React Native or Flutter to build one app for both platforms), and Hybrid Development (web technologies wrapped in a native container). Mobile developers create everything from simple utility apps to complex social media platforms, e-commerce apps, and mobile games."
     },
     {
-      question: "Why should I learn Data Science & AI?",
-      answer: "Learning Data Science & AI offers numerous benefits: 1) Explosive Demand - Companies across all industries need data scientists. 2) Top Salaries - Data scientists are among the highest-paid professionals. 3) Future-Proof Career - AI is transforming every industry. 4) Impactful Work - Solve real-world problems in healthcare, climate, business. 5) Intellectual Challenge - Constantly learn and solve complex problems. 6) Versatility - Work in any industry: tech, finance, healthcare, retail. 7) Innovation - Be at the forefront of technological advancement. 8) Remote Work - Many data science roles offer flexibility."
+      question: "Why should I learn Mobile App Development?",
+      answer: "Learning Mobile App Development offers numerous benefits: 1) Massive Market - Over 6 billion smartphone users worldwide. 2) High Demand - Companies need mobile apps to reach customers. 3) Excellent Salaries - Mobile developers are among the highest-paid in tech. 4) Creative Expression - Build apps you imagine. 5) Entrepreneurial Opportunity - Create and sell your own apps. 6) Freelance Potential - Work on projects globally. 7) Rapid Growth - Mobile usage continues to increase. 8) Diverse Technologies - Work with different platforms and tools. 9) Immediate Impact - Users carry your apps everywhere. 10) Continuous Learning - New technologies keep it exciting."
     },
     {
-      question: "What can I do with Data Science & AI skills?",
-      answer: "With Data Science & AI skills, you can: 1) Become a Data Scientist at tech companies. 2) Work as an ML Engineer building production AI systems. 3) Join as a Data Analyst helping businesses make decisions. 4) Become an AI Research Scientist pushing boundaries. 5) Work in specialized fields like Computer Vision or NLP. 6) Start your own AI-powered company. 7) Consult for businesses on AI strategy. 8) Work in academia or research. 9) Create AI art and generative content. 10) Build intelligent chatbots and virtual assistants. 11) Develop recommendation systems. 12) Work on autonomous vehicles or robotics."
+      question: "What can I do with Mobile App Development skills?",
+      answer: "With Mobile App Development skills, you can: 1) Become an Android Developer (Kotlin/Java). 2) Work as an iOS Developer (Swift/SwiftUI). 3) Specialize as a Cross-Platform Developer (React Native/Flutter). 4) Join tech companies as a Mobile Engineer. 5) Work for startups building MVPs. 6) Start your own app business. 7) Freelance on platforms like Upwork. 8) Build enterprise apps for businesses. 9) Create mobile games. 10) Develop AR/VR experiences. 11) Build IoT and wearables apps. 12) Work on fintech, healthtech, or edtech apps. 13) Become a Mobile Tech Lead or Architect. 14) Teach mobile development or create content."
     },
     {
-      question: "What is the best roadmap to become a Data Scientist?",
-      answer: "The complete data science roadmap: 1) Master Python programming and data libraries (Pandas, NumPy). 2) Learn SQL for database querying. 3) Study statistics and probability fundamentals. 4) Master data visualization with Matplotlib/Seaborn. 5) Learn machine learning algorithms and scikit-learn. 6) Dive into deep learning with TensorFlow/PyTorch. 7) Specialize in areas like NLP, Computer Vision, or Time Series. 8) Learn big data technologies (Spark). 9) Master MLOps and deployment. 10) Build a portfolio of end-to-end projects. 11) Study system design for ML systems. 12) Prepare for interviews with ML case studies. This 16-week course covers exactly this roadmap with 30+ hands-on projects."
+      question: "What is the best roadmap to become a Mobile Developer?",
+      answer: "The complete mobile development roadmap: 1) Learn programming fundamentals (variables, loops, functions). 2) Choose your path: Native (iOS/Android) or Cross-Platform. 3) For Android: Master Kotlin, Android Studio, XML/Jetpack Compose. 4) For iOS: Master Swift, Xcode, SwiftUI/UIKit. 5) For Cross-Platform: Choose React Native or Flutter. 6) Understand mobile UI/UX principles. 7) Learn local databases (Room, CoreData, Realm). 8) Master networking and API integration. 9) Implement authentication and security. 10) Add features: camera, location, notifications. 11) Learn testing and debugging. 12) Understand app store deployment. 13) Build a portfolio of apps. 14) Prepare for technical interviews. This 16-week course covers all these paths with 30+ hands-on projects."
     },
     {
-      question: "Do I need a math or programming background?",
-      answer: "While a background in math or programming helps, it's not required! This course is designed for beginners and covers all necessary mathematics (statistics, linear algebra, calculus) and programming fundamentals. We start from the basics and progressively build up. The key requirements are curiosity, analytical thinking, and dedication to practice. Many successful data scientists started from non-technical backgrounds."
+      question: "Do I need prior programming experience?",
+      answer: "No prior experience is required! This course starts from the absolute basics and gradually builds up. We begin with programming fundamentals, then move to platform-specific languages (Kotlin for Android, Swift for iOS, or Dart for Flutter). The curriculum is designed for complete beginners who are passionate about building mobile apps. Basic computer literacy and a willingness to learn are the only prerequisites."
     },
     {
       question: "What is the time commitment for this 16-week course?",
-      answer: "We recommend dedicating 15-20 hours per week. This includes 6 hours of live/recorded sessions and 9-14 hours of hands-on coding, project work, and assignments. With 30+ projects, you'll get extensive practical experience building your portfolio. Many students successfully complete the course while working full-time by dedicating evenings and weekends."
+      answer: "We recommend dedicating 15-20 hours per week. This includes 6 hours of live/recorded sessions and 9-14 hours of hands-on coding, project work, and assignments. With 30+ projects, you'll get extensive practical experience building real apps. The flexible schedule allows working professionals to participate by dedicating evenings and weekends."
     },
     {
-      question: "What kind of projects will I build?",
-      answer: "You'll build 30+ real-world projects including: Sales Data Analyzer, COVID-19 Dashboard, House Price Predictor, Customer Segmentation, Image Classifier, Sentiment Analysis App, Stock Price Predictor, AI Chatbot, Object Detection System, Recommendation Engine, and many more. Projects range from beginner to advanced, covering all major areas of data science and AI. By the end, you'll have a comprehensive portfolio demonstrating your skills to employers."
+      question: "What kind of apps will I build?",
+      answer: "You'll build 30+ real-world apps including: Calculator, Todo List, Weather App, Notes App, Fitness Tracker, E-commerce App, Food Delivery App, Expense Tracker, Social Media App, QR Scanner, Restaurant Finder, News App, and many more. Advanced projects include clones of popular apps like WhatsApp, Instagram, Spotify, Uber, and Airbnb. By the end, you'll have a comprehensive portfolio demonstrating your skills to employers and clients."
     },
     {
       question: "What technologies will I master?",
-      answer: "You'll master: Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, TensorFlow, PyTorch, SQL, Spark, FastAPI, Docker, Git, Jupyter, VS Code, AWS/GCP basics, MLflow, DVC, and more. You'll be proficient in the entire data science stack - from data collection and cleaning to model deployment and monitoring."
+      answer: "You'll master multiple technologies based on your chosen path: Android: Kotlin, Android Studio, XML, Jetpack Compose, Room Database, Retrofit. iOS: Swift, Xcode, SwiftUI, UIKit, CoreData, URLSession. Cross-Platform: React Native, JavaScript/TypeScript, Redux, or Flutter, Dart. Common: Git, REST APIs, GraphQL, Firebase, Push Notifications, Google Maps, Camera APIs, Location Services, App Store Connect, Google Play Console, Testing frameworks, and CI/CD. You'll be a well-rounded mobile developer ready for the job market."
     }
   ];
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
       
-      {/* HERO SECTION - Full Width Image */}
+      {/* HERO SECTION */}
       <section className="relative h-screen flex items-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1920&h=1080&fit=crop"
-            alt="Data Science and AI"
+            src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1920&h=1080&fit=crop"
+            alt="Mobile App Development"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/90 to-yellow-900/80" />
@@ -410,20 +412,20 @@ export default function DataSciencePage() {
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 text-white">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-medium px-4 py-2 rounded-full mb-6">
-              <Brain className="w-4 h-4" />
-              Complete 16-Week Data Science & AI Bootcamp
+              <Smartphone className="w-4 h-4" />
+              Complete 16-Week Mobile App Development Bootcamp
             </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Become a Professional{' '}
               <span className="bg-gradient-to-r from-yellow-400 to-yellow-400 bg-clip-text text-transparent">
-                Data Scientist
+                Mobile Developer
               </span>
             </h1>
             
             <p className="text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed">
-              Master data science, machine learning, and AI with 30+ hands-on projects. 
-              Learn Python, ML, Deep Learning, NLP, LLMs, and MLOps. 
+              Master Android, iOS, and Cross-Platform development with 30+ hands-on projects. 
+              Learn Kotlin, Swift, React Native, Flutter, and app store deployment. 
               No prior experience required.
             </p>
             
@@ -451,8 +453,8 @@ export default function DataSciencePage() {
                 <div className="text-sm text-gray-400">Hours</div>
               </div>
               <div>
-                <div className="text-3xl font-bold">15+</div>
-                <div className="text-sm text-gray-400">Technologies</div>
+                <div className="text-3xl font-bold">3</div>
+                <div className="text-sm text-gray-400">Platforms</div>
               </div>
             </div>
           </div>
@@ -466,56 +468,56 @@ export default function DataSciencePage() {
         </div>
       </section>
 
-      {/* What is Data Science Section */}
+      {/* What is Mobile Development Section */}
       <section className="py-16 bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                What is <span className="text-yellow-600 dark:text-yellow-400">Data Science & AI</span>?
+                What is <span className="text-yellow-600 dark:text-yellow-400">Mobile App Development</span>?
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
-                Data Science is the art of extracting insights and knowledge from data using scientific methods, algorithms, and systems. Artificial Intelligence (AI) takes this further by creating systems that can learn, reason, and make decisions like humans. Together, they form the most transformative technology of our era.
+                Mobile App Development is the process of creating software applications that run on mobile devices. It's a dynamic field that combines programming, design, and user experience to build the apps billions of people use daily on their smartphones and tablets.
               </p>
               <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
-                Data Science & AI encompasses:
+                Mobile Development encompasses:
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <div className="p-1 bg-yellow-100 dark:bg-yellow-900/30 rounded mt-1">
-                    <Database className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
+                    <AppleIcon className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                   </div>
                   <div>
-                    <span className="font-semibold text-gray-900 dark:text-white">Data Engineering:</span>
-                    <span className="text-gray-600 dark:text-gray-400"> Collecting, cleaning, and preparing data for analysis - the foundation of all data work.</span>
+                    <span className="font-semibold text-gray-900 dark:text-white">iOS Development:</span>
+                    <span className="text-gray-600 dark:text-gray-400"> Build apps for iPhone and iPad using Swift and SwiftUI.</span>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="p-1 bg-yellow-100 dark:bg-yellow-900/30 rounded mt-1">
-                    <BarChart className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
+                    <SmartphoneIcon className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                   </div>
                   <div>
-                    <span className="font-semibold text-gray-900 dark:text-white">Machine Learning:</span>
-                    <span className="text-gray-600 dark:text-gray-400"> Building models that learn from data to make predictions and decisions.</span>
+                    <span className="font-semibold text-gray-900 dark:text-white">Android Development:</span>
+                    <span className="text-gray-600 dark:text-gray-400"> Create apps for billions of Android devices using Kotlin and Jetpack Compose.</span>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="p-1 bg-yellow-100 dark:bg-yellow-900/30 rounded mt-1">
-                    <Brain className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
+                    <Code className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                   </div>
                   <div>
-                    <span className="font-semibold text-gray-900 dark:text-white">Deep Learning & AI:</span>
-                    <span className="text-gray-600 dark:text-gray-400"> Advanced neural networks that power computer vision, NLP, and generative AI.</span>
+                    <span className="font-semibold text-gray-900 dark:text-white">Cross-Platform Development:</span>
+                    <span className="text-gray-600 dark:text-gray-400"> Build once, deploy everywhere with React Native or Flutter.</span>
                   </div>
                 </li>
               </ul>
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { number: '$120k+', label: 'Average Data Scientist Salary' },
-                { number: '35%', label: 'Annual Job Growth' },
-                { number: '2.7M', label: 'AI Jobs by 2025' },
-                { number: '100%', label: 'Remote Opportunities' }
+                { number: '6B+', label: 'Smartphone users' },
+                { number: '$110k+', label: 'Avg. developer salary' },
+                { number: '25%', label: 'Industry growth' },
+                { number: '3.5M', label: 'Apps available' }
               ].map((stat, i) => (
                 <div key={i} className="p-4 bg-gray-50 dark:bg-gray-900 rounded-xl text-center">
                   <div className="text-2xl font-bold text-yellow-600 dark:text-yellow-400">{stat.number}</div>
@@ -527,29 +529,29 @@ export default function DataSciencePage() {
         </div>
       </section>
 
-      {/* Why Learn Data Science & AI */}
+      {/* Why Learn Mobile Development */}
       <section className="py-16 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
-              Why Learn <span className="text-yellow-600 dark:text-yellow-400">Data Science & AI</span>?
+              Why Learn <span className="text-yellow-600 dark:text-yellow-400">Mobile Development</span>?
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              10 compelling reasons to start your data science journey today
+              10 compelling reasons to start your mobile development journey today
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { icon: TrendingUp, title: 'Explosive Demand', description: 'Data scientists are needed in every industry - from tech to healthcare to finance.' },
-              { icon: DollarSign, title: 'Top Salaries', description: 'Data scientists command some of the highest salaries in the tech industry.' },
-              { icon: Globe, title: 'Global Impact', description: 'Work on problems that matter - climate change, healthcare, education, and more.' },
-              { icon: Rocket, title: 'Future-Proof', description: 'AI is transforming every industry. Be at the forefront of this revolution.' },
-              { icon: Brain, title: 'Intellectual Challenge', description: 'Constantly solve complex problems and push the boundaries of what\'s possible.' },
-              { icon: Heart, title: 'Meaningful Work', description: 'Use data to make better decisions, save lives, and improve human well-being.' },
-              { icon: Users, title: 'Versatility', description: 'Work in any industry - tech, finance, healthcare, retail, manufacturing, and more.' },
-              { icon: Award, title: 'Continuous Learning', description: 'Field evolves rapidly - always something new to learn and explore.' },
-              { icon: Briefcase, title: 'Entrepreneurship', description: 'Build AI-powered startups and create innovative products.' }
+              { icon: TrendingUp, title: 'Massive Market', description: 'Over 6 billion smartphone users worldwide - your apps can reach billions.' },
+              { icon: DollarSign, title: 'Top Salaries', description: 'Mobile developers are among the highest-paid in the tech industry.' },
+              { icon: Globe, title: 'Global Reach', description: 'Publish apps on app stores that reach users in every country.' },
+              { icon: Rocket, title: 'Quick MVP Development', description: 'Build and launch app ideas faster than ever with modern tools.' },
+              { icon: Brain, title: 'Creative Expression', description: 'Bring your app ideas to life and solve real problems.' },
+              { icon: Heart, title: 'Entrepreneurial Opportunity', description: 'Create your own apps, start a business, or freelance.' },
+              { icon: Users, title: 'High Demand', description: 'Every business needs a mobile app to reach customers.' },
+              { icon: Award, title: 'Continuous Learning', description: 'New technologies, features, and platforms keep it exciting.' },
+              { icon: Briefcase, title: 'Freelance Freedom', description: 'Work on projects globally, set your own rates and schedule.' }
             ].map((reason, i) => {
               const Icon = reason.icon
               return (
@@ -572,28 +574,28 @@ export default function DataSciencePage() {
               What You Can <span className="text-yellow-600 dark:text-yellow-400">Build</span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              With data science & AI skills, you can create intelligent systems that transform industries
+              With mobile development skills, you can create apps for every category
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { icon: Bot, label: 'Chatbots' },
-              { icon: Eye, label: 'Computer Vision' },
-              { icon: Mic, label: 'Speech Recognition' },
-              { icon: Brain, label: 'Recommendation Systems' },
-              { icon: TrendingUp, label: 'Predictive Models' },
-              { icon: Heart, label: 'Healthcare AI' },
-              { icon: Car, label: 'Autonomous Vehicles' },
-              { icon: Fingerprint, label: 'Biometrics' },
-              { icon: LineChart, label: 'Forecasting' },
-              { icon: Users2, label: 'Customer Analytics' },
-              { icon: Shield, label: 'Fraud Detection' },
-              { icon: Sparkles, label: 'Generative AI' },
-              { icon: Map, label: 'Route Optimization' },
-              { icon: Activity, label: 'Anomaly Detection' },
-              { icon: MessageCircle, label: 'NLP Systems' },
-              { icon: Sigma, label: 'Statistical Models' }
+              { icon: ShoppingCart, label: 'E-commerce' },
+              { icon: MessageSquare, label: 'Social Media' },
+              { icon: Music, label: 'Music Streaming' },
+              { icon: Video, label: 'Video Apps' },
+              { icon: Camera, label: 'Photo Editors' },
+              { icon: Map, label: 'Maps & Navigation' },
+              { icon: Heart, label: 'Health & Fitness' },
+              { icon: Wallet, label: 'Fintech Apps' },
+              { icon: Gamepad, label: 'Mobile Games' },
+              { icon: BookOpen, label: 'E-learning' },
+              { icon: Plane, label: 'Travel Apps' },
+              { icon: Car, label: 'Ride Sharing' },
+              { icon: Home, label: 'Smart Home' },
+              { icon: Watch, label: 'Wearables' },
+              { icon: Newspaper, label: 'News Apps' },
+              { icon: Calendar, label: 'Productivity' }
             ].map((item, i) => {
               const Icon = item.icon
               return (
@@ -615,7 +617,7 @@ export default function DataSciencePage() {
               The Complete <span className="text-yellow-600 dark:text-yellow-400">Roadmap</span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              Follow this proven path to become a professional data scientist
+              Follow this proven path to become a professional mobile developer
             </p>
           </div>
 
@@ -625,10 +627,10 @@ export default function DataSciencePage() {
 
             <div className="space-y-8">
               {[
-                { phase: 'Phase 1', title: 'Python & Data Fundamentals', weeks: 'Weeks 1-4', color: 'yellow', topics: ['Python', 'Pandas', 'NumPy', 'Visualization'] },
-                { phase: 'Phase 2', title: 'Machine Learning', weeks: 'Weeks 5-8', color: 'yellow', topics: ['Scikit-learn', 'Regression', 'Classification', 'Clustering'] },
-                { phase: 'Phase 3', title: 'Deep Learning & AI', weeks: 'Weeks 9-12', color: 'yellow', topics: ['TensorFlow', 'NLP', 'Computer Vision', 'LLMs'] },
-                { phase: 'Phase 4', title: 'Production & Specialization', weeks: 'Weeks 13-16', color: 'yellow', topics: ['MLOps', 'Big Data', 'Deployment', 'Career Prep'] }
+                { phase: 'Phase 1', title: 'Programming Fundamentals', weeks: 'Weeks 1-2', color: 'yellow', topics: ['Programming Logic', 'Git', 'Mobile UI/UX', 'Dev Setup'] },
+                { phase: 'Phase 2', title: 'Native Development', weeks: 'Weeks 3-6', color: 'yellow', topics: ['Kotlin/Android', 'Swift/iOS', 'UI Development', 'Local Storage'] },
+                { phase: 'Phase 3', title: 'Cross-Platform', weeks: 'Weeks 7-10', color: 'yellow', topics: ['React Native', 'Flutter', 'APIs', 'Features'] },
+                { phase: 'Phase 4', title: 'Advanced & Deployment', weeks: 'Weeks 11-16', color: 'yellow', topics: ['Performance', 'Testing', 'App Store', 'Portfolio'] }
               ].map((phase, idx) => (
                 <div key={idx} className="relative md:ml-16">
                   <div className={`absolute left-0 top-2 w-8 h-8 rounded-full bg-${phase.color}-500 hidden md:flex items-center justify-center text-white font-bold`}>
@@ -669,7 +671,7 @@ export default function DataSciencePage() {
             </p>
             <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 px-4 py-2 rounded-full">
               <Rocket className="w-4 h-4" />
-              <span className="font-medium">{weeklyCurriculum.reduce((acc, week) => acc + 1, 0)} Weeks • 30+ Projects</span>
+              <span className="font-medium">{weeklyCurriculum.length} Weeks • 30+ Projects</span>
             </div>
           </div>
 
@@ -736,10 +738,10 @@ export default function DataSciencePage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
-              30+ <span className="text-yellow-600 dark:text-yellow-400">Real-World Projects</span>
+              30+ <span className="text-yellow-600 dark:text-yellow-400">Real-World Apps</span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              Build an impressive portfolio with projects of all difficulty levels
+              Build an impressive portfolio with apps of all difficulty levels
             </p>
           </div>
 
@@ -747,7 +749,7 @@ export default function DataSciencePage() {
             {additionalProjects.map((project, i) => {
               const Icon = project.icon
               const difficultyColor = 
-                project.difficulty === 'Beginner' ? 'text-green-600 bg-green-100 dark:bg-green-900/30 dark:text-green-400' :
+                project.difficulty === 'Beginner' ? 'text-yellow-600 bg-yellow-100 dark:bg-yellow-900/30 dark:text-yellow-400' :
                 project.difficulty === 'Intermediate' ? 'text-yellow-600 bg-yellow-100 dark:bg-yellow-900/30 dark:text-yellow-400' :
                 'text-red-600 bg-red-100 dark:bg-red-900/30 dark:text-red-400'
               
@@ -773,7 +775,7 @@ export default function DataSciencePage() {
           <div className="text-center mt-8">
             <div className="inline-flex items-center gap-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-6 py-3 rounded-full">
               <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-              <span className="text-gray-900 dark:text-white font-medium">Plus 16 weekly projects = 30+ total projects</span>
+              <span className="text-gray-900 dark:text-white font-medium">Plus 16 weekly projects = 30+ total apps</span>
             </div>
           </div>
         </div>
@@ -787,30 +789,30 @@ export default function DataSciencePage() {
               Technologies You'll <span className="text-yellow-600 dark:text-yellow-400">Master</span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              Full stack data science with modern tools and frameworks
+              Choose your path or learn them all
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {[
-              { icon: Code, name: 'Python' },
-              { icon: Database, name: 'Pandas' },
-              { icon: Sigma, name: 'NumPy' },
-              { icon: BarChart, name: 'Matplotlib' },
-              { icon: LineChart, name: 'Seaborn' },
-              { icon: Layers, name: 'Scikit-learn' },
-              { icon: Brain, name: 'TensorFlow' },
-              { icon: Brain, name: 'PyTorch' },
-              { icon: Server, name: 'SQL' },
-              { icon: Cloud, name: 'Spark' },
+              { icon: SmartphoneIcon, name: 'Android' },
+              { icon: AppleIcon, name: 'iOS' },
+              { icon: Code, name: 'React Native' },
+              { icon: Code, name: 'Flutter' },
+              { icon: Code, name: 'Kotlin' },
+              { icon: Code, name: 'Swift' },
+              { icon: Database, name: 'Firebase' },
+              { icon: Database, name: 'Room' },
+              { icon: Database, name: 'CoreData' },
+              { icon: Cloud, name: 'REST APIs' },
               { icon: GitBranch, name: 'Git' },
-              { icon: Terminal, name: 'Jupyter' },
-              { icon: Bot, name: 'LangChain' },
-              { icon: TestTube, name: 'MLflow' },
-              { icon: Rocket, name: 'FastAPI' },
-              { icon: Cloud, name: 'Docker' },
-              { icon: Cpu, name: 'VS Code' },
-              { icon: Database, name: 'PostgreSQL' }
+              { icon: Figma, name: 'Figma' },
+              { icon: Terminal, name: 'Android Studio' },
+              { icon: Terminal, name: 'Xcode' },
+              { icon: TestTube, name: 'JUnit' },
+              { icon: TestTube, name: 'XCTest' },
+              { icon: Rocket, name: 'Play Store' },
+              { icon: Rocket, name: 'App Store' }
             ].map((tech, i) => {
               const Icon = tech.icon
               return (
@@ -825,11 +827,11 @@ export default function DataSciencePage() {
       </section>
 
       {/* Career Paths Section */}
-      <section className="py-16 bg-yellow-600 text-white">
+      <section className="py-16 bg-gradient-to-r from-yellow-600 to-yellow-600 text-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Launch Your Data Science Career?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Launch Your Mobile Dev Career?</h2>
           <p className="text-xl text-yellow-100 mb-8 max-w-2xl mx-auto">
-            Join our Data Science & AI bootcamp and get access to our career support team. We'll help you prepare for interviews, build your portfolio, and connect with top tech companies.
+            Join our Mobile App Development bootcamp and get access to our career support team. We'll help you build your portfolio, prepare for interviews, and connect with top tech companies hiring mobile developers.
           </p>
           <Link href="/Careers">
             <button className="px-8 py-4 bg-white text-yellow-600 font-semibold rounded-xl hover:bg-gray-100 transition-all hover:shadow-xl inline-flex items-center gap-2 group">
@@ -849,7 +851,7 @@ export default function DataSciencePage() {
               Frequently Asked <span className="text-yellow-600 dark:text-yellow-400">Questions</span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              Everything you need to know about our data science course
+              Everything you need to know about our mobile development course
             </p>
           </div>
 
@@ -879,7 +881,7 @@ export default function DataSciencePage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div>
-              <h2 className="text-3xl font-bold mb-2">Ready to Start Your Data Science Journey?</h2>
+              <h2 className="text-3xl font-bold mb-2">Ready to Start Building Apps?</h2>
               <p className="text-yellow-100">Join 2,500+ students who have transformed their careers with Yelocode.</p>
             </div>
             <div className="flex flex-wrap gap-4">
@@ -889,12 +891,10 @@ export default function DataSciencePage() {
                   Enroll Now
                 </button>
               </Link>
-              <a href="contacts">
               <button className="px-6 py-3 border border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors flex items-center gap-2">
                 <Calendar className="w-5 h-5" />
                 Schedule Consultation
               </button>
-              </a>
             </div>
           </div>
         </div>
@@ -936,3 +936,8 @@ const ArrowRight = ({ className }: { className?: string }) => (
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
   </svg>
 )
+
+// Missing icon components
+const Hotel = Building2
+const Instagram = Camera
+const Apple = AppleIcon

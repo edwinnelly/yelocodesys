@@ -136,7 +136,7 @@ export default function TechSolutionsPage() {
       color: 'from-yellow-600 to-yellow-500',
       bgColor: 'bg-yellow-50 dark:bg-yellow-900/20',
       features: ['iOS Apps', 'Android Apps', 'Cross-Platform', 'App Store'],
-      metrics: { projects: '25+', clients: '20+' }
+      metrics: { projects: '25+', clients: '18+' }
     },
     {
       id: 3,
@@ -202,7 +202,7 @@ export default function TechSolutionsPage() {
       color: 'from-yellow-600 to-yellow-500',
       bgColor: 'bg-yellow-50 dark:bg-yellow-900/20',
       features: ['CI/CD', 'Containerization', 'Automation', 'Monitoring'],
-      metrics: { projects: '28+', clients: '24+' }
+      metrics: { projects: '14+', clients: '12+' }
     }
   ]
 
@@ -210,7 +210,7 @@ export default function TechSolutionsPage() {
     { icon: Briefcase, value: '50+', label: 'Projects Delivered' },
     { icon: Users, value: '40+', label: 'Happy Clients' },
     { icon: Clock, value: '24/7', label: 'Support' },
-    { icon: Award, value: '6+', label: 'Years Experience' }
+    { icon: Award, value: '10+', label: 'Years Experience' }
   ]
 
   const process = [

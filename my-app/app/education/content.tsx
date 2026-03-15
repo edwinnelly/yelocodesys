@@ -121,7 +121,7 @@ export default function EducationPage() {
     {
       title: 'Mobile App Development',
       icon: Smartphone,
-      duration: '12 weeks',
+      duration: '16 weeks',
       level: 'Intermediate',
       skills: ['Flutter', 'React Native', 'Firebase', 'API Integration', 'App Store'],
       description: 'Build cross-platform mobile apps for iOS and Android.',
@@ -133,14 +133,14 @@ export default function EducationPage() {
     {
       title: 'Cybersecurity',
       icon: Shield,
-      duration: '14 weeks',
+      duration: '26 weeks',
       level: 'Intermediate',
       skills: ['Network Security', 'Ethical Hacking', 'Pen Testing', 'Security Audits', 'Compliance'],
       description: 'Learn to protect systems and networks from cyber threats.',
       outcomes: ['Security Analyst', 'Penetration Tester', '$50k - $95k starting salary'],
       gradient: 'from-red-600 to-orange-600',
       popular: true,
-      link: '/programs/cybersecurity'
+      link: '/cybersecurity'
     },
     {
       title: 'Cloud Computing',
@@ -289,7 +289,7 @@ export default function EducationPage() {
     {
       icon: Network,
       title: 'Strong Alumni Network',
-      description: 'Connect with 500+ graduates in tech'
+      description: 'Connect with 1675+ graduates in tech'
     }
   ]
 
@@ -370,10 +370,10 @@ export default function EducationPage() {
   ]
 
   const stats = [
-    { icon: Users, value: '500+', label: 'Students Trained' },
-    { icon: Award, value: '92%', label: 'Placement Rate' },
-    { icon: Building2, value: '40+', label: 'Industry Partners' },
-    { icon: Clock, value: '8+', label: 'Years Experience' }
+    { icon: Users, value: '1675+', label: 'Students Trained' },
+    { icon: Award, value: '87%', label: 'Placement Rate' },
+    { icon: Building2, value: '23+', label: 'Industry Partners' },
+    { icon: Clock, value: '10+', label: 'Years Experience' }
   ]
 
   const handlePrevTestimonial = () => {
@@ -527,7 +527,7 @@ export default function EducationPage() {
               {
                 icon: Users,
                 title: 'Expert Mentorship',
-                description: 'Learn from industry professionals with 8+ years experience',
+                description: 'Learn from industry professionals with 10+ years experience',
                 color: 'from-purple-600 to-pink-600'
               },
               {
