@@ -152,12 +152,12 @@ export default function EducationPage() {
       outcomes: ['Cloud Engineer', 'DevOps Specialist', '$55k - $100k starting salary'],
       gradient: 'from-cyan-600 to-yellow-600',
       popular: false,
-      link: '/programs/cloud-computing'
+      link: '/cloud-computing'
     },
     {
       title: 'Python Programming',
       icon: Cpu,
-      duration: '8 weeks',
+      duration: '16 weeks',
       level: 'Beginner-friendly',
       skills: ['Python Basics', 'OOP', 'APIs', 'Data Structures', 'Automation'],
       description: 'Start your coding journey with the world\'s most versatile language.',
@@ -169,7 +169,7 @@ export default function EducationPage() {
     {
       title: 'Digital Marketing',
       icon: TrendingUp,
-      duration: '8 weeks',
+      duration: '12 weeks',
       level: 'Beginner-friendly',
       skills: ['SEO', 'Social Media', 'Content Marketing', 'Google Ads', 'Analytics'],
       description: 'Master digital marketing strategies to grow businesses online.',
