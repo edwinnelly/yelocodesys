@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import ClientLayout from "./client-layout";
 import "./globals.css";
+import WhatsAppWidget from "./components/whatsapp-widget";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -161,7 +162,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} antialiased`}>
-        <ClientLayout>{children}</ClientLayout>
+        <ClientLayout>{children} <WhatsAppWidget 
+          phoneNumber="2349162865693" // Your number without +
+          name="Yelocode Systems"
+          position="Online | Replies within 1 hour"
+          welcomeMessage="Hello! 👋 Welcome to Yelocode Systems. How can we help you today?"
+        /></ClientLayout>
       </body>
     </html>
   );
