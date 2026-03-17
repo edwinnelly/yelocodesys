@@ -29,10 +29,20 @@ import {
   CheckCheck, Copy as CopyIcon
 } from 'lucide-react'
 
+// Define types
+type CookiePreferences = {
+  necessary: boolean;
+  functional: boolean;
+  analytics: boolean;
+  marketing: boolean;
+}
+
+type CopiedType = string | null;
+
 export default function PrivacyPage() {
-  const [activeSection, setActiveSection] = useState('overview')
-  const [copied, setCopied] = useState<string | null>(null)
-  const [cookiePreferences, setCookiePreferences] = useState({
+  const [activeSection, setActiveSection] = useState<string>('overview')
+  const [copied, setCopied] = useState<CopiedType>(null)
+  const [cookiePreferences, setCookiePreferences] = useState<CookiePreferences>({
     necessary: true,
     functional: false,
     analytics: false,
@@ -56,8 +66,8 @@ export default function PrivacyPage() {
     setTimeout(() => setCopied(null), 2000)
   }
 
-  const handleCookieChange = (type) => {
-    setCookiePreferences(prev => ({
+  const handleCookieChange = (type: keyof CookiePreferences) => {
+    setCookiePreferences((prev: CookiePreferences) => ({
       ...prev,
       [type]: !prev[type]
     }))
@@ -78,7 +88,7 @@ export default function PrivacyPage() {
       description: 'Direct line to Data Protection Officer',
       action: 'Contact DPO',
       link: '#',
-      color: 'from-yellow-600 to-emerald-600'
+      color: 'from-green-600 to-emerald-600'
     },
     {
       icon: HelpCircle,
@@ -242,11 +252,11 @@ export default function PrivacyPage() {
                 
                 <div className="prose prose-lg dark:prose-invert max-w-none">
                   <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                    Yelocode Systems ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
+                    Yelocode Systems (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
                   </p>
                   
                   <p className="text-gray-600 dark:text-gray-400 leading-relaxed mt-4">
-                    We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the "Last Updated" date of this Privacy Policy. Any changes or modifications will be effective immediately upon posting the updated Privacy Policy on the Site, and you waive the right to receive specific notice of each such change or modification.
+                    We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the &quot;Last Updated&quot; date of this Privacy Policy. Any changes or modifications will be effective immediately upon posting the updated Privacy Policy on the Site, and you waive the right to receive specific notice of each such change or modification.
                   </p>
                 </div>
 
@@ -544,23 +554,26 @@ export default function PrivacyPage() {
                       {
                         type: 'Necessary Cookies',
                         description: 'Essential for website functionality and cannot be disabled',
-                        key: 'necessary',
+                        key: 'necessary' as const,
                         required: true
                       },
                       {
                         type: 'Functional Cookies',
                         description: 'Remember your preferences and enhance usability',
-                        key: 'functional'
+                        key: 'functional' as const,
+                        required: false
                       },
                       {
                         type: 'Analytics Cookies',
                         description: 'Help us understand how visitors interact with our site',
-                        key: 'analytics'
+                        key: 'analytics' as const,
+                        required: false
                       },
                       {
                         type: 'Marketing Cookies',
                         description: 'Used to deliver relevant advertisements',
-                        key: 'marketing'
+                        key: 'marketing' as const,
+                        required: false
                       }
                     ].map((cookie) => (
                       <div key={cookie.key} className="flex items-center justify-between p-3 bg-white dark:bg-gray-800 rounded-lg">
