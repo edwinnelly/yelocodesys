@@ -192,6 +192,7 @@ export default function Footer() {
                 { name: "Scholarships", url: "/bootcampsapply" },
                 { name: "Resource Center", url: "/resources" },
                 { name: "Alumni Network", url: "/alumni" },
+                { name: "Privacy", url: "/privacy" },
               ].map((item, i) => (
                 <li key={i}>
                   <a
