@@ -462,7 +462,7 @@ export default function DataAnalysisPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                What is <span className="text-blue-600 dark:text-blue-400">Data Analysis</span>?
+                What is <span className="text-yellow-600 dark:text-yellow-400">Data Analysis</span>?
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
                 Data analysis is the process of inspecting, cleaning, transforming, and modeling data to discover useful information, draw conclusions, and support decision-making. It combines domain knowledge, programming skills, and statistical techniques to extract insights from data.
@@ -473,7 +473,7 @@ export default function DataAnalysisPage() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <div className="p-1 bg-blue-100 dark:bg-blue-900/30 rounded mt-1">
-                    <Database className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                    <Database className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                   </div>
                   <div>
                     <span className="font-semibold text-gray-900 dark:text-white">Data Collection:</span>
@@ -482,7 +482,7 @@ export default function DataAnalysisPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="p-1 bg-blue-100 dark:bg-blue-900/30 rounded mt-1">
-                    <Filter className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                    <Filter className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                   </div>
                   <div>
                     <span className="font-semibold text-gray-900 dark:text-white">Data Cleaning:</span>
@@ -491,7 +491,7 @@ export default function DataAnalysisPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="p-1 bg-blue-100 dark:bg-blue-900/30 rounded mt-1">
-                    <BarChart3 className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                    <BarChart3 className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                   </div>
                   <div>
                     <span className="font-semibold text-gray-900 dark:text-white">Data Analysis:</span>
@@ -500,7 +500,7 @@ export default function DataAnalysisPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="p-1 bg-blue-100 dark:bg-blue-900/30 rounded mt-1">
-                    <LineChart className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                    <LineChart className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                   </div>
                   <div>
                     <span className="font-semibold text-gray-900 dark:text-white">Data Visualization:</span>
@@ -517,7 +517,7 @@ export default function DataAnalysisPage() {
                 { number: '100%', label: 'Remote work possible' }
               ].map((stat, i) => (
                 <div key={i} className="p-4 bg-gray-50 dark:bg-gray-900 rounded-xl text-center">
-                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">{stat.number}</div>
+                  <div className="text-2xl font-bold text-yellow-600 dark:text-yellow-400">{stat.number}</div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">{stat.label}</div>
                 </div>
               ))}
@@ -531,7 +531,7 @@ export default function DataAnalysisPage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
-              Why Learn <span className="text-blue-600 dark:text-blue-400">Data Analysis</span>?
+              Why Learn <span className="text-yellow-600 dark:text-yellow-400">Data Analysis</span>?
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
               10 compelling reasons to start your data analysis journey today
@@ -553,7 +553,7 @@ export default function DataAnalysisPage() {
               const Icon = reason.icon
               return (
                 <div key={i} className="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition">
-                  <Icon className="w-8 h-8 text-blue-600 dark:text-blue-400 mb-3" />
+                  <Icon className="w-8 h-8 text-yellow-600 dark:text-yellow-400 mb-3" />
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">{reason.title}</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400">{reason.description}</p>
                 </div>
@@ -568,7 +568,7 @@ export default function DataAnalysisPage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
-              What You Can <span className="text-blue-600 dark:text-blue-400">Build</span> with Data Analysis
+              What You Can <span className="text-yellow-600 dark:text-yellow-400">Build</span> with Data Analysis
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
               Data analysis skills let you create powerful insights and tools
@@ -597,7 +597,7 @@ export default function DataAnalysisPage() {
               const Icon = item.icon
               return (
                 <div key={i} className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg text-center hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors">
-                  <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400 mx-auto mb-2" />
+                  <Icon className="w-6 h-6 text-yellow-600 dark:text-yellow-400 mx-auto mb-2" />
                   <span className="text-sm font-medium text-gray-900 dark:text-white">{item.label}</span>
                 </div>
               )
@@ -611,7 +611,7 @@ export default function DataAnalysisPage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
-              The Complete <span className="text-blue-600 dark:text-blue-400">Data Analysis Roadmap</span>
+              The Complete <span className="text-yellow-600 dark:text-yellow-400">Data Analysis Roadmap</span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
               Follow this proven path to become a professional data analyst
@@ -635,7 +635,7 @@ export default function DataAnalysisPage() {
                   </div>
                   <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md">
                     <div className="flex flex-wrap items-center gap-3 mb-3">
-                      <span className={`px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium rounded-full`}>
+                      <span className={`px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium rounded-full`}>
                         {phase.phase}
                       </span>
                       <span className="text-sm text-gray-500 dark:text-gray-400">{phase.weeks}</span>
@@ -661,7 +661,7 @@ export default function DataAnalysisPage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
-              16-Week <span className="text-blue-600 dark:text-blue-400">Data Analysis Curriculum</span>
+              16-Week <span className="text-yellow-600 dark:text-yellow-400">Data Analysis Curriculum</span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-4">
               Week-by-week breakdown of your data analysis journey with 30+ projects
@@ -695,13 +695,13 @@ export default function DataAnalysisPage() {
                   <div className="grid md:grid-cols-2 gap-4 mb-4">
                     <div>
                       <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
-                        <BookOpen className="w-4 h-4 text-blue-600" />
+                        <BookOpen className="w-4 h-4 text-yellow-600" />
                         Topics Covered
                       </h4>
                       <ul className="space-y-1">
                         {week.topics.map((topic, i) => (
                           <li key={i} className="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-2">
-                            <span className="text-blue-600 mt-1">•</span>
+                            <span className="text-yellow-600 mt-1">•</span>
                             <span>{topic}</span>
                           </li>
                         ))}
@@ -735,7 +735,7 @@ export default function DataAnalysisPage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
-              30+ <span className="text-blue-600 dark:text-blue-400">Real-World Projects</span>
+              30+ <span className="text-yellow-600 dark:text-yellow-400">Real-World Projects</span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
               Build an impressive portfolio with projects of all difficulty levels
@@ -754,7 +754,7 @@ export default function DataAnalysisPage() {
                 <div key={i} className="p-4 bg-white dark:bg-gray-800 rounded-lg hover:shadow-md transition">
                   <div className="flex items-start gap-3 mb-2">
                     <div className="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
-                      <Icon className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                      <Icon className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 dark:text-white text-sm">{project.title}</h3>
@@ -783,7 +783,7 @@ export default function DataAnalysisPage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
-              Tools You'll <span className="text-blue-600 dark:text-blue-400">Master</span>
+              Tools You'll <span className="text-yellow-600 dark:text-yellow-400">Master</span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
               Industry-standard tools for professional data analysis
@@ -812,7 +812,7 @@ export default function DataAnalysisPage() {
               const Icon = tech.icon
               return (
                 <div key={i} className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg text-center hover:shadow-md transition">
-                  <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400 mx-auto mb-2" />
+                  <Icon className="w-6 h-6 text-yellow-600 dark:text-yellow-400 mx-auto mb-2" />
                   <span className="text-sm font-medium text-gray-900 dark:text-white">{tech.name}</span>
                 </div>
               )
@@ -826,7 +826,7 @@ export default function DataAnalysisPage() {
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
-              Frequently Asked <span className="text-blue-600 dark:text-blue-400">Questions</span>
+              Frequently Asked <span className="text-yellow-600 dark:text-yellow-400">Questions</span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
               Everything you need to know about our Data Analysis course
@@ -860,10 +860,10 @@ export default function DataAnalysisPage() {
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div>
               <h2 className="text-3xl font-bold mb-2">Ready to Start Your Data Analysis Journey?</h2>
-              <p className="text-blue-100">Join thousands of students who have launched their data careers with Yelocode.</p>
+              <p className="text-yellow-100">Join thousands of students who have launched their data careers with Yelocode.</p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <button className="px-6 py-3 bg-white text-blue-600 font-medium rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2">
+              <button className="px-6 py-3 bg-white text-yellow-600 font-medium rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2">
                 <GraduationCap className="w-5 h-5" />
                 Enroll Now
               </button>

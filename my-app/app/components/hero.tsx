@@ -118,19 +118,19 @@ export default function Hero() {
               <div className="text-2xl md:text-3xl font-bold text-white">
                 8k+
               </div>
-              <div className="text-sm text-blue-200">Trusted Customers</div>
+              <div className="text-sm text-yellow-200">Trusted Customers</div>
             </div>
             <div className="text-center lg:text-left">
               <div className="text-2xl md:text-3xl font-bold text-white">
                 10+
               </div>
-              <div className="text-sm text-blue-200">Years of Excellence</div>
+              <div className="text-sm text-yellow-200">Years of Excellence</div>
             </div>
             <div className="text-center lg:text-left">
               <div className="text-2xl md:text-3xl font-bold text-white">
                 24/7
               </div>
-              <div className="text-sm text-blue-200">Support</div>
+              <div className="text-sm text-yellow-200">Support</div>
             </div>
           </div>
         </div>

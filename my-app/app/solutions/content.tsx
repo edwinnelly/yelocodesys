@@ -326,7 +326,7 @@ export default function TechSolutionsPage() {
         
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-2 bg-yellow-100/90 dark:bg-yellow-900/80 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6 backdrop-blur-sm animate-fade-in">
+            <div className="inline-flex items-center gap-2 bg-yellow-100/50 dark:bg-yellow-900/80 text-white dark:text-white text-sm font-medium px-4 py-2 rounded-full mb-6 backdrop-blur-sm animate-fade-in">
               Technology Solutions
             </div>
             

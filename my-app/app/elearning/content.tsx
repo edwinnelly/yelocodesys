@@ -27,7 +27,7 @@ export default function ELearningComingSoon() {
         </div>
 
         {/* Coming Soon Badge */}
-        <div className="inline-flex items-center gap-2 bg-blue-600/20 text-blue-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
+        <div className="inline-flex items-center gap-2 bg-blue-600/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
           <Clock className="w-4 h-4" />
           Coming Soon
         </div>

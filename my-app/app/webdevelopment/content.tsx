@@ -500,7 +500,7 @@ export default function WebDevPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="p-1 bg-purple-100 dark:bg-purple-900/30 rounded mt-1">
-                    <GitBranch className="w-4 h-4 text-purple-600 dark:text-purple-400" />
+                    <GitBranch className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                   </div>
                   <div>
                     <span className="font-semibold text-gray-900 dark:text-white">Full Stack Development:</span>

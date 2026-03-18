@@ -108,7 +108,7 @@ export default function NetworkStats() {
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           {/* Live indicator */}
-          <div className="inline-flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 text-blue-300 text-sm font-medium px-4 py-2 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 text-yellow-300 text-sm font-medium px-4 py-2 rounded-full mb-6">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>

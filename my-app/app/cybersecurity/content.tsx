@@ -691,7 +691,7 @@ export default function CybersecurityPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="p-1 bg-purple-100 dark:bg-purple-900/30 rounded mt-1">
-                    <FileLock className="w-4 h-4 text-purple-600 dark:text-purple-400" />
+                    <FileLock className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                   </div>
                   <div>
                     <span className="font-semibold text-gray-900 dark:text-white">Security Operations:</span>

@@ -29,7 +29,7 @@ export default function TopStudents() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between mb-12">
           <div>
-            <div className="inline-flex items-center gap-2 text-sm text-blue-600 mb-3">
+            <div className="inline-flex items-center gap-2 text-sm text-yellow-600 mb-3">
               <Star className="w-4 h-4 fill-blue-600" />
               Hall of Fame
             </div>

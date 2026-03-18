@@ -64,7 +64,7 @@ export default function ContactPage() {
       description: 'Schedule a video tour of our campus',
       action: 'Schedule',
       link: '#',
-      color: 'from-purple-600 to-pink-600'
+      color: 'from-yellow-600 to-pink-600'
     },
     {
       icon: UserPlus,
@@ -72,7 +72,7 @@ export default function ContactPage() {
       description: 'One-on-one career counseling session',
       action: 'Book Now',
       link: '#',
-      color: 'from-green-600 to-emerald-600'
+      color: 'from-yellow-600 to-emerald-600'
     },
     {
       icon: HelpCircle,
@@ -330,8 +330,8 @@ export default function ContactPage() {
               </div>
 
               {formSubmitted ? (
-                <div className="bg-green-100 dark:bg-green-900/30 border border-green-500 text-green-700 dark:text-green-400 rounded-xl p-8 text-center">
-                  <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="bg-yellow-100 dark:bg-yellow-900/30 border border-yellow-500 text-yellow-700 dark:text-yellow-400 rounded-xl p-8 text-center">
+                  <div className="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Check className="w-10 h-10 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Message Sent!</h3>
