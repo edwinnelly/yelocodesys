@@ -46,9 +46,9 @@ export default function Hero() {
         <div className="max-w-3xl mx-auto lg:mx-0 text-center lg:text-left">
           {/* Badge */}
           <div className="inline-block mb-6">
-            <span className="bg-white/10 backdrop-blur-sm text-white text-sm font-medium px-4 py-2 rounded-full border border-white/20">
+            {/* <span className="bg-white/10 backdrop-blur-sm text-white text-sm font-medium px-4 py-2 rounded-full border border-white/20">
               Launch Your Digital Future
-            </span>
+            </span> */}
           </div>
 
           {/* Heading */}

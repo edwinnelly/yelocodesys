@@ -64,7 +64,7 @@ export default function ContactPage() {
       description: 'Schedule a video tour of our campus',
       action: 'Schedule',
       link: '#',
-      color: 'from-yellow-600 to-pink-600'
+      color: 'from-yellow-600 to-gray-600'
     },
     {
       icon: UserPlus,
@@ -72,7 +72,7 @@ export default function ContactPage() {
       description: 'One-on-one career counseling session',
       action: 'Book Now',
       link: '#',
-      color: 'from-yellow-600 to-emerald-600'
+      color: 'from-yellow-600 to-gray-600'
     },
     {
       icon: HelpCircle,
@@ -80,7 +80,7 @@ export default function ContactPage() {
       description: 'Find quick answers to common questions',
       action: 'View FAQs',
       link: '#faq',
-      color: 'from-orange-600 to-amber-600'
+      color: 'from-yellow-600 to-gray-600'
     }
   ]
 
@@ -269,7 +269,7 @@ export default function ContactPage() {
                       { icon: Facebook, href: '#', color: 'hover:bg-yellow-600' },
                       { icon: Twitter, href: '#', color: 'hover:bg-sky-500' },
                       { icon: Linkedin, href: '#', color: 'hover:bg-yellow-700' },
-                      { icon: Instagram, href: '#', color: 'hover:bg-pink-600' },
+                      { icon: Instagram, href: '#', color: 'hover:bg-yellow-600' },
                       { icon: Github, href: '#', color: 'hover:bg-gray-800' }
                     ].map((social, i) => {
                       const Icon = social.icon

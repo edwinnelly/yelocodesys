@@ -135,7 +135,7 @@ export default function EducationPage() {
       description:
         "Master full-stack development and build complete web applications from scratch.",
       outcomes: ["Full-stack developer", "$45k - $80k starting salary"],
-      gradient: "from-yellow-600 to-indigo-600",
+      gradient: "from-white-600 to-gray-600",
       popular: true,
       link: "/webdevelopment",
     },
@@ -149,7 +149,7 @@ export default function EducationPage() {
       description:
         "Learn to extract insights from data and build AI-powered applications.",
       outcomes: ["Data Analyst", "ML Engineer", "$50k - $90k starting salary"],
-      gradient: "from-purple-600 to-pink-600",
+     gradient: "from-white-600 to-gray-600",
       popular: false,
       link: "/datascience",
     },
@@ -172,7 +172,7 @@ export default function EducationPage() {
         "Product Designer",
         "$40k - $75k starting salary",
       ],
-      gradient: "from-pink-600 to-rose-600",
+        gradient: "from-white-600 to-gray-600",
       popular: false,
       link: "/ui-ux-design",
     },
@@ -194,7 +194,7 @@ export default function EducationPage() {
         "Flutter Developer",
         "$45k - $85k starting salary",
       ],
-      gradient: "from-white-600 to-emerald-600",
+      gradient: "from-white-600 to-gray-600",
       popular: false,
       link: "/mobile-development",
     },
@@ -216,7 +216,7 @@ export default function EducationPage() {
         "Penetration Tester",
         "$50k - $95k starting salary",
       ],
-      gradient: "from-red-600 to-orange-600",
+        gradient: "from-white-600 to-gray-600",
       popular: true,
       link: "/cybersecurity",
     },
@@ -233,7 +233,7 @@ export default function EducationPage() {
         "DevOps Specialist",
         "$55k - $100k starting salary",
       ],
-      gradient: "from-cyan-600 to-yellow-600",
+      gradient: "from-white-600 to-gray-600",
       popular: false,
       link: "/cloud-computing",
     },
@@ -250,7 +250,7 @@ export default function EducationPage() {
         "Automation Engineer",
         "$40k - $70k starting salary",
       ],
-      gradient: "from-yellow-600 to-amber-600",
+     gradient: "from-white-600 to-gray-600",
       popular: false,
       link: "/python",
     },
@@ -273,7 +273,7 @@ export default function EducationPage() {
         "SEO Specialist",
         "$35k - $60k starting salary",
       ],
-      gradient: "from-orange-600 to-red-600",
+     gradient: "from-white-600 to-gray-600",
       popular: false,
       link: "/digitalmarketing",
     },
@@ -622,8 +622,8 @@ export default function EducationPage() {
       <section className="py-24 bg-white dark:bg-gray-950">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
-              <Sparkles className="w-4 h-4" />
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-500 text-yellow-500 dark:text-white text-sm font-medium px-4 py-2 rounded-full mb-4">
+              {/* <Sparkles className="w-4 h-4" /> */}
               Our Approach
             </div>
 
@@ -650,20 +650,20 @@ export default function EducationPage() {
                 title: "Expert Mentorship",
                 description:
                   "Learn from industry professionals with 10+ years experience",
-                color: "from-purple-600 to-pink-600",
+                color: "from-yellow-600 to-gray-600",
               },
               {
                 icon: Target,
                 title: "Career-Focused",
                 description:
                   "Skills that lead to jobs and freelance opportunities",
-                color: "from-white-600 to-emerald-600",
+                color: "from-white-600 to-yellow-600",
               },
               {
                 icon: Heart,
                 title: "Community Support",
                 description: "Collaborative learning environment with peers",
-                color: "from-orange-600 to-red-600",
+                color: "from-gray-600 to-yellow-600",
               },
             ].map((item, index) => {
               const Icon = item.icon;
