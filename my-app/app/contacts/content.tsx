@@ -102,7 +102,7 @@ export default function ContactPage() {
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 bg-yellow-500/20 backdrop-blur-sm text-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-6 border border-yellow-500/30">
+            <div className="inline-flex items-center gap-2 bg-yellow-500/20 backdrop-blur-sm text-white text-sm font-medium px-4 py-2 rounded-full mb-6 border border-yellow-500/30">
               <MessageCircle className="w-4 h-4" />
               Let's Talk
             </div>
