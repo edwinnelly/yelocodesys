@@ -143,15 +143,39 @@ export default function EducationPage() {
     {
       title: "Data Science & AI",
       icon: BarChart3,
-      duration: "16 weeks",
+      duration: "16 -21 weeks",
       level: "Intermediate",
       skills: ["Python", "Pandas", "Machine Learning", "TensorFlow", "SQL"],
       description:
         "Learn to extract insights from data and build AI-powered applications.",
-      outcomes: ["Data Analyst", "ML Engineer", "$50k - $90k starting salary"],
-     gradient: "from-white-600 to-gray-600",
+      outcomes: ["Data Science & AI", "ML Engineer", "$50k - $90k starting salary"],
+      gradient: "from-white-600 to-gray-600",
       popular: false,
       link: "/datascience",
+    },
+    {
+      title: "Data Analysis & AI",
+      icon: BarChart3,
+      duration: "12 -16 weeks",
+      level: "Beginner to Intermediate",
+      skills: [
+        "Python",
+        "Sql",
+        "Data Visualization",
+        "Machine Learning",
+        "SQL",
+      ],
+      description:
+        "Master data analysis and AI by learning how to clean, analyze, and visualize data, then build intelligent models for real-world decision-making.",
+      outcomes: [
+        "Data Analyst",
+        "Junior Machine Learning Engineer",
+        "Business Intelligence Analyst",
+        "$50k - $75k starting salary",
+      ],
+      gradient: "from-white-600 to-gray-600",
+      popular: true,
+      link: "/data-analysis-ai",
     },
     {
       title: "UI/UX Design",
@@ -172,7 +196,7 @@ export default function EducationPage() {
         "Product Designer",
         "$40k - $75k starting salary",
       ],
-        gradient: "from-white-600 to-gray-600",
+      gradient: "from-white-600 to-gray-600",
       popular: false,
       link: "/ui-ux-design",
     },
@@ -216,7 +240,7 @@ export default function EducationPage() {
         "Penetration Tester",
         "$50k - $95k starting salary",
       ],
-        gradient: "from-white-600 to-gray-600",
+      gradient: "from-white-600 to-gray-600",
       popular: true,
       link: "/cybersecurity",
     },
@@ -250,7 +274,7 @@ export default function EducationPage() {
         "Automation Engineer",
         "$40k - $70k starting salary",
       ],
-     gradient: "from-white-600 to-gray-600",
+      gradient: "from-white-600 to-gray-600",
       popular: false,
       link: "/python",
     },
@@ -273,7 +297,7 @@ export default function EducationPage() {
         "SEO Specialist",
         "$35k - $60k starting salary",
       ],
-     gradient: "from-white-600 to-gray-600",
+      gradient: "from-white-600 to-gray-600",
       popular: false,
       link: "/digitalmarketing",
     },
@@ -541,7 +565,7 @@ export default function EducationPage() {
 
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 text-white">
           <div className="max-w-3xl">
-         <br></br>
+            <br></br>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Transform Your{" "}
               <span className="relative">

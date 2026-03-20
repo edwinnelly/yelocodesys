@@ -395,24 +395,24 @@ export default function DataAnalysisPage() {
       <section className="relative py-20 md:py-28 overflow-hidden bg-gradient-to-br from-gray-900 to-gray-950 text-white">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+            // backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
             backgroundSize: '40px 40px'
           }} />
         </div>
         
-        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl" />
+        <div className="absolute top-20 left-10 w-96 h-96 bg-yellow-500/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-yellow-300/20 rounded-full blur-3xl" />
 
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-medium px-4 py-2 rounded-full mb-6">
-              <BarChart3 className="w-4 h-4" />
+              {/* <BarChart3 className="w-4 h-4" /> */}
               Complete 16-Week Data Analysis Bootcamp
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Become a Professional{' '}
-              <span className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent">
                 Data Analyst
               </span>
             </h1>
@@ -424,14 +424,14 @@ export default function DataAnalysisPage() {
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <button className="px-6 py-3 bg-white text-gray-900 font-medium rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2">
+              <a href="education"><button className="px-6 py-3 bg-white text-gray-900 font-medium rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2">
                 <GraduationCap className="w-5 h-5" />
                 Enroll Now
-              </button>
-              <button className="px-6 py-3 border border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors flex items-center gap-2">
+              </button></a>
+              {/* <button className="px-6 py-3 border border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors flex items-center gap-2">
                 <FileText className="w-5 h-5" />
                 Download Syllabus
-              </button>
+              </button> */}
             </div>
 
             <div className="flex flex-wrap gap-8 mt-12">
@@ -472,7 +472,7 @@ export default function DataAnalysisPage() {
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <div className="p-1 bg-blue-100 dark:bg-blue-900/30 rounded mt-1">
+                  <div className="p-1 bg-yellow-100 dark:bg-yellow-900/30 rounded mt-1">
                     <Database className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                   </div>
                   <div>
@@ -481,7 +481,7 @@ export default function DataAnalysisPage() {
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="p-1 bg-blue-100 dark:bg-blue-900/30 rounded mt-1">
+                  <div className="p-1 bg-yellow-100 dark:bg-yellow-900/30 rounded mt-1">
                     <Filter className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                   </div>
                   <div>
@@ -490,7 +490,7 @@ export default function DataAnalysisPage() {
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="p-1 bg-blue-100 dark:bg-blue-900/30 rounded mt-1">
+                  <div className="p-1 bg-yellow-100 dark:bg-yellow-900/30 rounded mt-1">
                     <BarChart3 className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                   </div>
                   <div>
@@ -499,7 +499,7 @@ export default function DataAnalysisPage() {
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="p-1 bg-blue-100 dark:bg-blue-900/30 rounded mt-1">
+                  <div className="p-1 bg-yellow-100 dark:bg-yellow-900/30 rounded mt-1">
                     <LineChart className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                   </div>
                   <div>
@@ -596,7 +596,7 @@ export default function DataAnalysisPage() {
             ].map((item, i) => {
               const Icon = item.icon
               return (
-                <div key={i} className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg text-center hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors">
+                <div key={i} className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg text-center hover:bg-yellow-50 dark:hover:bg-yellow-900/20 transition-colors">
                   <Icon className="w-6 h-6 text-yellow-600 dark:text-yellow-400 mx-auto mb-2" />
                   <span className="text-sm font-medium text-gray-900 dark:text-white">{item.label}</span>
                 </div>
@@ -620,14 +620,14 @@ export default function DataAnalysisPage() {
 
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-blue-300 hidden md:block" />
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-yellow-500 to-yellow-300 hidden md:block" />
 
             <div className="space-y-8">
               {[
-                { phase: 'Phase 1', title: 'Foundations', weeks: 'Weeks 1-4', color: 'blue', topics: ['Excel', 'SQL Basics', 'Statistics', 'Data Fundamentals'] },
-                { phase: 'Phase 2', title: 'Programming & Manipulation', weeks: 'Weeks 5-8', color: 'blue', topics: ['Python', 'NumPy', 'Pandas', 'Data Cleaning'] },
-                { phase: 'Phase 3', title: 'Visualization & BI', weeks: 'Weeks 9-12', color: 'blue', topics: ['Matplotlib', 'Seaborn', 'Tableau', 'Power BI'] },
-                { phase: 'Phase 4', title: 'Advanced & Career', weeks: 'Weeks 13-16', color: 'blue', topics: ['Statistics', 'ML Basics', 'Big Data', 'Capstone Projects'] }
+                { phase: 'Phase 1', title: 'Foundations', weeks: 'Weeks 1-4', color: 'yellow', topics: ['Excel', 'SQL Basics', 'Statistics', 'Data Fundamentals'] },
+                { phase: 'Phase 2', title: 'Programming & Manipulation', weeks: 'Weeks 5-8', color: 'yellow', topics: ['Python', 'NumPy', 'Pandas', 'Data Cleaning'] },
+                { phase: 'Phase 3', title: 'Visualization & BI', weeks: 'Weeks 9-12', color: 'yellow', topics: ['Matplotlib', 'Seaborn', 'Tableau', 'Power BI'] },
+                { phase: 'Phase 4', title: 'Advanced & Career', weeks: 'Weeks 13-16', color: 'yellow', topics: ['Statistics', 'ML Basics', 'Big Data', 'Capstone Projects'] }
               ].map((phase, idx) => (
                 <div key={idx} className="relative md:ml-16">
                   <div className={`absolute left-0 top-2 w-8 h-8 rounded-full bg-${phase.color}-600 hidden md:flex items-center justify-center text-white font-bold`}>
@@ -635,7 +635,7 @@ export default function DataAnalysisPage() {
                   </div>
                   <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md">
                     <div className="flex flex-wrap items-center gap-3 mb-3">
-                      <span className={`px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium rounded-full`}>
+                      <span className={`px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 text-sm font-medium rounded-full`}>
                         {phase.phase}
                       </span>
                       <span className="text-sm text-gray-500 dark:text-gray-400">{phase.weeks}</span>
@@ -666,7 +666,7 @@ export default function DataAnalysisPage() {
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-4">
               Week-by-week breakdown of your data analysis journey with 30+ projects
             </p>
-            <div className="inline-flex items-center gap-2 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 px-4 py-2 rounded-full">
+            <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 px-4 py-2 rounded-full">
               <Rocket className="w-4 h-4" />
               <span className="font-medium">{weeklyCurriculum.length} Weeks • 30+ Projects</span>
             </div>
@@ -678,12 +678,12 @@ export default function DataAnalysisPage() {
                 <div className="bg-gray-50 dark:bg-gray-900 p-4 border-b border-gray-200 dark:border-gray-800">
                   <div className="flex flex-wrap items-center justify-between gap-4">
                     <div className="flex items-center gap-3">
-                      <span className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
+                      <span className="w-8 h-8 bg-yellow-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
                         {week.week}
                       </span>
                       <h3 className="text-lg font-bold text-gray-900 dark:text-white">{week.title}</h3>
                     </div>
-                    <span className="text-sm px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full">
+                    <span className="text-sm px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 rounded-full">
                       Project: {week.project.title}
                     </span>
                   </div>
@@ -710,7 +710,7 @@ export default function DataAnalysisPage() {
                     
                     <div>
                       <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
-                        <Rocket className="w-4 h-4 text-green-600" />
+                        <Rocket className="w-4 h-4 text-yellow-600" />
                         Project: {week.project.title}
                       </h4>
                       <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{week.project.description}</p>
@@ -746,14 +746,14 @@ export default function DataAnalysisPage() {
             {additionalProjects.map((project, i) => {
               const Icon = project.icon
               const difficultyColor = 
-                project.difficulty === 'Beginner' ? 'text-green-600 bg-green-100 dark:bg-green-900/30 dark:text-green-400' :
+                project.difficulty === 'Beginner' ? 'text-yellow-600 bg-yellow-100 dark:bg-yellow-900/30 dark:text-yellow-400' :
                 project.difficulty === 'Intermediate' ? 'text-yellow-600 bg-yellow-100 dark:bg-yellow-900/30 dark:text-yellow-400' :
                 'text-red-600 bg-red-100 dark:bg-red-900/30 dark:text-red-400'
               
               return (
                 <div key={i} className="p-4 bg-white dark:bg-gray-800 rounded-lg hover:shadow-md transition">
                   <div className="flex items-start gap-3 mb-2">
-                    <div className="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
+                    <div className="p-2 bg-yellow-100 dark:bg-yellow-900/30 rounded-lg">
                       <Icon className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                     </div>
                     <div>
@@ -855,7 +855,7 @@ export default function DataAnalysisPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-400 text-white">
+      {/* <section className="py-16 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div>
@@ -874,7 +874,7 @@ export default function DataAnalysisPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }
