@@ -193,6 +193,7 @@ export default function Footer() {
                 { name: "Resource Center", url: "/resources" },
                 { name: "Alumni Network", url: "/alumni" },
                 { name: "Privacy", url: "/privacy" },
+                { name: "Promotions", url: "/promotions" },
               ].map((item, i) => (
                 <li key={i}>
                   <a
