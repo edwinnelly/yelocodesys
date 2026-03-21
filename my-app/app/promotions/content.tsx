@@ -751,7 +751,7 @@ export default function PromoPage() {
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
-              'url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")',
+              'url("/pics/200.jpg")',
           }}
         >
           <div className="absolute inset-0 bg-black/75" />
