@@ -613,7 +613,7 @@ const faqs = [
 ];
 
 // Discount percentage - CHANGED TO 15%
-const DISCOUNT_PERCENT = 15;
+const DISCOUNT_PERCENT = 10;
 
 // Helper function to format currency
 const formatCurrency = (amount: number) => {
