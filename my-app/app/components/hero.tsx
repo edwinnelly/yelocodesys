@@ -1,16 +1,12 @@
-import { Link } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
-const handleClick = () => {
-  window.location.href = "/aboutus"; // For vanilla JS
-  // or use router.push('/aboutus') for Next.js
-  // or use navigate('/aboutus') for React Router
-};
 export default function Hero() {
   return (
     <section
       id="home"
       className="relative pt-20 pb-16 md:pt-24 md:pb-20 overflow-hidden min-h-[600px] md:min-h-[700px] flex items-center"
+      aria-label="Hero section - Yelocode Systems main introduction"
     >
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full">
@@ -19,6 +15,7 @@ export default function Hero() {
           loop
           muted
           playsInline
+          aria-label="Background video showing technology concept"
           className="absolute min-w-full min-h-full object-cover"
           style={{
             top: "50%",
@@ -28,39 +25,30 @@ export default function Hero() {
             height: "100%",
           }}
         >
-          {/* https://static.vecteezy.com/system/resources/previews/013/279/729/mp4/young-girl-which-applying-virtual-reality-headset-during-working-at-home-in-the-evening-modern-technology-concept-free-video.mp4 */}
           <source
             src="https://static.vecteezy.com/system/resources/previews/013/279/729/mp4/young-girl-which-applying-virtual-reality-headset-during-working-at-home-in-the-evening-modern-technology-concept-free-video.mp4"
-            // src="/pics/abc.mp4"
             type="video/mp4"
           />
-          {/* Fallback for browsers that don't support video */}
           Your browser does not support the video tag.
         </video>
         {/* Dark blue overlay to ensure text readability */}
-        <div className="absolute inset-0 bg-gray/90 dark:bg-black/70" />
+        <div className="absolute inset-0 bg-gray/90 dark:bg-black/70" aria-hidden="true" />
       </div>
 
       {/* Content */}
       <div className="relative container-custom z-10 w-full">
         <div className="max-w-3xl mx-auto lg:mx-0 text-center lg:text-left">
-          {/* Badge */}
-          <div className="inline-block mb-6">
-            {/* <span className="bg-white/10 backdrop-blur-sm text-white text-sm font-medium px-4 py-2 rounded-full border border-white/20">
-              Launch Your Digital Future
-            </span> */}
-          </div>
-
-          {/* Heading */}
+          {/* Heading - SEO optimized with keywords */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Delivering world class computer programming{" "}
+            Delivering world class{" "}
             <span className="text-yellow-500 relative">
-              education for all.
+              computer programming
               <svg
                 className="absolute -bottom-2 left-0 w-full"
                 viewBox="0 0 300 12"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <path
                   d="M2 10C66.6667 4.33333 196.4 -1.6 298 10"
@@ -70,54 +58,64 @@ export default function Hero() {
                 />
               </svg>
             </span>
+            <br />
+            <span className="text-yellow-500">education for all.</span>
           </h1>
 
-          {/* Description */}
+          {/* Description - Keyword rich */}
           <p className="text-lg md:text-xl text-gray-100 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            Expert IT support, custom app development, and professional training
-            designed to drive efficiency, growth, and digital transformation.
+            Expert IT support, custom app development, and professional{" "}
+            <strong className="text-yellow-300">coding training in Port Harcourt, Nigeria</strong>.
+            Designed to drive efficiency, growth, and digital transformation for individuals and businesses.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-            <a href="/education">
-              <button className="group relative px-8 py-4 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
-                <span className="relative z-10">Get Started</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </button>
-            </a>
+            <Link
+              href="/education"
+              className="group relative px-8 py-4 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden inline-flex items-center justify-center"
+              aria-label="Start your coding journey with Yelocode Systems"
+            >
+              <span className="relative z-10">Get Started Today</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </Link>
 
-            <a href="https://www.tiktok.com/@yelocode">
-              <button className="group px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300 flex items-center gap-2">
-                <span>Connect</span>
-                <svg
-                  className="w-5 h-5 group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </button>
-            </a>
+            <Link
+              href="https://www.tiktok.com/@yelocode"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300 flex items-center gap-2"
+              aria-label="Connect with Yelocode on TikTok"
+            >
+              <span>Connect With Us</span>
+              <svg
+                className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </Link>
           </div>
 
-          {/* Stats */}
+          {/* Stats - Social proof */}
           <div className="grid grid-cols-3 gap-4 md:gap-8 mt-12 max-w-2xl mx-auto lg:mx-0">
             <div className="text-center lg:text-left">
               <div className="text-2xl md:text-3xl font-bold text-white">
-                8k+
+                8,000+
               </div>
               <div className="text-sm text-yellow-200">Trusted Customers</div>
             </div>
@@ -131,7 +129,7 @@ export default function Hero() {
               <div className="text-2xl md:text-3xl font-bold text-white">
                 24/7
               </div>
-              <div className="text-sm text-yellow-200">Support</div>
+              <div className="text-sm text-yellow-200">Expert Support</div>
             </div>
           </div>
         </div>
@@ -140,7 +138,7 @@ export default function Hero() {
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 hidden md:block">
         <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-          <div className="w-1 h-2 bg-white rounded-full mt-2 animate-bounce" />
+          <div className="w-1 h-2 bg-white rounded-full mt-2 animate-bounce" aria-label="Scroll down" />
         </div>
       </div>
     </section>

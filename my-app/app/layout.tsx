@@ -11,12 +11,12 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Yelocode Systems | #1 Tech Training & Software Development in Port Harcourt",
+    default: "Best IT Training Center in Port Harcourt | Yelocode systems – IT Courses, Cybersecurity &amp; Web Development",
     template: "%s | Yelocode Systems",
   },
 
   description:
-    "Yelocode Systems is Port Harcourt's premier technology training and software development company. Transform your career with expert-led bootcamps in web development, data science, cybersecurity, and more. Custom software solutions for businesses. Located at No. 11 Elekahia.",
+    "Yelocode systems is a leading IT training center in Port Harcourt, offering IT courses in Nigeria, online training, cybersecurity, programming, web development, data analysis, cloud/DevOps engineering and professional certifications. Enroll today for individual, corporate, or online learning.",
 
   keywords: [
     // Brand & Primary
@@ -75,9 +75,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://yelocodesys.com"),
 
   openGraph: {
-    title: "Yelocode Systems | #1 Tech Training & Software Development in Port Harcourt",
+    title: "Best IT Training Center in Port Harcourt | Yelocode systems – IT Courses, Cybersecurity &amp; Web Development",
     description:
-      "Transform your career or business with Yelocode Systems, Port Harcourt's leading tech training and software development company. Expert-led bootcamps, custom software solutions, and IT consulting at No. 11 Elekahia.",
+      "Yelocode systems is a leading IT training center in Port Harcourt, offering IT courses in Nigeria, online training, cybersecurity, programming, web development, data analysis, cloud/DevOps engineering and professional certifications. Enroll today for individual, corporate, or online learning.",
     url: "https://yelocodesys.com",
     siteName: "Yelocode Systems",
     images: [
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
         url: "/og-home.png",
         width: 1200,
         height: 630,
-        alt: "Yelocode Systems - Premier Tech Training & Software Development in Port Harcourt",
+        alt: "Best IT Training Center in Port Harcourt | Yelocode systems – IT Courses, Cybersecurity &amp; Web Development",
       },
     ],
     locale: "en_NG",
@@ -96,9 +96,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Yelocode Systems | Tech Training & Development",
+    title: "Best IT Training Center in Port Harcourt | Yelocode systems – IT Courses, Cybersecurity &amp; Web Development",
     description:
-      "Port Harcourt's premier tech training and software development company. Start your tech journey at No. 11 Elekahia.",
+      "Yelocode systems is a leading IT training center in Port Harcourt, offering IT courses in Nigeria, online training, cybersecurity, programming, web development, data analysis, cloud/DevOps engineering and professional certifications. Enroll today for individual, corporate, or online learning.",
     images: ["/twitter-home.png"],
     site: "@yelocode",
     creator: "@yelocode",
