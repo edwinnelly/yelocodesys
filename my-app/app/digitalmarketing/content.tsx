@@ -270,7 +270,7 @@ export default function DigitalMarketingPage() {
     { icon: Rocket, title: 'Growth Hacking Campaign', description: 'Experimental marketing tactics', difficulty: 'Advanced' },
     { icon: Brain, title: 'AI Content Calendar', description: 'AI-generated content planning', difficulty: 'Intermediate' },
     { icon: Bot, title: 'Social Media Bot', description: 'Automated social engagement', difficulty: 'Intermediate' },
-    { icon: Sparkles, title: 'Personalization Engine', description: 'AI-powered content personalization', difficulty: 'Advanced' },
+    { icon: Brain, title: 'Personalization Engine', description: 'AI-powered content personalization', difficulty: 'Advanced' },
     { icon: Download, title: 'Lead Magnet Creation', description: 'High-converting lead magnets', difficulty: 'Beginner' },
     { icon: Upload, title: 'Webinar Marketing', description: 'From promotion to conversion', difficulty: 'Intermediate' },
     { icon: Copy, title: 'Ad Copy Generator', description: 'AI-generated ad variations', difficulty: 'Beginner' },
@@ -335,7 +335,7 @@ export default function DigitalMarketingPage() {
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 text-white">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-medium px-4 py-2 rounded-full mb-6">
-              <Sparkles className="w-4 h-4" />
+              {/* <Sparkles className="w-4 h-4" /> */}
               Complete 12-Week Digital Marketing with AI Automation Bootcamp
             </div>
             
@@ -419,7 +419,7 @@ export default function DigitalMarketingPage() {
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="p-1 bg-purple-100 dark:bg-purple-900/30 rounded mt-1">
+                  <div className="p-1 bg-yellow-100 dark:bg-yellow-900/30 rounded mt-1">
                     <Target className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                   </div>
                   <div>
@@ -429,7 +429,7 @@ export default function DigitalMarketingPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="p-1 bg-indigo-100 dark:bg-indigo-900/30 rounded mt-1">
-                    <BarChart className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
+                    <BarChart className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
                   </div>
                   <div>
                     <span className="font-semibold text-gray-900 dark:text-white">Predictive Analytics:</span>
@@ -527,7 +527,7 @@ export default function DigitalMarketingPage() {
               { icon: Settings, label: 'Marketing Automation' },
               { icon: Target, label: 'Lead Generation' },
               { icon: LineChartIcon, label: 'Predictive Analytics' },
-              { icon: Sparkles, label: 'Personalization' },
+              { icon: Brain, label: 'Personalization' },
               { icon: Camera, label: 'Visual Content' },
               { icon: TrendingUp, label: 'Growth Hacking' },
               { icon: Globe, label: 'Global Campaigns' }
@@ -558,13 +558,13 @@ export default function DigitalMarketingPage() {
 
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-yellow-500 to-cyan-500 hidden md:block" />
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-yellow-500 to-yellow-500 hidden md:block" />
 
             <div className="space-y-8">
               {[
                 { phase: 'Phase 1', title: 'Marketing Fundamentals', weeks: 'Weeks 1-3', color: 'yellow', topics: ['Digital Marketing Basics', 'Content Marketing', 'SEO Fundamentals'] },
-                { phase: 'Phase 2', title: 'Channel Marketing', weeks: 'Weeks 4-6', color: 'cyan', topics: ['Social Media', 'Email Marketing', 'Paid Advertising'] },
-                { phase: 'Phase 3', title: 'AI & Automation', weeks: 'Weeks 7-9', color: 'purple', topics: ['Analytics & AI', 'Chatbots', 'Video Marketing'] },
+                { phase: 'Phase 2', title: 'Channel Marketing', weeks: 'Weeks 4-6', color: 'yellow', topics: ['Social Media', 'Email Marketing', 'Paid Advertising'] },
+                { phase: 'Phase 3', title: 'AI & Automation', weeks: 'Weeks 7-9', color: 'yellow', topics: ['Analytics & AI', 'Chatbots', 'Video Marketing'] },
                 { phase: 'Phase 4', title: 'Integration & Career', weeks: 'Weeks 10-12', color: 'yellow', topics: ['Influencer Marketing', 'Marketing Automation', 'Capstone Projects'] }
               ].map((phase, idx) => (
                 <div key={idx} className="relative md:ml-16">

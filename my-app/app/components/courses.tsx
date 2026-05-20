@@ -23,7 +23,7 @@ const courses = [
     students: "2.1k",
     duration: "16 weeks",
     description: "Learn Python programming fundamentals to advanced concepts",
-    slug: "python-programming",
+    slug: "python",
   },
   {
     icon: Brain,
@@ -32,7 +32,7 @@ const courses = [
     students: "1.8k",
     duration: "18 weeks",
     description: "Master ML algorithms, neural networks, and AI applications",
-    slug: "machine-learning",
+    slug: "datascience",
   },
   {
     icon: Globe,
@@ -41,7 +41,7 @@ const courses = [
     students: "3.2k",
     duration: "16 weeks",
     description: "Become a full stack developer with React, Node.js, and databases",
-    slug: "full-stack-web-development",
+    slug: "webdevelopment",
   },
   {
     icon: Database,
@@ -50,7 +50,7 @@ const courses = [
     students: "1.5k",
     duration: "14 weeks",
     description: "Extract insights from data using statistical methods and visualization",
-    slug: "data-science",
+    slug: "datascience",
   },
   {
     icon: Cloud,
@@ -95,7 +95,7 @@ const courses = [
     students: "1k",
     duration: "16 weeks",
     description: "Analyze and visualize data using Python, SQL, and Excel",
-    slug: "data-analysis",
+    slug: "data-analysis-ai",
   },
 ];
 
@@ -148,7 +148,7 @@ export default function CoursesSection() {
               return (
                 <Link
                   key={index}
-                  href={`/courses/${course.slug}`}
+                  href={`/${course.slug}`}
                   className="group relative bg-white dark:bg-black p-5 hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-800 block cursor-pointer"
                   aria-label={`Learn ${course.title} - ${course.duration} course in Port Harcourt`}
                 >

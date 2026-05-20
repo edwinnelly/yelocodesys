@@ -4,7 +4,7 @@ import Content from "./content";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: {
-    default: "Yelocode Systems | About Us - Tech Training & Solutions in Port Harcourt",
+    default: "Best coding training in port harcourt nigeria | Yelocode Systems",
     template: "%s | Yelocode Systems",
   },
 
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     // About specific
     "about Yelocode",
     "tech company Port Harcourt",
-    "founding story",
-    "mission and vision",
-    "our team Port Harcourt",
+    "Free coding training in port harcourt nigeria",
+    "Top 10 tech schools in Port Harcourt",
+    "Top tech schools in Port Harcourt and their fees",
     "tech instructors Nigeria",
     "software experts Rivers State",
     "coding mentors Port Harcourt",
