@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from 'react'
-import { 
+import {
   Code, Palette, PieChart, Database, TrendingUp, Cpu, Lock, Cloud,
   Check, X, Clock, Users, Award, Calendar, BookOpen, Rocket,
   Star, Briefcase, Target, Zap, Globe, Mail, Phone, GraduationCap,
-  ChevronDown, ChevronRight, MessageSquare 
+  ChevronDown, ChevronRight, MessageSquare
 } from 'lucide-react'
 
 // Tier data for hero section
@@ -283,36 +283,77 @@ const courseCategories = [
     color: 'yellow',
     courses: [
       {
-        name: 'NOVA PRIME',
-        price: '₦180,000',
-        duration: '2 months',
+        name: 'NOVA BUSINESS',
+        price: '₦60,000',
+        duration: '1 MONTH',
         projects: '5 live campaigns',
-        description: 'Focuses on low-budget strategies for small businesses',
+        description: 'Designed for entrepreneurs and business owners who want to scale their business online using advanced advertising strategies and conversion-focused campaigns.',
+   
         popular: false,
         features: [
-          '5 live campaigns',
-          'Social Media, SEO basics',
-          'Canva, Google Analytics',
+          '12 live ad campaigns',
+          'Advanced Meta Ads strategy',
+          'Instagram sales funnel setup',
+          'TikTok conversion campaigns',
+          'Google Search Ads',
+          'Google Display Ads',
+          'Pixel & conversion tracking',
+          'Lead generation systems',
+          'Creative ad content strategy',
+          'A/B testing techniques',
+          'Analytics & optimization',
+          'Landing page fundamentals',
+          'Customer retargeting strategy',
+          'Business growth strategy'
+        ]
+      },
+
+      {
+        name: 'NOVA PRIME',
+        price: '₦180,000',
+        duration: '2 Months',
+        projects: '5 Practical Campaign Projects',
+        description: 'An intensive beginner-to-intermediate digital marketing program designed to equip students with practical marketing skills, audience targeting techniques, content strategy, and campaign management for startups and growing businesses.',
+        popular: false,
+        features: [
+          '5 practical campaign projects',
+          'Social Media Marketing Fundamentals',
+          'SEO Fundamentals & Keyword Research',
+          'Content Creation with AI Tools',
+          'Google Analytics & Performance Tracking',
+          'Brand Strategy & Audience Positioning',
           'Digital Marketing Fundamentals',
-          'Freelance setup'
+          'Freelancing & Client Acquisition Setup',
+          'Certificate of Completion',
+          'Hands-on Practical Assignments'
         ]
       },
       {
         name: 'AXIS IGNITE',
         price: '₦350,000',
-        duration: '3 months',
-        projects: '15 client projects',
-        description: 'Career switchers targeting developer roles',
+        duration: '3 Months',
+        projects: '15 Real Client Campaign Projects',
+        description: 'An advanced digital marketing specialization program focused on performance marketing, paid advertising, conversion optimization, and professional campaign execution for students preparing for high-paying digital marketing careers or agency work.',
         popular: true,
         features: [
-          '15 client projects',
-          'Paid ads (Meta/Google), Email Marketing',
-          'Meta Ads Manager',
-          'Google Ads, Microsoft, Meta, Tiktok',
-          'Professional Digital Marketer',
-          'Job placement assistance'
+          '15 real-world client campaign projects',
+          'Meta Ads (Facebook & Instagram)',
+          'Google Ads & YouTube Advertising',
+          'TikTok Ads & Short-form Marketing',
+          'Email Marketing Automation',
+          'Sales Funnel & Lead Generation Strategy',
+          'Advanced SEO & Search Ranking',
+          'Google Analytics 4 (GA4)',
+          'Meta Business Suite & Ads Manager',
+          'Campaign Budgeting & Optimization',
+          'Conversion Tracking & Retargeting',
+          'Professional Portfolio Development',
+          'Freelancing & Remote Work Setup',
+          'Internship / Job Placement Assistance',
+          'Professional Digital Marketing Certification'
         ]
       }
+
     ]
   },
   {
@@ -597,11 +638,11 @@ export default function PricingPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900">
-      
+
       {/* HERO SECTION - Pricing Tiers with Cover Image */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         {/* Background Cover Image with Overlay */}
-        <div 
+        <div
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: 'url("pics/db.jpg")', // Replace with your image path
@@ -619,17 +660,17 @@ export default function PricingPage() {
               {/* <GraduationCap className="w-4 h-4" /> */}
               Learning Paths for Every Level
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Choose Your{' '}
               <span className="text-yellow-400">
                 Learning Journey
               </span>
             </h1>
-            
+
             <p className="text-lg text-gray-200 max-w-3xl mx-auto">
-              Each level prepares you for progressively higher-paying opportunities. 
-              Our structured learning path is designed to do more than build your skills, 
+              Each level prepares you for progressively higher-paying opportunities.
+              Our structured learning path is designed to do more than build your skills,
               It propels your career forward.
             </p>
           </div>
@@ -640,14 +681,14 @@ export default function PricingPage() {
               <div key={index} className="group relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                 {/* Gradient border on hover */}
                 <div className={`absolute inset-0 bg-gradient-to-r ${tier.color} opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
-                
+
                 <div className="p-6">
                   <div className={`inline-block px-4 py-2 bg-gradient-to-r ${tier.color} rounded-full text-white font-semibold text-sm mb-4`}>
                     {tier.name}
                   </div>
-                  
+
                   <h4 className="text-gray-200 text-sm mb-4">{tier.title}</h4>
-                  
+
                   <div className="flex items-center gap-4 mb-4 text-sm">
                     <div className="flex items-center gap-1 text-gray-300">
                       <Clock className="w-4 h-4" />
@@ -658,15 +699,15 @@ export default function PricingPage() {
                       {tier.projects}
                     </div>
                   </div>
-                  
+
                   <div className="mb-4">
                     <span className="text-2xl font-bold text-white">{tier.price}</span>
                   </div>
-                  
+
                   <button className="w-full mb-6 px-4 py-3 bg-white/20 hover:bg-white/30 text-white rounded-lg transition-colors">
                     Get Started
                   </button>
-                  
+
                   <div className="space-y-2">
                     {tier.features.slice(0, 5).map((feature, i) => (
                       <p key={i} className="text-gray-200 text-sm flex items-start gap-2">
@@ -685,7 +726,7 @@ export default function PricingPage() {
 
           <div className="text-center max-w-3xl mx-auto mt-12 text-gray-200">
             <p>
-              The Advanced Tier equips you with the expertise, confidence, 
+              The Advanced Tier equips you with the expertise, confidence,
               and recognition to thrive in top-tier roles and command higher earning potential.
             </p>
           </div>
@@ -701,24 +742,24 @@ export default function PricingPage() {
                 <Star className="w-4 h-4" />
                 Why Choose Us
               </div>
-              
+
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
                 At Yelocode Systems,{' '}
                 <span className="bg-gradient-to-r from-yellow-600 to-yellow-400 bg-clip-text text-transparent">
                   your success is our priority
                 </span>
               </h2>
-              
+
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-4">
-                Equip yourself with the skills that employers demand, 
+                Equip yourself with the skills that employers demand,
                 through courses that focus on practical outcomes and real-world application.
               </p>
-              
+
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-                Our expert trainers offer 1-on-1 mentoring and support to ensure you get 
+                Our expert trainers offer 1-on-1 mentoring and support to ensure you get
                 the most out of your course and reach your goals.
               </p>
-              
+
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { icon: Users, value: '2000+', label: 'Students Trained' },
@@ -737,10 +778,10 @@ export default function PricingPage() {
                 })}
               </div>
             </div>
-            
+
             <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-800">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">What Our Students Say</h3>
-              
+
               <div className="space-y-6">
                 {[
                   {
@@ -774,11 +815,11 @@ export default function PricingPage() {
               <BookOpen className="w-4 h-4" />
               Course Catalog
             </div>
-            
+
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Courses <span className="bg-gradient-to-r from-yellow-600 to-yellow-400 bg-clip-text text-transparent">Price List</span>
             </h2>
-            
+
             <p className="text-lg text-gray-600 dark:text-gray-400">
               Choose from our comprehensive range of programs designed for your career goals
             </p>
@@ -789,7 +830,7 @@ export default function PricingPage() {
               const Icon = category.icon
               const isOpen = openCategories.includes(category.name)
               const gradientColor = getColorClasses(category.color)
-              
+
               return (
                 <div key={category.name} className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
                   <button
@@ -804,7 +845,7 @@ export default function PricingPage() {
                     </div>
                     <ChevronDown className={`w-5 h-5 text-gray-500 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
                   </button>
-                  
+
                   {isOpen && (
                     <div className="p-6 border-t border-gray-200 dark:border-gray-700">
                       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -815,11 +856,11 @@ export default function PricingPage() {
                                 Most Popular
                               </div>
                             )}
-                            
+
                             <div className={`inline-block px-3 py-1 bg-gradient-to-r ${gradientColor} text-white text-xs font-semibold rounded-full mb-4`}>
                               {course.name}
                             </div>
-                            
+
                             <div className="mb-4">
                               <div className="text-2xl font-bold text-gray-900 dark:text-white">
                                 {course.price}
@@ -833,11 +874,11 @@ export default function PricingPage() {
                               </div>
                               <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">{course.description}</p>
                             </div>
-                            
+
                             <button className="w-full mb-4 px-4 py-2 bg-gradient-to-r from-yellow-600 to-yellow-400 text-white rounded-lg hover:shadow-lg transition-all">
                               Get Started
                             </button>
-                            
+
                             <div className="space-y-2">
                               {course.features.map((feature, i) => (
                                 <p key={i} className="text-gray-600 dark:text-gray-400 text-xs flex items-start gap-2">
@@ -866,7 +907,7 @@ export default function PricingPage() {
               <MessageSquare className="w-4 h-4" />
               Got Questions?
             </div>
-            
+
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Frequently Asked <span className="bg-gradient-to-r from-yellow-600 to-yellow-400 bg-clip-text text-transparent">Questions</span>
             </h2>
@@ -888,7 +929,7 @@ export default function PricingPage() {
                 </div>
               </div>
             </div>
-            
+
             <div className="md:col-span-2 space-y-3">
               {faqs.map((faq, index) => (
                 <div key={index} className="border border-gray-200 dark:border-gray-800 rounded-lg overflow-hidden bg-white dark:bg-gray-900">
@@ -899,7 +940,7 @@ export default function PricingPage() {
                     <p className="font-medium text-gray-900 dark:text-white">{faq.question}</p>
                     <ChevronDown className={`w-5 h-5 text-gray-500 transition-transform ${openFaqs.includes(index) ? 'rotate-180' : ''}`} />
                   </button>
-                  
+
                   {openFaqs.includes(index) && (
                     <div className="px-4 pb-4 pt-0 border-t border-gray-200 dark:border-gray-800">
                       <p className="text-gray-600 dark:text-gray-400 text-sm">{faq.answer}</p>
