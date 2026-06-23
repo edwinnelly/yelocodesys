@@ -98,7 +98,7 @@ export default function CorePrinciples() {
           <div className="text-center max-w-3xl mx-auto mb-20">
             {/* Label */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-black dark:text-white text-sm font-medium mb-6">
-              <Sparkles className="w-4 h-4" />
+              {/* <Sparkles className="w-4 h-4" /> */}
               Our Core Values
             </div>
 
