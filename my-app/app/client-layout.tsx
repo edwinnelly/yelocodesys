@@ -46,7 +46,7 @@ export default function ClientLayout({
     // { name: "Network", href: "/network" },
     { name: "Education", href: "/education" },
     // { name: "E-learning", href: "/elearning" },
-    { name: "Pricing", href: "/Careers" },
+    { name: "Pricing", href: "/careers" },
     { name: "About Us", href: "/aboutus" },
     { name: "Contact Us", href: "/contacts" },
   ];

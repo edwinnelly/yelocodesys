@@ -19,71 +19,21 @@ export const metadata: Metadata = {
     "Yelocode Systems is a leading IT training center in Port Harcourt, offering IT courses in Nigeria, online training, cybersecurity, programming, web development, data analysis, cloud/DevOps engineering and professional certifications. Enroll today for individual, corporate, or online learning.",
 
   keywords: [
-    // Brand & Primary
     "Yelocode Systems",
-    "yelocodesys.com",
-    "Port Harcourt tech company",
-    "coding school Port Harcourt",
-    
-    // High-Intent Enrollment Keywords
-    "best tech school in port harcourt",
     "coding bootcamp port harcourt",
     "it training center in port harcourt",
     "computer training school in port harcourt",
-    
-    // High-Demand Skill Keywords
     "data analytics training in port harcourt",
     "ui ux design training port harcourt",
     "software engineering academy in port harcourt",
     "cybersecurity training in port harcourt",
-    
-    // Career & Value-Driven Keywords
-    "tech training in port harcourt with job placement",
-    "affordable computer training centers in ph",
-    
-    // Training Services
     "tech bootcamp Port Harcourt",
     "programming classes Nigeria",
     "web development training",
     "data science course Port Harcourt",
-    "cybersecurity certification Nigeria",
     "DevOps training",
-    "Free coding training in port harcourt nigeria",
-    "Top 10 tech schools in Port Harcourt",
-    "Top tech schools in Port Harcourt and their fees",
-    "Python programming Nigeria",
-    "digital marketing training",
     "software engineering bootcamp",
-    
-    // Development Services
-    "software development Nigeria",
-    "web development company Port Harcourt",
-    "mobile app development",
-    "custom software solutions",
     "IT consulting Rivers State",
-    "cloud solutions Nigeria",
-    "business automation",
-    
-    // Location
-    "No. 11 Elekahia",
-    "Port Harcourt",
-    "Rivers State",
-    "Nigeria",
-    "tech hub Port Harcourt",
-    
-    // Student Intent
-    "learn to code Port Harcourt",
-    "tech career Nigeria",
-    "best coding bootcamp Nigeria",
-    "affordable tech training",
-    "IT certification Port Harcourt",
-    "become a programmer",
-    
-    // Business Intent
-    "software company Port Harcourt",
-    "tech solutions provider Nigeria",
-    "business technology services",
-    "digital transformation Nigeria",
   ],
 
   authors: [{ name: "Yelocode Systems", url: "https://yelocodesys.com/aboutus" }],
@@ -146,14 +96,6 @@ export const metadata: Metadata = {
     canonical: "https://yelocodesys.com",
   },
 
-  // Verification for search consoles (add your codes)
-  // verification: {
-  //   google: "your-google-verification-code",
-  //   yandex: "your-yandex-code",
-  //   bing: "your-bing-code",
-  // },
-
-  // Structured data for local business
   other: {
     "og:site_name": "Yelocode Systems",
     "business:contact_data:street_address": "No. 11 Elekahia",
@@ -180,12 +122,127 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} antialiased`}>
-        <ClientLayout>{children} <WhatsAppWidget 
-          phoneNumber="2349162865693" // Your number without +
-          name="Yelocode Systems"
-          position="Online | Replies within 1 hour"
-          welcomeMessage="Hello! 👋 Welcome to Yelocode Systems. How can we help you today?"
-        /></ClientLayout>
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": ["EducationalOrganization", "LocalBusiness"],
+              "name": "Yelocode Systems",
+              "url": "https://yelocodesys.com",
+              "logo": "https://yelocodesys.com/pics/10001.png",
+              "image": "https://yelocodesys.com/pics/10001.png",
+              "description": "Premium IT training center in Port Harcourt offering software engineering, cybersecurity, web development, and data analytics, and UI/UX design bootcamps.",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "No. 11 Elekahia Road, Rebisi",
+                "addressLocality": "Port Harcourt",
+                "addressRegion": "Rivers State",
+                "addressCountry": "NG"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "4.8020",
+                "longitude": "7.0205"
+              },
+              "telephone": "+2349162865693",
+              "email": "info@yelocodesys.com",
+              "priceRange": "NGN120000 - NGN1500000",
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "09:00",
+                  "closes": "18:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": "Saturday",
+                  "opens": "10:00",
+                  "closes": "16:00"
+                }
+              ],
+              "sameAs": [
+                "https://twitter.com/yelocode",
+                "https://linkedin.com/company/yelocode-systems"
+              ],
+              "areaServed": {
+                "@type": "City",
+                "name": "Port Harcourt",
+                "sameAs": "https://en.wikipedia.org/wiki/Port_Harcourt"
+              },
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "IT Training Courses",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Course",
+                      "name": "Software Engineering Bootcamp",
+                      "description": "Comprehensive software engineering training covering full-stack development,python, cybersecurity and modern web technologies",
+                      "provider": {
+                        "@type": "EducationalOrganization",
+                        "name": "Yelocode Systems",
+                        "url": "https://yelocodesys.com"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Course",
+                      "name": "Cybersecurity Training",
+                      "description": "Professional cybersecurity certification and practical training",
+                      "provider": {
+                        "@type": "EducationalOrganization",
+                        "name": "Yelocode Systems",
+                        "url": "https://yelocodesys.com"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Course",
+                      "name": "Data Analytics Training",
+                      "description": "Data analysis, visualization, and business intelligence training",
+                      "provider": {
+                        "@type": "EducationalOrganization",
+                        "name": "Yelocode Systems",
+                        "url": "https://yelocodesys.com"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Course",
+                      "name": "UI/UX Design Training",
+                      "description": "User interface and user experience design professional course",
+                      "provider": {
+                        "@type": "EducationalOrganization",
+                        "name": "Yelocode Systems",
+                        "url": "https://yelocodesys.com"
+                      }
+                    }
+                  }
+                ]
+              }
+            }),
+          }}
+        />
+
+        <ClientLayout>
+          {children}
+          <WhatsAppWidget
+            phoneNumber="2349162865693"
+            name="Yelocode Systems"
+            position="Online | Replies within 1 hour"
+            welcomeMessage="Hello! 👋 Welcome to Yelocode Systems. How can we help you today?"
+          />
+        </ClientLayout>
       </body>
     </html>
   );

@@ -1,4 +1,4 @@
-import Hero from "../components/hero";
+// import Hero from "../components/hero";
 import Footer from "../components/footer";
 import Content from "./content";
 import type { Metadata } from "next";
@@ -13,18 +13,13 @@ export const metadata: Metadata = {
     "Explore Yelocode Systems' comprehensive course catalog in Port Harcourt. Choose from Web Development (₦250k-₦850k), Data Science (₦200k-₦850k), Cybersecurity (₦250k-₦1.5M), UI/UX Design (₦120k-₦250k), Python (₦200k-₦900k), and more. Find your perfect tech program at No. 11 Elekahia.",
 
   keywords: [
-    // Brand
     "Yelocode Systems",
     "yelocodesys.com",
-    
-    // Course catalog specific
     "tech course catalog Port Harcourt",
     "coding bootcamp list Nigeria",
     "programming courses directory",
     "IT training programs",
     "software development courses",
-    
-    // Web Development
     "web development bootcamp Port Harcourt",
     "full stack course Nigeria",
     "frontend development training",
@@ -32,8 +27,6 @@ export const metadata: Metadata = {
     "NOVA PRIME web",
     "AXIS IGNITE web",
     "QUANTA ELITE web",
-    
-    // Data Science
     "data science course Port Harcourt",
     "machine learning training Nigeria",
     "data analysis bootcamp",
@@ -41,8 +34,6 @@ export const metadata: Metadata = {
     "NOVA PRIME data",
     "AXIS IGNITE data",
     "QUANTA ELITE data",
-    
-    // Cybersecurity
     "cybersecurity course Port Harcourt",
     "ethical hacking training Nigeria",
     "security certification",
@@ -50,16 +41,12 @@ export const metadata: Metadata = {
     "NOVA PRIME cyber",
     "AXIS IGNITE cyber",
     "QUANTA ELITE cyber",
-    
-    // Design
     "UI UX design course Port Harcourt",
     "graphic design training Nigeria",
     "Figma course",
     "product design bootcamp",
     "NOVA PRIME design",
     "AXIS IGNITE design",
-    
-    // Python
     "Python programming course",
     "Django training Nigeria",
     "Flask bootcamp",
@@ -67,24 +54,18 @@ export const metadata: Metadata = {
     "NOVA PRIME Python",
     "AXIS IGNITE Python",
     "QUANTA ELITE Python",
-    
-    // Digital Marketing
     "digital marketing course Port Harcourt",
     "SEO training Nigeria",
     "social media marketing bootcamp",
     "Google Ads certification",
     "NOVA PRIME marketing",
     "AXIS IGNITE marketing",
-    
-    // Mobile Development
     "mobile app development course",
     "Flutter training Nigeria",
     "React Native bootcamp",
     "iOS Android development",
     "NOVA PRIME mobile",
     "AXIS IGNITE mobile",
-    
-    // Cloud & DevOps
     "cloud computing course Port Harcourt",
     "DevOps training Nigeria",
     "AWS certification",
@@ -92,8 +73,6 @@ export const metadata: Metadata = {
     "NOVA PRIME cloud",
     "AXIS IGNITE cloud",
     "QUANTA ELITE cloud",
-    
-    // Database
     "database management course",
     "SQL training Nigeria",
     "MongoDB bootcamp",
@@ -101,24 +80,18 @@ export const metadata: Metadata = {
     "NOVA PRIME database",
     "AXIS IGNITE database",
     "QUANTA ELITE database",
-    
-    // Program Levels
     "NOVA PRIME beginner courses",
     "AXIS IGNITE intermediate training",
     "QUANTA ELITE advanced programs",
     "tech certification levels",
-    
-    // Location
     "No. 11 Elekahia",
     "Port Harcourt",
     "Rivers State",
     "Nigeria",
-    
-    // Pricing
     "tech course prices Port Harcourt",
     "affordable coding bootcamp",
     "program training fees",
-    "best value tech courses",
+    "best value tech courses"
   ],
 
   authors: [{ name: "Yelocode Systems", url: "https://yelocodesys.com/about" }],
@@ -143,8 +116,6 @@ export const metadata: Metadata = {
     ],
     locale: "en_NG",
     type: "website",
-    phoneNumbers: ["+2349162865693"],
-    countryName: "Nigeria",
   },
 
   twitter: {
@@ -181,11 +152,9 @@ export const metadata: Metadata = {
     canonical: "https://yelocodesys.com/coursecatalog",
   },
 
-  // Structured data for catalog page
   other: {
     "og:type": "website",
     "og:see_also": "https://yelocodesys.com/education",
-    // "og:see_also": "https://yelocodesys.com/pricing",
     "business:contact_data:street_address": "No. 11 Elekahia",
     "business:contact_data:locality": "Port Harcourt",
     "business:contact_data:region": "Rivers State",
@@ -198,13 +167,14 @@ export const metadata: Metadata = {
     "business:hours:day:4": "Thursday 9:00 AM - 6:00 PM",
     "business:hours:day:5": "Friday 9:00 AM - 6:00 PM",
     "business:hours:day:6": "Saturday 10:00 AM - 4:00 PM",
-    "business:hours:day:7": "Sunday Closed",
-  },
+    "business:hours:day:7": "Sunday Closed"
+  }
 }
 
-export default function AboutPage() {
+export default function CourseCatalogPage() {
   return (
     <main>
+      {/* <Hero /> */}
       <Content />
       <Footer />
     </main>

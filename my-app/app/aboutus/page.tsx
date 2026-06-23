@@ -1,7 +1,8 @@
-import Hero from "../components/hero";
+
 import Footer from "../components/footer";
 import Content from "./content";
 import type { Metadata } from "next";
+
 export const metadata: Metadata = {
   title: {
     default: "About Us | Best Tech School in Port Harcourt | Yelocode Systems",
@@ -12,27 +13,18 @@ export const metadata: Metadata = {
     "Yelocode Systems is the best tech school and IT training center in Port Harcourt, Nigeria. We offer coding bootcamps, software engineering, cybersecurity, data analytics, and UI/UX design training with job placement at No. 11 Elekahia.",
 
   keywords: [
-    // Brand
     "Yelocode Systems",
     "yelocodesys.com",
-    
-    // High-Intent Enrollment Keywords
     "best tech school in port harcourt",
     "coding bootcamp port harcourt",
     "it training center in port harcourt",
     "computer training school in port harcourt",
-    
-    // High-Demand Skill Keywords
     "data analytics training in port harcourt",
     "ui ux design training port harcourt",
     "software engineering academy in port harcourt",
     "cybersecurity training in port harcourt",
-    
-    // Career & Value-Driven Keywords
     "tech training in port harcourt with job placement",
     "affordable computer training centers in ph",
-    
-    // About specific
     "about Yelocode",
     "tech company Port Harcourt",
     "Free coding training in port harcourt nigeria",
@@ -41,29 +33,23 @@ export const metadata: Metadata = {
     "tech instructors Nigeria",
     "software experts Rivers State",
     "coding mentors Port Harcourt",
-    
-    // Company info
     "technology training company Nigeria",
     "software development firm Port Harcourt",
     "IT solutions provider Rivers State",
     "tech education pioneers",
     "No. 11 Elekahia",
     "Port Harcourt tech hub",
-    
-    // Leadership
     "tech leadership Nigeria",
     "industry experts Port Harcourt",
     "certified instructors",
     "software engineering team",
     "data science mentors",
     "cybersecurity professionals",
-    
-    // Values
     "tech education mission",
     "bridging skills gap Nigeria",
     "empowering Nigerian youth",
     "career transformation",
-    "tech community Port Harcourt",
+    "tech community Port Harcourt"
   ],
 
   authors: [{ name: "Yelocode Systems", url: "https://yelocodesys.com/aboutus" }],
@@ -126,7 +112,6 @@ export const metadata: Metadata = {
     canonical: "https://yelocodesys.com/aboutus",
   },
 
-  // Structured data for organization
   other: {
     "og:type": "company",
     "business:contact_data:street_address": "No. 11 Elekahia",
@@ -141,13 +126,14 @@ export const metadata: Metadata = {
     "business:hours:day:4": "Thursday 9:00 AM - 6:00 PM",
     "business:hours:day:5": "Friday 9:00 AM - 6:00 PM",
     "business:hours:day:6": "Saturday 10:00 AM - 4:00 PM",
-    "business:hours:day:7": "Sunday Closed",
-  },
+    "business:hours:day:7": "Sunday Closed"
+  }
 }
 
 export default function AboutPage() {
   return (
     <main>
+      {/* <Hero /> */}
       <Content />
       <Footer />
     </main>

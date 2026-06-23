@@ -31,8 +31,8 @@ const allCourses = [
     gradient: 'from-yellow-500/20 to-amber-500/20',
     borderColor: 'border-yellow-500/30',
     textColor: 'text-yellow-600',
-    description: 'Master frontend and backend development to build modern, responsive websites and web applications.',
-    longDescription: 'Learn HTML, CSS, JavaScript, React, Node.js, and databases. Build full-stack applications from scratch.',
+    description: 'Master frontend and backend development to build modern, responsive websites and web applications. Offered at our coding bootcamp in Port Harcourt.',
+    longDescription: 'Learn HTML, CSS, JavaScript, React, Node.js, and databases. Build full-stack applications from scratch at the best tech school in Port Harcourt.',
     programs: [
       { name: 'NOVA PRIME', duration: '3 months', projects: '15 Live Projects', level: 'Beginner' },
       { name: 'AXIS IGNITE', duration: '5 months', projects: '40 Live Projects', level: 'Intermediate' },
@@ -69,8 +69,8 @@ const allCourses = [
     gradient: 'from-yellow-500/20 to-amber-500/20',
     borderColor: 'border-yellow-500/30',
     textColor: 'text-yellow-600',
-    description: 'Create stunning visuals and intuitive user experiences for web and mobile applications.',
-    longDescription: 'Master design tools, user research, wireframing, prototyping, and visual design principles.',
+    description: 'Create stunning visuals and intuitive user experiences. Get professional UI/UX design training in Port Harcourt with Figma and prototyping tools.',
+    longDescription: 'Master design tools, user research, wireframing, prototyping, and visual design principles at our computer training school in Port Harcourt.',
     programs: [
       { name: 'NOVA PRIME', duration: '2 months', projects: '10 Live Projects', level: 'Beginner' },
       { name: 'AXIS IGNITE', duration: '4 months', projects: '20 Live Projects', level: 'Intermediate' }
@@ -106,8 +106,8 @@ const allCourses = [
     gradient: 'from-yellow-500/20 to-amber-500/20',
     borderColor: 'border-yellow-500/30',
     textColor: 'text-yellow-600',
-    description: 'Transform raw data into actionable insights for business decision-making.',
-    longDescription: 'Master Excel, SQL, Python, Pandas, Tableau, and Power BI for comprehensive data analysis.',
+    description: 'Transform raw data into actionable insights. Master data analytics training in Port Harcourt using Python, SQL, Power BI, and Excel.',
+    longDescription: 'Master Excel, SQL, Python, Pandas, Tableau, and Power BI for comprehensive data analysis at our IT training center in Port Harcourt.',
     programs: [
       { name: 'NOVA PRIME', duration: '3 months', projects: '5 Live Projects', level: 'Beginner' },
       { name: 'AXIS IGNITE', duration: '5 months', projects: '20 Live Projects', level: 'Intermediate' },
@@ -144,8 +144,8 @@ const allCourses = [
     gradient: 'from-yellow-500/20 to-amber-500/20',
     borderColor: 'border-yellow-500/30',
     textColor: 'text-yellow-600',
-    description: 'Master Python programming for web development, automation, data science, and more.',
-    longDescription: 'Learn Python fundamentals, OOP, web frameworks, data analysis, and machine learning basics.',
+    description: 'Master Python programming for web development, automation, and data science. Learn at the best computer training school in Port Harcourt.',
+    longDescription: 'Learn Python fundamentals, OOP, web frameworks, data analysis, and machine learning basics with hands-on projects.',
     programs: [
       { name: 'NOVA PRIME', duration: '2 months', projects: '10 Live Projects', level: 'Beginner' },
       { name: 'AXIS IGNITE', duration: '4 months', projects: '20 Live Projects', level: 'Intermediate' },
@@ -219,7 +219,7 @@ const allCourses = [
     gradient: 'from-yellow-500/20 to-amber-500/20',
     borderColor: 'border-yellow-500/30',
     textColor: 'text-yellow-600',
-    description: 'Build cross-platform and native mobile applications for iOS and Android.',
+    description: 'Build cross-platform and native mobile applications for iOS and Android at our IT training center in Port Harcourt.',
     longDescription: 'Master Flutter, React Native, and native development with Kotlin/Swift.',
     programs: [
       { name: 'NOVA PRIME', duration: '3 months', projects: '6 basic apps', level: 'Beginner' },
@@ -256,8 +256,8 @@ const allCourses = [
     gradient: 'from-yellow-500/20 to-amber-500/20',
     borderColor: 'border-yellow-500/30',
     textColor: 'text-yellow-600',
-    description: 'Protect systems, networks, and data from cyber threats and attacks.',
-    longDescription: 'Master network security, ethical hacking, penetration testing, and security operations.',
+    description: 'Protect systems and networks from cyber threats. Get cybersecurity training in Port Harcourt with ethical hacking and penetration testing.',
+    longDescription: 'Master network security, ethical hacking, penetration testing, and security operations at our software engineering academy in Port Harcourt.',
     programs: [
       { name: 'NOVA PRIME', duration: '3 months', projects: '50+ environments', level: 'Beginner' },
       { name: 'AXIS IGNITE', duration: '5 months', projects: '100+ simulations', level: 'Intermediate' },
@@ -367,19 +367,19 @@ const allCourses = [
 const faqs = [
   {
     question: 'How do I choose the right course for me?',
-    answer: 'Consider your interests, current skills, and career goals. Beginners should start with NOVA PRIME programs. If you have some experience, AXIS IGNITE offers deeper learning. For expert-level mastery, QUANTA ELITE prepares you for leadership roles.'
+    answer: 'Consider your interests, current skills, and career goals. Beginners should start with NOVA PRIME programs at our IT training center in Port Harcourt. If you have some experience, AXIS IGNITE offers deeper learning. For expert-level mastery, QUANTA ELITE prepares you for leadership roles.'
   },
   {
     question: 'Do you offer job placement assistance?',
-    answer: 'Yes! We provide career coaching, resume reviews, interview preparation, and access to our exclusive job board with partner companies. AXIS IGNITE and QUANTA ELITE programs include enhanced career support.'
+    answer: 'Yes! We provide tech training in Port Harcourt with job placement including career coaching, resume reviews, interview preparation, and access to our exclusive job board with partner companies. AXIS IGNITE and QUANTA ELITE programs include enhanced career support.'
   },
   {
     question: 'How do I build a portfolio after completing a course?',
-    answer: 'Each course includes portfolio-building projects. We guide you on showcasing your work on platforms like GitHub, Behance, Tableau Public, or your personal website. Our career coaches help you present your projects effectively.'
+    answer: 'Each course includes portfolio-building projects. We guide you on showcasing your work on platforms like GitHub, Behance, Tableau Public, or your personal website. Our career coaches at the best tech school in Port Harcourt help you present your projects effectively.'
   },
   {
     question: 'Where can I find jobs after completing the program?',
-    answer: 'Graduates find opportunities on LinkedIn, Indeed, Glassdoor, and specialized job boards for each field. We also have partnerships with hiring companies and an internal job board for graduates.'
+    answer: 'Graduates of our coding bootcamp in Port Harcourt find opportunities on LinkedIn, Indeed, Glassdoor, and specialized job boards for each field. We also have partnerships with hiring companies and an internal job board.'
   },
   {
     question: 'What salary can I expect after completing a course?',
@@ -387,11 +387,11 @@ const faqs = [
   },
   {
     question: 'Do I need prior experience to enroll?',
-    answer: 'No. NOVA PRIME programs are designed for beginners with no prior experience. AXIS IGNITE and QUANTA ELITE build upon skills from earlier levels or equivalent experience.'
+    answer: 'No. NOVA PRIME programs are designed for beginners with no prior experience. Our affordable computer training center in PH welcomes students from all backgrounds.'
   },
   {
     question: 'How long does it take to complete each program?',
-    answer: 'NOVA PRIME: 2-3 months, AXIS IGNITE: 4-6 months, QUANTA ELITE: 7-12 months. All programs are flexible with self-paced learning options.'
+    answer: 'NOVA PRIME: 2-3 months, AXIS IGNITE: 4-6 months, QUANTA ELITE: 7-12 months. All programs at our computer training school in Port Harcourt are flexible with self-paced learning options.'
   }
 ]
 
@@ -419,7 +419,7 @@ export default function AllCoursesPage() {
         <div className="absolute inset-0">
           <img 
             src="pics/200.jpg" 
-            alt="Students learning" 
+            alt="Students learning at Yelocode Systems - best tech school and IT training center in Port Harcourt" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-amber-900/90 via-yellow-800/85 to-amber-900/90"></div>
@@ -443,7 +443,6 @@ export default function AllCoursesPage() {
             {/* Left Column - Text Content */}
             <div className="text-left">
               <div className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-amber-400 text-white text-sm font-medium px-4 py-2 rounded-full mb-6 shadow-lg shadow-yellow-500/30">
-                {/* <Sparkles className="w-4 h-4" /> */}
                 Explore All Programs
               </div>
               
@@ -455,8 +454,10 @@ export default function AllCoursesPage() {
               </h1>
               
               <p className="text-xl text-gray-200 max-w-3xl leading-relaxed mb-8">
-                Discover our comprehensive courses designed to transform your career. 
-                Each program includes hands-on projects, career support, and portfolio development.
+                Discover comprehensive courses at the{" "}
+                <strong className="text-white font-semibold">best tech school in Port Harcourt</strong>
+                . Each program includes hands-on projects, career support, and portfolio development with{" "}
+                <strong className="text-white font-semibold">job placement support</strong>.
               </p>
 
               <div className="flex flex-wrap gap-4 mb-10">
@@ -512,7 +513,7 @@ export default function AllCoursesPage() {
                 {/* Main Image */}
                 <img 
                   src="pics/201.jpg" 
-                  alt="Students learning online" 
+                  alt="Students learning online at Yelocode Systems coding bootcamp in Port Harcourt" 
                   className="rounded-2xl shadow-2xl border-4 border-white/20"
                 />
                 
@@ -550,7 +551,7 @@ export default function AllCoursesPage() {
                     </div>
                     <div>
                       <div className="text-sm font-semibold text-gray-900">Job Placement</div>
-                      <div className="text-xs text-gray-600">90% success rate</div>
+                      <div className="text-xs text-gray-600">85% success rate</div>
                     </div>
                   </div>
                 </div>
@@ -559,6 +560,20 @@ export default function AllCoursesPage() {
           </div>
         </div>
       </section>
+
+      {/* SEO Keywords Section */}
+      <div className="bg-white py-6 border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 text-center">
+          <p className="text-xs text-gray-400 max-w-4xl mx-auto leading-relaxed">
+            <strong className="text-gray-500 font-medium">Yelocode Systems Course Catalog:</strong>{" "}
+            Best Tech School in Port Harcourt • Coding Bootcamp Port Harcourt • IT Training Center in Port Harcourt • 
+            Computer Training School in Port Harcourt • Software Engineering Academy in Port Harcourt • 
+            Cybersecurity Training in Port Harcourt • Data Analytics Training in Port Harcourt • 
+            UI/UX Design Training in Port Harcourt • Tech Training with Job Placement • 
+            Affordable Computer Training Centers in PH
+          </p>
+        </div>
+      </div>
 
       {/* COURSES SECTION - MODERN ACCORDION */}
       <section id="courses" className="py-20">
@@ -976,7 +991,9 @@ export default function AllCoursesPage() {
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
             <div className="max-w-2xl">
               <h2 className="text-4xl md:text-5xl font-bold mb-4">Ready to Start Your Journey?</h2>
-              <p className="text-xl text-yellow-100">Choose your course and begin building your future today.</p>
+              <p className="text-xl text-yellow-100">
+                Choose your course at the <strong className="text-white">best tech school in Port Harcourt</strong> and begin building your future today.
+              </p>
             </div>
             <div className="flex flex-wrap gap-4">
               <a href="education">
