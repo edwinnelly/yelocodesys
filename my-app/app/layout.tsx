@@ -11,12 +11,12 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Best IT Training Center in Port Harcourt | Yelocode systems – IT Courses, Cybersecurity &amp; Web Development",
+    default: "Best IT Training Center in Port Harcourt | Yelocode Systems – IT Courses, Cybersecurity & Web Development",
     template: "%s | Yelocode Systems",
   },
 
   description:
-    "Yelocode systems is a leading IT training center in Port Harcourt, offering IT courses in Nigeria, online training, cybersecurity, programming, web development, data analysis, cloud/DevOps engineering and professional certifications. Enroll today for individual, corporate, or online learning.",
+    "Yelocode Systems is a leading IT training center in Port Harcourt, offering IT courses in Nigeria, online training, cybersecurity, programming, web development, data analysis, cloud/DevOps engineering and professional certifications. Enroll today for individual, corporate, or online learning.",
 
   keywords: [
     // Brand & Primary
@@ -24,6 +24,22 @@ export const metadata: Metadata = {
     "yelocodesys.com",
     "Port Harcourt tech company",
     "coding school Port Harcourt",
+    
+    // High-Intent Enrollment Keywords
+    "best tech school in port harcourt",
+    "coding bootcamp port harcourt",
+    "it training center in port harcourt",
+    "computer training school in port harcourt",
+    
+    // High-Demand Skill Keywords
+    "data analytics training in port harcourt",
+    "ui ux design training port harcourt",
+    "software engineering academy in port harcourt",
+    "cybersecurity training in port harcourt",
+    
+    // Career & Value-Driven Keywords
+    "tech training in port harcourt with job placement",
+    "affordable computer training centers in ph",
     
     // Training Services
     "tech bootcamp Port Harcourt",
@@ -77,9 +93,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://yelocodesys.com"),
 
   openGraph: {
-    title: "Best IT Training Center in Port Harcourt | Yelocode systems – IT Courses, Cybersecurity &amp; Web Development",
+    title: "Best IT Training Center in Port Harcourt | Yelocode Systems – IT Courses, Cybersecurity & Web Development",
     description:
-      "Yelocode systems is a leading IT training center in Port Harcourt, offering IT courses in Nigeria, online training, cybersecurity, programming, web development, data analysis, cloud/DevOps engineering and professional certifications. Enroll today for individual, corporate, or online learning.",
+      "Yelocode Systems is a leading IT training center in Port Harcourt, offering IT courses in Nigeria, online training, cybersecurity, programming, web development, data analysis, cloud/DevOps engineering and professional certifications. Enroll today for individual, corporate, or online learning.",
     url: "https://yelocodesys.com",
     siteName: "Yelocode Systems",
     images: [
@@ -87,7 +103,7 @@ export const metadata: Metadata = {
         url: "/og-home.png",
         width: 1200,
         height: 630,
-        alt: "Best IT Training Center in Port Harcourt | Yelocode systems – IT Courses, Cybersecurity &amp; Web Development",
+        alt: "Best IT Training Center in Port Harcourt | Yelocode Systems – IT Courses, Cybersecurity & Web Development",
       },
     ],
     locale: "en_NG",
@@ -98,9 +114,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Best IT Training Center in Port Harcourt | Yelocode systems – IT Courses, Cybersecurity &amp; Web Development",
+    title: "Best IT Training Center in Port Harcourt | Yelocode Systems – IT Courses, Cybersecurity & Web Development",
     description:
-      "Yelocode systems is a leading IT training center in Port Harcourt, offering IT courses in Nigeria, online training, cybersecurity, programming, web development, data analysis, cloud/DevOps engineering and professional certifications. Enroll today for individual, corporate, or online learning.",
+      "Yelocode Systems is a leading IT training center in Port Harcourt, offering IT courses in Nigeria, online training, cybersecurity, programming, web development, data analysis, cloud/DevOps engineering and professional certifications. Enroll today for individual, corporate, or online learning.",
     images: ["/twitter-home.png"],
     site: "@yelocode",
     creator: "@yelocode",
