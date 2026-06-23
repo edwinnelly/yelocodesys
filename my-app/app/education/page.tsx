@@ -5,26 +5,40 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "Yelocode Systems | Tech Training & Coding Bootcamps in Port Harcourt",
+    default: "Best Tech School in Port Harcourt | Coding Bootcamp & IT Training | Yelocode Systems",
     template: "%s | Yelocode Systems",
   },
 
   description:
-    "Start your tech career with Yelocode Systems in Port Harcourt, Nigeria. Professional training in web development, data science, cybersecurity, UI/UX design, Python, and digital marketing. Hands-on learning with expert mentors at No. 11 Elekahia.",
+    "Yelocode Systems is the best tech school and IT training center in Port Harcourt, Nigeria. We offer coding bootcamps, software engineering, cybersecurity, data analytics, and UI/UX design training with job placement at No. 11 Elekahia. Start your tech career today.",
 
   keywords: [
     // Brand
     "Yelocode Systems",
     "yelocodesys.com",
     
+    // High-Intent Enrollment Keywords
+    "best tech school in port harcourt",
+    "coding bootcamp port harcourt",
+    "it training center in port harcourt",
+    "computer training school in port harcourt",
+    
+    // High-Demand Skill Keywords
+    "data analytics training in port harcourt",
+    "ui ux design training port harcourt",
+    "software engineering academy in port harcourt",
+    "cybersecurity training in port harcourt",
+    
+    // Career & Value-Driven Keywords
+    "tech training in port harcourt with job placement",
+    "affordable computer training centers in ph",
+    
     // Education/Training
-    "coding bootcamp Port Harcourt",
     "tech training Nigeria",
     "programming school Port Harcourt",
     "software development course Nigeria",
     "data science training Port Harcourt",
     "cybersecurity certification Nigeria",
-    "UI UX design course Port Harcourt",
     "Python programming Nigeria",
     "digital marketing training",
     "web development bootcamp",
@@ -45,6 +59,9 @@ export const metadata: Metadata = {
     "coding for beginners",
     "IT certification Port Harcourt",
     "job-ready tech skills",
+    "free coding training in port harcourt nigeria",
+    "top 10 tech schools in Port Harcourt",
+    "top tech schools in Port Harcourt and their fees",
   ],
 
   authors: [{ name: "Yelocode Systems", url: "https://yelocodesys.com/about" }],
@@ -54,9 +71,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://yelocodesys.com"),
 
   openGraph: {
-    title: "Yelocode Systems | Tech Training & Coding Bootcamps in Nigeria",
+    title: "Best Tech School in Port Harcourt | Coding Bootcamps & IT Training | Yelocode Systems",
     description:
-      "Launch your tech career with Yelocode Systems in Port Harcourt. Professional bootcamps in web development, data science, cybersecurity, UI/UX design, and digital marketing. Learn from industry experts at No. 11 Elekahia.",
+      "Launch your tech career at the best tech school in Port Harcourt. We offer coding bootcamps, software engineering, cybersecurity, data analytics, and UI/UX design training with job placement. Learn from industry experts at No. 11 Elekahia.",
     url: "https://yelocodesys.com/education",
     siteName: "Yelocode Systems",
     images: [
@@ -64,7 +81,7 @@ export const metadata: Metadata = {
         url: "/og-education.png",
         width: 1200,
         height: 630,
-        alt: "Yelocode Systems - Tech Training & Coding Bootcamps in Port Harcourt",
+        alt: "Yelocode Systems - Best tech school and IT training center in Port Harcourt, Nigeria",
       },
     ],
     locale: "en_NG",
@@ -75,9 +92,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Yelocode Systems | Tech Training",
+    title: "Best Tech School in Port Harcourt | Yelocode Systems",
     description:
-      "Learn to code and launch your tech career in Port Harcourt. Professional bootcamps in web development, data science, cybersecurity, and more.",
+      "Join the best coding bootcamp in Port Harcourt. Software engineering, cybersecurity, data analytics, and UI/UX design training with job placement.",
     images: ["/twitter-education.png"],
     site: "@yelocode",
     creator: "@yelocode",
@@ -107,14 +124,15 @@ export const metadata: Metadata = {
     canonical: "https://yelocodesys.com/education",
   },
 
-  // Add structured data for educational organization
+  // Structured data for educational organization
   other: {
-    "og:education": "coding bootcamp, tech training",
+    "og:education": "coding bootcamp, tech training, software engineering, cybersecurity, data analytics, ui ux design",
     "business:contact_data:street_address": "No. 11 Elekahia",
     "business:contact_data:locality": "Port Harcourt",
     "business:contact_data:region": "Rivers State",
     "business:contact_data:country_name": "Nigeria",
     "business:contact_data:phone_number": "+2349162865693",
+    "business:contact_data:email": "info@yelocodesys.com",
   },
 }
 
