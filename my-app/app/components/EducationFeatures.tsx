@@ -17,7 +17,7 @@ export default function CorePrinciples() {
       icon: Lightbulb,
       title: "Innovation First",
       description: "We embrace creativity and cutting-edge technology to design future-ready solutions. Our curriculum evolves with industry trends to ensure you learn the most relevant skills at our IT training center in Port Harcourt, Nigeria.",
-      image: "pics/db.jpg",
+      image: "pics/boy.jpeg",
       imageAlt: "Innovation and technology at Yelocode Systems - best tech school in Port Harcourt",
       principleNumber: 1,
       tag: "Forward Thinking"
@@ -26,7 +26,7 @@ export default function CorePrinciples() {
       icon: Award,
       title: "Excellence Always",
       description: "We uphold the highest standards in everything we build, teach, and deliver. Our commitment to quality ensures you receive the best tech education at our coding bootcamp in Port Harcourt, Rivers State, Nigeria.",
-      image: "pics/40606.jpg",
+      image: "pics/uognna.jpeg",
       imageAlt: "Excellence in tech education at Yelocode Systems computer training school in Port Harcourt",
       principleNumber: 2,
       tag: "Quality Driven"
@@ -35,7 +35,7 @@ export default function CorePrinciples() {
       icon: Shield,
       title: "Integrity & Trust",
       description: "We operate with transparency and honesty, building long-lasting relationships with students and businesses across Port Harcourt. Your success is our success, and we're committed to your growth with job placement support.",
-      image: "pics/37243.jpg",
+      image: "pics/etim.jpeg",
       imageAlt: "Integrity and trust at Yelocode Systems affordable computer training center in PH",
       principleNumber: 3,
       tag: "Trusted Partner"
