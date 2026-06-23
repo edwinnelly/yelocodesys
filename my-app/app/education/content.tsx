@@ -363,7 +363,8 @@ export default function EducationPage() {
         <BookOpen className="w-4 h-4" />
         Best Tech School in Port Harcourt
       </div> */}
-
+<br/>
+<br/>
       <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-white">
         Transform Your{" "}
         <span className="relative inline-block">
