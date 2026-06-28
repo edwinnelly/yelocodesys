@@ -11,53 +11,35 @@ import {
   MapPin,
   Phone,
   Mail,
-  Check,
   ArrowRight,
   Star,
   Briefcase,
   Target,
-  Zap,
-  Globe,
+  Heart,
   MessageCircle,
   BookOpen,
   Laptop,
-  Heart,
-  Sparkles,
-  Rocket,
-  Layers,
-  Eye,
+  BarChart3,
+  Cpu,
+  TrendingUp,
   Palette,
   Shield,
   Cloud,
   Smartphone,
-  BarChart3,
-  Cpu,
-  TrendingUp,
-  Database,
   ChevronRight,
-  Play,
   Quote,
-  ThumbsUp,
-  Download,
-  Bookmark,
-  Filter,
-  MoveRight,
   ArrowUpRight,
   PlayCircle,
   Video,
-  Headphones,
-  Monitor,
   UserCheck,
   Building2,
   Network,
-  Gift,
 } from "lucide-react";
 import Link from "next/link";
 
 export default function EducationPage() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const [activeTestimonial, setActiveTestimonial] = useState(0);
-  const [isVisible, setIsVisible] = useState<Record<string, boolean>>({});
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [mounted, setMounted] = useState(false);
 
@@ -67,7 +49,6 @@ export default function EducationPage() {
     experience: HTMLElement | null;
     success: HTMLElement | null;
     why: HTMLElement | null;
-    process: HTMLElement | null;
     cohorts: HTMLElement | null;
     faq: HTMLElement | null;
   }>({
@@ -76,7 +57,6 @@ export default function EducationPage() {
     experience: null,
     success: null,
     why: null,
-    process: null,
     cohorts: null,
     faq: null,
   });
@@ -86,34 +66,14 @@ export default function EducationPage() {
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          setIsVisible((prev) => ({
-            ...prev,
-            [entry.target.id]: entry.isIntersecting,
-          }));
-        });
-      },
-      { threshold: 0.2, rootMargin: "0px 0px -100px 0px" },
-    );
-
-    Object.values(sectionRefs.current).forEach((ref) => {
-      if (ref) observer.observe(ref);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
     let interval: NodeJS.Timeout;
-    if (isAutoPlaying) {
+    if (isAutoPlaying && mounted) {
       interval = setInterval(() => {
         setActiveTestimonial((prev) => (prev + 1) % testimonials.length);
       }, 5000);
     }
     return () => clearInterval(interval);
-  }, [isAutoPlaying]);
+  }, [isAutoPlaying, mounted]);
 
   const setSectionRef =
     (key: keyof typeof sectionRefs.current) => (el: HTMLElement | null) => {
@@ -124,7 +84,7 @@ export default function EducationPage() {
     {
       title: "Web Development Bootcamp",
       icon: Code,
-      duration: "12-16 weeks",
+      duration: "12-32 weeks",
       level: "Beginner to Advanced",
       skills: ["HTML/CSS", "JavaScript", "React", "Node.js", "MongoDB"],
       description: "Master full-stack development at our software engineering academy in Port Harcourt with job placement support.",
@@ -148,7 +108,7 @@ export default function EducationPage() {
       icon: BarChart3,
       duration: "12-16 weeks",
       level: "Beginner to Intermediate",
-      skills: ["Python", "SQL", "Data Visualization", "Machine Learning", "SQL"],
+      skills: ["Python", "SQL", "Data Visualization", "Machine Learning"],
       description: "Master data analytics training in Port Harcourt by learning to clean, analyze, and visualize data, then build intelligent models for real-world decision-making.",
       outcomes: ["Data Analyst", "Junior ML Engineer", "BI Analyst", "$50k - $75k starting salary"],
       popular: true,
@@ -228,44 +188,40 @@ export default function EducationPage() {
       role: "Web Developer at Reaput",
       program: "Web Development Bootcamp",
       quote: "Yelocode transformed my career. From a complete beginner to landing my dream job in just 6 months. The mentors really care about your success.",
-      image: "pics/xxc.png",
+      image: "/pics/xxc.png",
       before: "Student",
       after: "Frontend Developer",
       rating: 5,
-      change: "+34% salary increase",
     },
     {
       name: "Emeka Nwachukwu",
       role: "Security Analyst at Interswitch",
       program: "Cybersecurity",
       quote: "The hands-on projects and real-world scenarios prepared me for the challenges I face daily at work. Best tech school in Port Harcourt.",
-      image: "pics/avatar.avif",
+      image: "/pics/avatar.avif",
       before: "IT Support",
       after: "Security Analyst",
       rating: 5,
-      change: "+80% salary increase",
     },
     {
       name: "Aisha Bello",
       role: "Data Analyst at KPMG",
       program: "Data Analysis & AI",
       quote: "The curriculum is perfectly structured for beginners. Within 3 months of graduating, I got a job. Affordable computer training in PH that delivers.",
-      image: "pics/avatar.avif",
+      image: "/pics/avatar.avif",
       before: "Bank Teller",
       after: "Data Analyst",
       rating: 5,
-      change: "+40% salary increase",
     },
     {
       name: "Michael Obi",
       role: "Product Designer at Terragon",
       program: "UI/UX Design",
       quote: "The portfolio I built got me multiple job offers. Great IT training center in Port Harcourt with excellent mentorship.",
-      image: "pics/avatar.avif",
+      image: "/pics/avatar.avif",
       before: "Graphic Designer",
       after: "Product Designer",
       rating: 5,
-      change: "+100% salary increase",
     },
   ];
 
@@ -288,9 +244,9 @@ export default function EducationPage() {
   ];
 
   const cohorts = [
-    { season: "Spring Cohort", date: "April 15, 2025", spots: "12 spots left", deadline: "Apply by Mar 30" },
-    { season: "Summer Cohort", date: "July 10, 2025", spots: "18 spots left", deadline: "Apply by Jun 25" },
-    { season: "Fall Cohort", date: "October 5, 2025", spots: "25 spots left", deadline: "Apply by Sep 20" },
+    { season: "Spring Cohort", date: "April 15, 2026", spots: "12 spots left", deadline: "Apply by Mar 30, 2026" },
+    { season: "Summer Cohort", date: "July 10, 2026", spots: "18 spots left", deadline: "Apply by Jun 25, 2026" },
+    { season: "Fall Cohort", date: "October 5, 2026", spots: "25 spots left", deadline: "Apply by Sep 20, 2026" },
   ];
 
   const faqs = [
@@ -328,115 +284,117 @@ export default function EducationPage() {
   ];
 
   const handlePrevTestimonial = () => {
+    setIsAutoPlaying(false);
     setActiveTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
 
   const handleNextTestimonial = () => {
+    setIsAutoPlaying(false);
     setActiveTestimonial((prev) => (prev + 1) % testimonials.length);
   };
+
+  if (!mounted) {
+    return (
+      <div className="min-h-screen bg-white dark:bg-black flex items-center justify-center">
+        <div className="w-8 h-8 border-2 border-black dark:border-white border-t-transparent rounded-full animate-spin" />
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-white dark:bg-black">
       {/* HERO SECTION */}
-      {/* HERO SECTION */}
-<section
-  id="hero"
-  ref={setSectionRef("hero")}
-  className="relative h-screen flex items-center overflow-hidden"
-  aria-label="Yelocode Systems - Best tech school and coding bootcamp in Port Harcourt"
->
-  {/* Background Image */}
-  <div className="absolute inset-0">
-    <img
-      src="pics/200.jpg"
-      alt="Students learning at Yelocode Systems - best tech school in Port Harcourt, Nigeria"
-      className="w-full h-full object-cover"
-      loading="eager"
-    />
-    <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
-  </div>
+      <section
+        id="hero"
+        ref={setSectionRef("hero")}
+        className="relative h-screen flex items-center overflow-hidden"
+        aria-label="Yelocode Systems - Best tech school and coding bootcamp in Port Harcourt Nigeria"
+      >
+        <div className="absolute inset-0">
+          <img
+            src="/pics/b1.jpeg"
+            alt="Students learning at Yelocode Systems - best tech school and coding bootcamp in Port Harcourt Nigeria with job placement"
+            className="w-full h-full object-cover"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
+        </div>
 
-  <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 text-white">
-    <div className="max-w-3xl">
-      {/* Label - Added mt-20 for mobile */}
-      {/* <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/30 backdrop-blur-md text-sm font-medium mb-8 mt-20 md:mt-0">
-        <BookOpen className="w-4 h-4" />
-        Best Tech School in Port Harcourt
-      </div> */}
-<br/>
-<br/>
-      <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-white">
-        Transform Your{" "}
-        <span className="relative inline-block">
-          Future
-          <svg
-            className="absolute -bottom-2 left-0 w-full"
-            viewBox="0 0 200 8"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <path
-              d="M2 6C44 2.66667 132 0 198 6"
-              stroke="white"
-              strokeWidth="2"
-              strokeLinecap="round"
-              className="opacity-50"
-            />
-          </svg>
-        </span>
-        <br />
-        with Tech Education
-      </h1>
+        <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 text-white">
+          <div className="max-w-3xl">
+            <br />
+            <br />
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-white">
+              Transform Your Future at the{" "}
+              <span className="relative inline-block">
+                Best Tech School
+                <svg
+                  className="absolute -bottom-2 left-0 w-full"
+                  viewBox="0 0 200 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M2 6C44 2.66667 132 0 198 6"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    className="opacity-50"
+                  />
+                </svg>
+              </span>
+              <br />
+              in Port Harcourt
+            </h1>
 
-      <p className="text-xl text-white/90 mb-8 max-w-2xl leading-relaxed">
-        Join the{" "}
-        <strong className="text-white font-semibold">best tech school in Port Harcourt</strong>{" "}
-        and gain the skills you need to launch a successful career in technology. 
-        Project-based learning, expert mentorship, and{" "}
-        <strong className="text-white font-semibold">job placement support</strong>.
-      </p>
+            <p className="text-xl text-white/90 mb-8 max-w-2xl leading-relaxed">
+              Join the{" "}
+              <strong className="text-white font-semibold">best tech school and coding bootcamp in Port Harcourt</strong>{" "}
+              and gain the skills you need to launch a successful career in technology. 
+              Project-based learning, expert mentorship, and{" "}
+              <strong className="text-white font-semibold">job placement support</strong> at No. 11 Elekahia.
+            </p>
 
-      <div className="flex flex-wrap gap-4">
-        <a
-          href="#programs"
-          className="group relative px-8 py-4 bg-white text-black font-semibold hover:bg-gray-200 transition-all duration-300 inline-flex items-center gap-2"
-        >
-          <span>Explore Programs</span>
-          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-        </a>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="#programs"
+                className="group relative px-8 py-4 bg-white text-black font-semibold hover:bg-gray-200 transition-all duration-300 inline-flex items-center gap-2"
+              >
+                <span>Explore Programs</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
 
-        <a
-          href="#success"
-          className="group px-8 py-4 border-2 border-white text-white font-semibold hover:bg-white/10 transition-all duration-300 inline-flex items-center gap-2"
-        >
-          <Star className="w-5 h-5" />
-          Success Stories
-        </a>
-      </div>
-
-      {/* Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-        {stats.map((stat, index) => {
-          const Icon = stat.icon;
-          return (
-            <div key={index} className="text-center">
-              <div className="text-2xl font-bold text-white">{stat.value}</div>
-              <div className="text-sm text-gray-300">{stat.label}</div>
+              <a
+                href="#success"
+                className="group px-8 py-4 border-2 border-white text-white font-semibold hover:bg-white/10 transition-all duration-300 inline-flex items-center gap-2"
+              >
+                <Star className="w-5 h-5" />
+                Success Stories
+              </a>
             </div>
-          );
-        })}
-      </div>
-    </div>
-  </div>
 
-  {/* Scroll indicator */}
-  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-    <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-      <div className="w-1 h-3 bg-white rounded-full mt-2 animate-scroll" />
-    </div>
-  </div>
-</section>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+              {stats.map((stat, index) => {
+                const Icon = stat.icon;
+                return (
+                  <div key={index} className="text-center">
+                    <Icon className="w-8 h-8 mx-auto mb-2 text-yellow-400" />
+                    <div className="text-2xl font-bold text-white">{stat.value}</div>
+                    <div className="text-sm text-gray-300">{stat.label}</div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-white rounded-full mt-2 animate-scroll" />
+          </div>
+        </div>
+      </section>
 
       {/* LEARNING PHILOSOPHY */}
       <section className="py-24 bg-white dark:bg-black">
@@ -446,7 +404,7 @@ export default function EducationPage() {
               Our Approach
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-4">
-              Learning Philosophy
+              Our Learning Philosophy at the Best Tech School in Port Harcourt
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
               We believe in practical, project-based learning that prepares you for real-world challenges
@@ -484,10 +442,10 @@ export default function EducationPage() {
               Our Programs
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-4">
-              Courses Designed for Your Future
+              Tech Courses Designed for Your Future
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              Choose from our comprehensive range of tech programs at the best computer training school in Port Harcourt
+              Choose from 9 comprehensive tech programs at the best computer training school in Port Harcourt
             </p>
           </div>
 
@@ -496,13 +454,13 @@ export default function EducationPage() {
               const Icon = program.icon;
               return (
                 <Link href={program.link} key={index}>
-                  <div className="group relative bg-white dark:bg-black border border-gray-200 dark:border-gray-800 hover:border-black dark:hover:border-white transition-all duration-500 cursor-pointer">
+                  <div className="group relative bg-white dark:bg-black border border-gray-200 dark:border-gray-800 hover:border-black dark:hover:border-white transition-all duration-500 cursor-pointer h-full">
                     {program.popular && (
                       <div className="absolute top-4 right-4 bg-black dark:bg-white text-white dark:text-black text-xs font-medium px-3 py-1 z-10">
                         Popular
                       </div>
                     )}
-                    <div className="p-6">
+                    <div className="p-6 flex flex-col h-full">
                       <div className="w-14 h-14 bg-black dark:bg-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                         <Icon className="w-7 h-7 text-white dark:text-black" />
                       </div>
@@ -511,7 +469,7 @@ export default function EducationPage() {
                         <Clock className="w-4 h-4" />
                         <span className="text-sm text-gray-500">{program.duration}</span>
                       </div>
-                      <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">{program.description}</p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2 flex-grow">{program.description}</p>
                       <div className="flex flex-wrap gap-1.5 mb-4">
                         {program.skills.slice(0, 3).map((skill, i) => (
                           <span key={i} className="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-400">
@@ -519,7 +477,7 @@ export default function EducationPage() {
                           </span>
                         ))}
                       </div>
-                      <div className="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-800">
+                      <div className="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-800 mt-auto">
                         <span className="text-xs text-gray-500">{program.outcomes[0]}</span>
                         <span className="inline-flex items-center gap-1 text-sm font-medium text-black dark:text-white group/link">
                           Learn more
@@ -546,7 +504,7 @@ export default function EducationPage() {
         </div>
       </section>
 
-      {/* LEARNING EXPERIENCE */}
+      {/* LEARNING EXPERIENCE - LOCAL IMAGES REPLACED */}
       <section id="experience" ref={setSectionRef("experience")} className="py-24 bg-white dark:bg-black">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -557,11 +515,11 @@ export default function EducationPage() {
               </div>
 
               <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-6">
-                Learn in an Engaging Environment
+                Learn in an Engaging Environment at Our IT Training Center
               </h2>
 
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-                Our learning experience combines live instruction, recorded content, and hands-on projects to ensure you master every concept.
+                Our learning experience combines live instruction, recorded content, and hands-on projects to ensure you master every concept at the best tech school in Port Harcourt.
               </p>
 
               <div className="grid grid-cols-2 gap-4">
@@ -582,16 +540,36 @@ export default function EducationPage() {
               </div>
             </div>
 
-            {/* Image collage */}
+            {/* REPLACED: Local images instead of Unsplash */}
             <div className="relative">
               <div className="relative grid grid-cols-2 gap-4">
                 <div className="space-y-4">
-                  <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop" alt="Students learning at coding bootcamp in Port Harcourt" className="grayscale hover:grayscale-0 transition-all duration-500" loading="lazy" />
-                  <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=300&fit=crop" alt="Coding session at IT training center in Port Harcourt" className="grayscale hover:grayscale-0 transition-all duration-500" loading="lazy" />
+                  <img 
+                    src="/pics/b2.jpeg" 
+                    alt="Students learning web development at coding bootcamp in Port Harcourt Nigeria - Yelocode Systems training center" 
+                    className="grayscale hover:grayscale-0 transition-all duration-500 rounded w-full h-48 object-cover" 
+                    loading="lazy" 
+                  />
+                  <img 
+                    src="/pics/b3.jpeg" 
+                    alt="Collaborative coding session at IT training center in Port Harcourt - Yelocode Systems students working on projects" 
+                    className="grayscale hover:grayscale-0 transition-all duration-500 rounded w-full h-48 object-cover" 
+                    loading="lazy" 
+                  />
                 </div>
                 <div className="space-y-4 mt-8">
-                  <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&h=300&fit=crop" alt="Classroom at best tech school in Port Harcourt" className="grayscale hover:grayscale-0 transition-all duration-500" loading="lazy" />
-                  <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop" alt="Mentorship at Yelocode Systems Port Harcourt" className="grayscale hover:grayscale-0 transition-all duration-500" loading="lazy" />
+                  <img 
+                    src="/pics/b4.jpeg" 
+                    alt="Modern classroom at best tech school in Port Harcourt Nigeria - Yelocode Systems campus" 
+                    className="grayscale hover:grayscale-0 transition-all duration-500 rounded w-full h-48 object-cover" 
+                    loading="lazy" 
+                  />
+                  <img 
+                    src="/pics/b5.jpeg" 
+                    alt="Expert mentorship session at Yelocode Systems Port Harcourt - Instructor guiding students through coding exercises" 
+                    className="grayscale hover:grayscale-0 transition-all duration-500 rounded w-full h-48 object-cover" 
+                    loading="lazy" 
+                  />
                 </div>
               </div>
             </div>
@@ -624,10 +602,14 @@ export default function EducationPage() {
               </div>
               <Quote className="w-12 h-12 text-gray-300 dark:text-gray-700 mb-4" />
               <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-                "{testimonials[activeTestimonial].quote}"
+                &ldquo;{testimonials[activeTestimonial].quote}&rdquo;
               </p>
               <div className="flex items-center gap-4">
-                <img src={testimonials[activeTestimonial].image} alt={testimonials[activeTestimonial].name} className="w-16 h-16 object-cover" />
+                <img 
+                  src={testimonials[activeTestimonial].image} 
+                  alt={`${testimonials[activeTestimonial].name} - ${testimonials[activeTestimonial].program} graduate at Yelocode Systems Port Harcourt`} 
+                  className="w-16 h-16 object-cover rounded" 
+                />
                 <div>
                   <h4 className="text-lg font-bold text-black dark:text-white">{testimonials[activeTestimonial].name}</h4>
                   <p className="text-gray-600 dark:text-gray-400">{testimonials[activeTestimonial].role}</p>
@@ -644,8 +626,9 @@ export default function EducationPage() {
                 {testimonials.map((_, index) => (
                   <button
                     key={index}
-                    onClick={() => setActiveTestimonial(index)}
+                    onClick={() => { setActiveTestimonial(index); setIsAutoPlaying(false); }}
                     className={`w-2 h-2 rounded-full transition-all ${index === activeTestimonial ? "w-8 bg-black dark:bg-white" : "bg-gray-300 dark:bg-gray-600"}`}
+                    aria-label={`View testimonial ${index + 1}`}
                   />
                 ))}
               </div>
@@ -666,7 +649,7 @@ export default function EducationPage() {
               Why Choose Yelocode
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-4">
-              The Best Place to Start Your Tech Journey
+              The Best Place to Start Your Tech Journey in Port Harcourt
             </h2>
             <p className="text-gray-600 dark:text-gray-400 text-lg">
               As the best tech school in Port Harcourt, we offer affordable training with job placement at our coding bootcamp
@@ -688,7 +671,6 @@ export default function EducationPage() {
             })}
           </div>
 
-          {/* Campus Address */}
           <div className="mt-12 bg-black dark:bg-white text-white dark:text-black p-8 text-center">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex items-center gap-4">
@@ -701,9 +683,9 @@ export default function EducationPage() {
                 </div>
               </div>
               <div className="flex gap-4">
-                <a href="tel:09162865693" className="flex items-center gap-2 px-6 py-3 bg-white/20 dark:bg-black/20 hover:bg-white/30 dark:hover:bg-black/30 transition-all">
+                <a href="tel:+2349162865693" className="flex items-center gap-2 px-6 py-3 bg-white/20 dark:bg-black/20 hover:bg-white/30 dark:hover:bg-black/30 transition-all">
                   <Phone className="w-4 h-4" />
-                  <span>09162865693</span>
+                  <span>+234 916 286 5693</span>
                 </a>
                 <a href="mailto:info@yelocodesys.com" className="flex items-center gap-2 px-6 py-3 bg-white/20 dark:bg-black/20 hover:bg-white/30 dark:hover:bg-black/30 transition-all">
                   <Mail className="w-4 h-4" />
@@ -724,7 +706,7 @@ export default function EducationPage() {
               Upcoming Cohorts
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-4">
-              Start Your Journey This Year
+              Start Your Tech Journey in 2026
             </h2>
           </div>
 
@@ -768,7 +750,7 @@ export default function EducationPage() {
               Got Questions?
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-4">
-              Frequently Asked Questions
+              Frequently Asked Questions About Our Coding Bootcamp
             </h2>
           </div>
 
@@ -800,28 +782,14 @@ export default function EducationPage() {
         </div>
       </section>
 
-      {/* SEO Keywords */}
-      <div className="bg-gray-50 dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800 py-8">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 text-center">
-          <p className="text-xs text-gray-400 dark:text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            <strong className="text-gray-500 dark:text-gray-500 font-medium">Yelocode Systems Programs:</strong>{" "}
-            Best Tech School in Port Harcourt • Coding Bootcamp Port Harcourt • IT Training Center in Port Harcourt • 
-            Computer Training School in Port Harcourt • Software Engineering Academy in Port Harcourt • 
-            Cybersecurity Training in Port Harcourt • Data Analytics Training in Port Harcourt • 
-            UI/UX Design Training in Port Harcourt • Tech Training with Job Placement • 
-            Affordable Computer Training Centers in PH
-          </p>
-        </div>
-      </div>
-
       {/* FINAL CTA */}
       <section className="py-20 bg-black dark:bg-white text-white dark:text-black">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Start Your Tech Journey?
+            Ready to Start Your Tech Journey at the Best Tech School in Port Harcourt?
           </h2>
           <p className="text-xl text-gray-300 dark:text-gray-700 mb-8 max-w-2xl mx-auto">
-            Join the best tech school in Port Harcourt and transform your career with job placement support.
+            Join 1,675+ graduates who transformed their careers with job placement support at Yelocode Systems.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
@@ -841,7 +809,7 @@ export default function EducationPage() {
             </Link>
           </div>
           <p className="text-sm text-gray-400 dark:text-gray-600 mt-6">
-            No. 11 Elekahia, Port Harcourt | 09162865693 | info@yelocodesys.com
+            No. 11 Elekahia, Port Harcourt, Nigeria | +234 916 286 5693 | info@yelocodesys.com
           </p>
         </div>
       </section>
