@@ -329,7 +329,7 @@ export default function Footer() {
           </div>
 
           {/* SEO Keywords */}
-          <div className="border-t border-white/10 dark:border-black/10 pt-8 pb-4">
+          {/* <div className="border-t border-white/10 dark:border-black/10 pt-8 pb-4">
             <p className="text-xs text-gray-500 dark:text-gray-500 max-w-4xl leading-relaxed">
               <strong className="text-gray-400 dark:text-gray-600 font-medium">Yelocode Systems —</strong>{" "}
               Best Tech School in Port Harcourt • Coding Bootcamp Port Harcourt • IT Training Center in Port Harcourt • 
@@ -338,7 +338,7 @@ export default function Footer() {
               UI/UX Design Training in Port Harcourt • Tech Training with Job Placement • 
               Affordable Computer Training Centers in PH
             </p>
-          </div>
+          </div> */}
 
           {/* Bottom Bar */}
           <div className="border-t border-white/10 dark:border-black/10 mt-6 pt-8">

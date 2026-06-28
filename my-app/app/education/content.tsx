@@ -824,5 +824,5 @@ export default function EducationPage() {
         }
       `}</style>
     </div>
-  );
+  );  
 }
